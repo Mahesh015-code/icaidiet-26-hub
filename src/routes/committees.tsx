@@ -16,11 +16,11 @@ import {
 export const Route = createFileRoute("/committees")({
   head: () => ({
     meta: [
-      { title: "Committees & Leadership — ICAIDIET'26 | Muthayammal Engineering College" },
+      { title: "Committees & Leadership — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "Organizing committee, chief patrons, patrons, convener, and coordinators of ICAIDIET'26, Muthayammal Engineering College.",
+          "Organizing committee, chief patrons, patrons, convener, and coordinators of ICAIDIET'26, Muthayammal Engineering College (Autonomous).",
       },
     ],
   }),
@@ -71,33 +71,33 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     id: "patrons",
     role: "Patrons",
     short: "Patrons",
-    description: "Executive academic administration of Muthayammal Engineering College.",
+    description: "Executive academic administration of Muthayammal Engineering College (Autonomous).",
     icon: Shield,
     members: [
       {
         name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
         detail: "Principal",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. P. Venugopal",
         detail: "Dean - Academics",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.",
         detail: "Dean - Student Affairs",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. P. Suresh, M.E., Ph.D.",
         detail: "Dean - Research",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
         detail: "Dean - IQAC",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
     ],
   },
@@ -111,7 +111,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
       {
         name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
         detail: "Professor and Head",
-        institution: "Department of Computer Science & Engineering, Muthayammal Engineering College",
+        institution: "Department of Computer Science & Engineering, Muthayammal Engineering College (Autonomous)",
       },
     ],
   },
@@ -125,22 +125,22 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
       {
         name: "Dr. D Anitha, Ph.D.",
         detail: "HoD, Information Technology (IT)",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. S. Vijayaragavan, Ph.D.",
         detail: "HoD, Artificial Intelligence & Data Science (AI & DS)",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. S. Muthusamy, Ph.D.",
         detail: "HoD, Computer Science & Engineering - Cyber Security [CSE (CS)]",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. S. Lavanya, Ph.D.",
         detail: "HoD, Computer Science & Engineering - AI & ML [CSE (AI&ML)]",
-        institution: "Muthayammal Engineering College",
+        institution: "Muthayammal Engineering College (Autonomous)",
       },
     ],
   },
@@ -208,7 +208,7 @@ function CommitteesPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-3">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-blue-700">
             <GraduationCap className="h-3.5 w-3.5 text-blue-600" />
-            Muthayammal Engineering College (Autonomous)
+            Muthayammal Engineering College (Autonomous) (Autonomous)
           </span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-blue-950">
             Organizing Committees
@@ -387,7 +387,7 @@ function CommitteesPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College
+          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p className="text-slate-400 mb-2">
           Department of Computer Science &amp; Engineering in association with University Canada West.

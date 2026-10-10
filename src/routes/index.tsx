@@ -34,17 +34,17 @@ import { SubmissionPortalHero } from "@/components/SubmissionPortalHero";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ICAIDIET'26 | International Conference - CSE | Muthayammal Engineering College" },
+      { title: "ICAIDIET'26 | International Conference - CSE | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology (CSE), hosted by Muthayammal Engineering College in association with University Canada West. Tentative Date: 18th December 2026. Published Partner: Wiley.",
+          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology (CSE), hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Tentative Date: 18th December 2026. Published Partner: Wiley.",
       },
       { property: "og:title", content: "ICAIDIET'26 — International Conference - CSE" },
       {
         property: "og:description",
         content:
-          "International conference by Department of CSE, Muthayammal Engineering College & University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
+          "International conference by Department of CSE, Muthayammal Engineering College (Autonomous) & University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -111,23 +111,23 @@ const COMMITTEE = [
     members: [
       {
         name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
-        detail: "Principal, Muthayammal Engineering College",
+        detail: "Principal, Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. P. Venugopal",
-        detail: "Dean - Academics, Muthayammal Engineering College",
+        detail: "Dean - Academics, Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. G. Sudarmozhi, M.Sc., Ph.D",
-        detail: "Dean - Student Affairs, Muthayammal Engineering College",
+        detail: "Dean - Student Affairs, Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. P. Suresh, M.E., Ph.D",
-        detail: "Dean - Research, Muthayammal Engineering College",
+        detail: "Dean - Research, Muthayammal Engineering College (Autonomous)",
       },
       {
         name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
-        detail: "Dean - Product and Consultancy, Muthayammal Engineering College",
+        detail: "Dean - Product and Consultancy, Muthayammal Engineering College (Autonomous)",
       },
     ],
   },
@@ -136,7 +136,7 @@ const COMMITTEE = [
     members: [
       {
         name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
-        detail: "Professor and Head, CSE, Muthayammal Engineering College",
+        detail: "Professor and Head, CSE, Muthayammal Engineering College (Autonomous)",
       },
     ],
   },
@@ -275,7 +275,7 @@ function Hero() {
             ICAIDIET'26 — CSE
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A hybrid platform organized by the Department of Computer Science &amp; Engineering, Muthayammal Engineering College in association with University Canada West.
+            A hybrid platform organized by the Department of Computer Science &amp; Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
@@ -302,7 +302,7 @@ function Hero() {
               <Globe className="h-4 w-4 text-primary" /> Hybrid Mode (Online)
             </span>
             <span className="inline-flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College
+              <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College (Autonomous)
             </span>
           </div>
         </div>
@@ -326,7 +326,7 @@ function Highlights() {
     { icon: BookOpenCheck, title: "Scopus-Indexed", text: "All accepted & presented papers published as Scopus-indexed conference proceedings" },
     { icon: BadgeCheck, title: "ISBN & DOI", text: "Assigned ISBN and DOI for all proceedings, as per publisher norms" },
     { icon: FileText, title: "Published Partner", text: "Wiley — official publishing partner of ICAIDIET'26" },
-    { icon: GraduationCap, title: "Department of CSE", text: "Muthayammal Engineering College (Autonomous)" },
+    { icon: GraduationCap, title: "Department of CSE", text: "Muthayammal Engineering College (Autonomous) (Autonomous)" },
   ];
   return (
     <section className="reveal-section border-y border-blue-100 bg-blue-600">
@@ -355,9 +355,9 @@ function About() {
           <div className="mt-6 rounded-2xl border border-border bg-ice p-6">
             <h3 className="font-display text-sm font-bold tracking-wide text-navy uppercase">Organized By</h3>
             <p className="mt-2 font-display text-xl font-bold text-primary">Department of Computer Science & Engineering</p>
-            <p className="mt-1 text-sm font-semibold text-navy">Muthayammal Engineering College (Autonomous)</p>
+            <p className="mt-1 text-sm font-semibold text-navy">Muthayammal Engineering College (Autonomous) (Autonomous)</p>
             <p className="mt-1 text-xs text-muted-foreground">
-              Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College, Rasipuram, Tamil Nadu-637408.
+              Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408.
             </p>
             <h3 className="mt-5 font-display text-sm font-bold tracking-wide text-navy uppercase">
               In Collaboration With
@@ -702,7 +702,7 @@ function Contact() {
                   <MapPin className="h-4.5 w-4.5" />
                 </span>
                 <span className="font-semibold">
-                  Muthayammal Engineering College, Rasipuram, Tamil Nadu-637408
+                  Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408
                 </span>
               </div>
             </div>
@@ -866,7 +866,7 @@ function Footer() {
           </a>
         </div>
         <p className="text-xs text-primary-foreground/50">
-          © 2026 ICAIDIET'26, Muthayammal Engineering College. All rights reserved.
+          © 2026 ICAIDIET'26, Muthayammal Engineering College (Autonomous). All rights reserved.
         </p>
       </div>
     </footer>

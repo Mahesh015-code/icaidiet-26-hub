@@ -59,7 +59,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-blue-100 shadow-xs transition-colors">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Left Branding: Muthayammal Engineering College Official Logo */}
+        {/* Left Branding: Muthayammal Engineering College (Autonomous) Official Logo */}
         <div className="flex items-center shrink-0">
           <a
             href="/#top"
@@ -70,11 +70,11 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
               }
             }}
             className="flex items-center transition-opacity hover:opacity-90"
-            aria-label="Muthayammal Engineering College"
+            aria-label="Muthayammal Engineering College (Autonomous)"
           >
             <img
               src="/mec-logo.png"
-              alt="Muthayammal Engineering College — An Autonomous Institution"
+              alt="Muthayammal Engineering College (Autonomous) — An Autonomous Institution"
               className="h-11 sm:h-12 md:h-14 w-auto object-contain"
             />
           </a>

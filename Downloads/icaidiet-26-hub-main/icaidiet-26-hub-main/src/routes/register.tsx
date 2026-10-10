@@ -334,7 +334,7 @@ function Register() {
           </div>
           <div className="rounded-xl border border-border bg-ice p-6">
             <h4 className="font-display font-bold text-navy">📍 Location</h4>
-            <p className="mt-2 text-sm text-muted-foreground">Muthayammal Engineering College, TN</p>
+            <p className="mt-2 text-sm text-muted-foreground">Muthayammal Engineering College (Autonomous), TN</p>
           </div>
         </div>
       </main>

@@ -37,13 +37,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "ICAIDIET'26 — hybrid international conference on AI-driven innovation, hosted by Muthayammal Engineering College in association with University Canada West. Scopus-indexed proceedings with ISBN & DOI.",
+          "ICAIDIET'26 — hybrid international conference on AI-driven innovation, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Scopus-indexed proceedings with ISBN & DOI.",
       },
       { property: "og:title", content: "ICAIDIET'26 — AI-Driven Innovation in Engineering & Technology" },
       {
         property: "og:description",
         content:
-          "International conference by Department of CSE, Muthayammal Engineering College in association with University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
+          "International conference by Department of CSE, Muthayammal Engineering College (Autonomous) in association with University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -99,17 +99,17 @@ const COMMITTEE = [
   {
     role: "Patrons",
     members: [
-      { name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)", detail: "Principal, Muthayammal Engineering College" },
-      { name: "Dr. P. Venugopal", detail: "Dean - Academics, Muthayammal Engineering College" },
-      { name: "Dr. G. Sudarmozhi, M.Sc., Ph.D", detail: "Dean - Student Affairs, Muthayammal Engineering College" },
-      { name: "Dr. P. Suresh, M.E., Ph.D", detail: "Dean - Research, Muthayammal Engineering College" },
-      { name: "Dr. S. Saravanan, M.E., Ph.D., FIE", detail: "Dean - Product and Consultancy, Muthayammal Engineering College" },
+      { name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)", detail: "Principal, Muthayammal Engineering College (Autonomous)" },
+      { name: "Dr. P. Venugopal", detail: "Dean - Academics, Muthayammal Engineering College (Autonomous)" },
+      { name: "Dr. G. Sudarmozhi, M.Sc., Ph.D", detail: "Dean - Student Affairs, Muthayammal Engineering College (Autonomous)" },
+      { name: "Dr. P. Suresh, M.E., Ph.D", detail: "Dean - Research, Muthayammal Engineering College (Autonomous)" },
+      { name: "Dr. S. Saravanan, M.E., Ph.D., FIE", detail: "Dean - Product and Consultancy, Muthayammal Engineering College (Autonomous)" },
     ],
   },
   {
     role: "Convenor",
     members: [
-      { name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE", detail: "Professor and Head, CSE, Muthayammal Engineering College" },
+      { name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE", detail: "Professor and Head, CSE, Muthayammal Engineering College (Autonomous)" },
     ],
   },
 ];
@@ -265,7 +265,7 @@ function Hero() {
               <Globe className="h-4 w-4 text-primary" /> Hybrid Mode (Online)
             </span>
             <span className="inline-flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College
+              <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College (Autonomous)
             </span>
           </div>
         </div>
@@ -321,7 +321,7 @@ function About() {
           </h2>
           <div className="mt-6 rounded-2xl border border-border bg-ice p-6">
             <h3 className="font-display text-sm font-bold tracking-wide text-navy uppercase">Hosted By</h3>
-            <p className="mt-2 font-display text-xl font-bold text-primary">Muthayammal Engineering College</p>
+            <p className="mt-2 font-display text-xl font-bold text-primary">Muthayammal Engineering College (Autonomous)</p>
             <p className="mt-1 text-sm text-muted-foreground">
               An Autonomous Institution — Approved by AICTE, Affiliated to Anna University. A leading institution
               known for quality engineering education, innovation, and research.
@@ -612,7 +612,7 @@ function Contact() {
                   <MapPin className="h-4.5 w-4.5" />
                 </span>
                 <span className="font-semibold">
-                  Muthayammal Engineering College, Kakkaveri, Singlandhapuram, Tamil Nadu 637408
+                  Muthayammal Engineering College (Autonomous), Kakkaveri, Singlandhapuram, Tamil Nadu 637408
                 </span>
               </div>
             </div>
@@ -717,7 +717,7 @@ function Footer() {
           ))}
         </div>
         <p className="text-xs text-primary-foreground/50">
-          © 2026 ICAIDIET'26, Muthayammal Engineering College. All rights reserved.
+          © 2026 ICAIDIET'26, Muthayammal Engineering College (Autonomous). All rights reserved.
         </p>
       </div>
     </footer>

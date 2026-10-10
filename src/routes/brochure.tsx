@@ -20,11 +20,11 @@ import {
 export const Route = createFileRoute("/brochure")({
   head: () => ({
     meta: [
-      { title: "Official Conference Brochure — ICAIDIET'26 | Muthayammal Engineering College" },
+      { title: "Official Conference Brochure — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College in association with University Canada West. Published Partner: Wiley.",
+          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College (Autonomous) in association with University Canada West. Published Partner: Wiley.",
       },
       { property: "og:image", content: "/brochure.png" },
     ],
@@ -87,7 +87,7 @@ function BrochurePage() {
             <div className="relative w-full overflow-hidden rounded-xl bg-slate-100 group border border-slate-200/80">
               <img
                 src="/brochure.png"
-                alt="ICAIDIET'26 Official Conference Brochure — Muthayammal Engineering College"
+                alt="ICAIDIET'26 Official Conference Brochure — Muthayammal Engineering College (Autonomous)"
                 className="w-full h-auto object-contain rounded-lg transition-transform duration-300 hover:scale-[1.01]"
               />
 
@@ -166,7 +166,7 @@ function BrochurePage() {
                   </span>
                   <div>
                     <p className="font-semibold text-slate-900">Host Institution</p>
-                    <p className="text-xs text-slate-600">Muthayammal Engineering College, Rasipuram, Tamil Nadu-637408</p>
+                    <p className="text-xs text-slate-600">Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408</p>
                   </div>
                 </div>
               </div>
@@ -224,7 +224,7 @@ function BrochurePage() {
                 </p>
                 <p className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
-                  <span>Muthayammal Engineering College, Rasipuram, Tamil Nadu-637408</span>
+                  <span>Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408</span>
                 </p>
               </div>
 
@@ -270,7 +270,7 @@ function BrochurePage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College
+          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p className="text-slate-400 mb-2">
           Department of Computer Science &amp; Engineering in association with University Canada West.

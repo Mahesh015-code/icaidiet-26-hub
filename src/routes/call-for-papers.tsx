@@ -272,7 +272,7 @@ function CallForPapersPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College
+          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p>© 2026 ICAIDIET'26. All rights reserved.</p>
       </footer>

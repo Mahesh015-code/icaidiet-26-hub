@@ -8,7 +8,7 @@ import { Send, FileText, Video, ExternalLink, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/guidelines")({
   head: () => ({
     meta: [
-      { title: "Paper Submission Guidelines — ICAIDIET'26 | Muthayammal Engineering College" },
+      { title: "Paper Submission Guidelines — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
@@ -70,7 +70,7 @@ function GuidelinesPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College
+          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p className="text-slate-400 mb-3">
           Department of Computer Science &amp; Engineering in association with University Canada West.

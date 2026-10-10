@@ -27,7 +27,7 @@ export const Route = createFileRoute("/register")({
       {
         name: "description",
         content:
-          "Submit your paper and register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Hosted by Muthayammal Engineering College. Published Partner: Wiley, Indexed in Scopus.",
+          "Submit your paper and register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley, Indexed in Scopus.",
       },
     ],
   }),
@@ -519,8 +519,8 @@ function Register() {
             <div className="flex items-center gap-2 text-blue-950 font-serif font-bold text-lg">
               <MapPin className="h-5 w-5 text-blue-600" /> Venue
             </div>
-            <p className="mt-2 text-sm font-semibold text-slate-800">Muthayammal Engineering College</p>
-            <p className="text-xs text-slate-500 mt-1">Muthayammal Engineering College, Rasipuram, Tamil Nadu-637408</p>
+            <p className="mt-2 text-sm font-semibold text-slate-800">Muthayammal Engineering College (Autonomous)</p>
+            <p className="text-xs text-slate-500 mt-1">Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408</p>
           </div>
         </div>
       </section>
@@ -532,7 +532,7 @@ function Register() {
             ICAIDIET<span className="text-blue-400">'26</span>
           </p>
           <p className="max-w-xl text-xs sm:text-sm text-slate-400">
-            International Conference on AI-Driven Innovation in Engineering and Technology. Hosted by Muthayammal Engineering College. Published Partner: Wiley. Indexed in Scopus.
+            International Conference on AI-Driven Innovation in Engineering and Technology. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley. Indexed in Scopus.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-xs text-slate-400 pt-2">
             <a href="https://www.acadera.co.in/conferences/icaidiet-2026" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
@@ -556,7 +556,7 @@ function Register() {
             </a>
           </div>
           <p className="text-xs text-slate-600 mt-2">
-            © 2026 ICAIDIET'26, Muthayammal Engineering College. All rights reserved.
+            © 2026 ICAIDIET'26, Muthayammal Engineering College (Autonomous). All rights reserved.
           </p>
         </div>
       </footer>

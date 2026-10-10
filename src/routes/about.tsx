@@ -15,11 +15,11 @@ import {
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About the Conference — ICAIDIET'26 | Muthayammal Engineering College" },
+      { title: "About the Conference — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "About ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College in association with University Canada West, Canada.",
+          "About ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College (Autonomous) in association with University Canada West, Canada.",
       },
     ],
   }),
@@ -95,10 +95,10 @@ function AboutPage() {
                 Department of Computer Science &amp; Engineering
               </h3>
               <p className="text-sm font-semibold text-slate-800 mt-1">
-                Muthayammal Engineering College (Autonomous)
+                Muthayammal Engineering College (Autonomous) (Autonomous)
               </p>
               <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College, Rasipuram, Tamil Nadu-637408.
+                Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408.
               </p>
             </div>
 
@@ -170,7 +170,7 @@ function AboutPage() {
             </span>
             <h4 className="font-serif text-lg font-bold text-blue-950 mb-2">Hybrid Format</h4>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Participate on-site at Muthayammal Engineering College or present remotely via global digital streams.
+              Participate on-site at Muthayammal Engineering College (Autonomous) or present remotely via global digital streams.
             </p>
           </div>
         </div>
@@ -205,7 +205,7 @@ function AboutPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College
+          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p>© 2026 ICAIDIET'26. All rights reserved.</p>
       </footer>
