@@ -158,9 +158,9 @@ function AboutPage() {
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 mb-4">
               <BookOpen className="h-6 w-6" />
             </span>
-            <h4 className="font-serif text-lg font-bold text-blue-950 mb-2">Wiley Proceedings</h4>
+            <h4 className="font-serif text-lg font-bold text-blue-950 mb-2">Wiley Book Proceedings</h4>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Conference proceedings compiled and submitted for inclusion in Wiley and Scopus indexed publications.
+              Conference Book Proceedings compiled and submitted for inclusion in Wiley and Scopus indexed publications.
             </p>
           </div>
 
