@@ -34,17 +34,17 @@ import { SubmissionPortalHero } from "@/components/SubmissionPortalHero";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ICAIDIET'26 | International Conference - CSE | Muthayammal Engineering College (Autonomous)" },
+      { title: "ICAIDIET'26 | International Conference | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology (CSE), hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Tentative Date: 18th December 2026. Published Partner: Wiley.",
+          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Tentative Date: 18th December 2026. Published Partner: Wiley.",
       },
-      { property: "og:title", content: "ICAIDIET'26 — International Conference - CSE" },
+      { property: "og:title", content: "ICAIDIET'26 — International Conference" },
       {
         property: "og:description",
         content:
-          "International conference by Department of CSE, Muthayammal Engineering College (Autonomous) & University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
+          "International conference by Department of Computer Science and Engineering and University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -69,18 +69,18 @@ const RESOURCE_LINKS = [
 // Both open in a new tab (same behavior as the official site).
 
 const TRACKS = [
-  { icon: BrainCircuit, title: "Artificial Intelligence & Intelligent Systems" },
-  { icon: LineChart, title: "Machine Learning & Advanced Analysis" },
-  { icon: Database, title: "Data Science & Decision Intelligence" },
-  { icon: Cpu, title: "IoT, Edge Computing & Embedded Systems" },
-  { icon: Network, title: "Communication Systems & Network Technologies" },
-  { icon: ShieldCheck, title: "Cybersecurity & Secure Computing" },
-  { icon: Bot, title: "Robotics, Automation & Smart Industry" },
-  { icon: Sprout, title: "Emerging Technologies, Sustainability & AI-Driven Management" },
+  { icon: BrainCircuit, title: "Artificial Intelligence and Intelligent Systems" },
+  { icon: LineChart, title: "Machine Learning and Advanced Analysis" },
+  { icon: Database, title: "Data Science and Decision Intelligence" },
+  { icon: Cpu, title: "IoT, Edge Computing and Embedded Systems" },
+  { icon: Network, title: "Communication Systems and Network Technologies" },
+  { icon: ShieldCheck, title: "Cybersecurity and Secure Computing" },
+  { icon: Bot, title: "Robotics, Automation and Smart Industry" },
+  { icon: Sprout, title: "Emerging Technologies, Sustainability and AI-Driven Management" },
 ];
 
 const DATES = [
-  { label: "Paper Submission Deadline", date: "21st September 2026" },
+  { label: "Paper Submission Deadline", date: "14th October 2026" },
   { label: "Acceptance Notification", date: "20th October 2026" },
   { label: "Early Bird Registration", date: "22nd October 2026" },
   { label: "Late Registration", date: "23rd – 28th October 2026" },
@@ -93,12 +93,8 @@ const COMMITTEE = [
     role: "Chief Patrons",
     members: [
       {
-        name: "Deiva Thiru R. Kandasamy",
-        detail: "Founder Chairman, Muthayammal Educational Trust And Research Foundation",
-      },
-      {
         name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
-        detail: "Secretary & Managing Trustee, Muthayammal Educational Trust And Research Foundation",
+        detail: "Secretary and Managing Trustee, Muthayammal Educational Trust And Research Foundation",
       },
       {
         name: "Er. G. Raghul, M.E.",
@@ -111,23 +107,23 @@ const COMMITTEE = [
     members: [
       {
         name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
-        detail: "Principal, Muthayammal Engineering College (Autonomous)",
+        detail: "Principal",
       },
       {
         name: "Dr. P. Venugopal",
-        detail: "Dean - Academics, Muthayammal Engineering College (Autonomous)",
+        detail: "Dean - Academics",
       },
       {
         name: "Dr. G. Sudarmozhi, M.Sc., Ph.D",
-        detail: "Dean - Student Affairs, Muthayammal Engineering College (Autonomous)",
+        detail: "Dean - Student Affairs",
       },
       {
         name: "Dr. P. Suresh, M.E., Ph.D",
-        detail: "Dean - Research, Muthayammal Engineering College (Autonomous)",
+        detail: "Dean - Research",
       },
       {
         name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
-        detail: "Dean - Product and Consultancy, Muthayammal Engineering College (Autonomous)",
+        detail: "Dean - Product and Consultancy",
       },
     ],
   },
@@ -136,7 +132,7 @@ const COMMITTEE = [
     members: [
       {
         name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
-        detail: "Professor and Head, CSE, Muthayammal Engineering College (Autonomous)",
+        detail: "Professor and Head, Computer Science and Engineering",
       },
     ],
   },
@@ -261,7 +257,7 @@ function Hero() {
           <div className="flex flex-wrap items-center gap-2">
             <p className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-semibold tracking-wide text-blue-900 uppercase">
               <Globe className="h-3.5 w-3.5 text-blue-600" />
-              Department of Computer Science and Engineering (CSE)
+              Department of Computer Science and Engineering
             </p>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-100/70 px-3 py-1 text-xs font-bold text-blue-950">
               Published Partner: Wiley
@@ -269,13 +265,13 @@ function Hero() {
           </div>
           <h1 className="mt-6 font-display text-4xl leading-[1.05] font-black tracking-tight text-blue-950 sm:text-5xl lg:text-6xl">
             International Conference on <span className="text-blue-600">AI-Driven Innovation</span> in
-            Engineering &amp; Technology
+            Engineering and Technology
           </h1>
           <p className="mt-4 inline-block rounded-lg bg-blue-600 px-4 py-1.5 font-display text-xl font-bold tracking-widest text-white shadow-sm">
-            ICAIDIET'26 — CSE
+            ICAIDIET'26
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A hybrid platform organized by the Department of Computer Science &amp; Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West.
+            A hybrid platform organized by the Department of Computer Science and Engineering in association with University Canada West.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
@@ -323,10 +319,10 @@ function Hero() {
 
 function Highlights() {
   const items = [
-    { icon: BookOpenCheck, title: "Scopus-Indexed", text: "All accepted & presented papers published as Scopus-indexed conference proceedings" },
-    { icon: BadgeCheck, title: "ISBN & DOI", text: "Assigned ISBN and DOI for all proceedings, as per publisher norms" },
+    { icon: BookOpenCheck, title: "Scopus-Indexed", text: "All accepted and presented papers published as Scopus-indexed conference book proceedings" },
+    { icon: BadgeCheck, title: "ISBN and DOI", text: "Assigned ISBN and DOI for all proceedings, as per publisher norms" },
     { icon: FileText, title: "Published Partner", text: "Wiley — official publishing partner of ICAIDIET'26" },
-    { icon: GraduationCap, title: "Department of CSE", text: "Muthayammal Engineering College (Autonomous) (Autonomous)" },
+    { icon: GraduationCap, title: "Department of Computer Science and Engineering", text: "Muthayammal Engineering College (Autonomous)" },
   ];
   return (
     <section className="reveal-section border-y border-blue-100 bg-blue-600">
@@ -354,8 +350,8 @@ function About() {
           </h2>
           <div className="mt-6 rounded-2xl border border-border bg-ice p-6">
             <h3 className="font-display text-sm font-bold tracking-wide text-navy uppercase">Organized By</h3>
-            <p className="mt-2 font-display text-xl font-bold text-primary">Department of Computer Science & Engineering</p>
-            <p className="mt-1 text-sm font-semibold text-navy">Muthayammal Engineering College (Autonomous) (Autonomous)</p>
+            <p className="mt-2 font-display text-xl font-bold text-primary">Department of Computer Science and Engineering</p>
+            <p className="mt-1 text-sm font-semibold text-navy">Muthayammal Engineering College (Autonomous)</p>
             <p className="mt-1 text-xs text-muted-foreground">
               Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408.
             </p>
@@ -509,9 +505,9 @@ function Fees() {
   return (
     <section id="fees" className="reveal-section mx-auto max-w-7xl px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">Registration & Publication Fees</p>
+        <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">Registration and Publication Fees</p>
         <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
-          Fee Structure & Categories
+          Fee Structure and Categories
         </h2>
         <p className="mt-4 text-muted-foreground">
           Published Partner: <span className="font-bold text-navy">Wiley</span>
@@ -559,7 +555,7 @@ function Fees() {
           </span>
           <div>
             <p className="text-xs font-bold text-red-900">Plagiarism Checker</p>
-            <p className="text-[11px] text-red-700">Check via NovelCheckr before submitting &rarr;</p>
+            <p className="text-[11px] text-red-700">Check via NovelCheckr before submitting →</p>
           </div>
         </a>
 
@@ -574,7 +570,7 @@ function Fees() {
           </span>
           <div>
             <p className="text-xs font-bold text-slate-900">Author Guidelines</p>
-            <p className="text-[11px] text-slate-600">Watch video instructions on YouTube &rarr;</p>
+            <p className="text-[11px] text-slate-600">Watch video instructions on YouTube →</p>
           </div>
         </a>
 
@@ -589,7 +585,7 @@ function Fees() {
           </span>
           <div>
             <p className="text-xs font-bold text-slate-900">Submission Portal</p>
-            <p className="text-[11px] text-slate-600">Upload paper on Acadera &rarr;</p>
+            <p className="text-[11px] text-slate-600">Upload paper on Acadera →</p>
           </div>
         </a>
       </div>
@@ -599,11 +595,11 @@ function Fees() {
           href="/register"
           className="inline-flex rounded-full bg-blue-600 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-500/25 transition-transform hover:-translate-y-0.5 hover:bg-blue-700"
         >
-          Proceed to Registration &rarr;
+          Proceed to Registration →
         </a>
       </div>
       <p className="mt-4 text-center text-sm text-muted-foreground">
-        All accepted and presented papers will be published in Wiley Scopus-indexed conference proceedings with ISBN
+        All accepted and presented papers will be published as Scopus-indexed conference book proceedings with ISBN
         and DOI (as per publisher norms).
       </p>
     </section>
@@ -847,7 +843,7 @@ function Footer() {
             Committees
           </Link>
           <Link to="/register" className="text-primary-foreground/70 transition-colors hover:text-white">
-            Registration &amp; Fees
+            Registration and Fees
           </Link>
           <a
             href="/brochure.png"
@@ -866,7 +862,7 @@ function Footer() {
           </a>
         </div>
         <p className="text-xs text-primary-foreground/50">
-          © 2026 ICAIDIET'26, Muthayammal Engineering College (Autonomous). All rights reserved.
+          © 2026 ICAIDIET'26. All rights reserved.
         </p>
       </div>
     </footer>
@@ -883,7 +879,7 @@ function ConferenceOverviewCards() {
       icon: Globe,
     },
     {
-      title: "Call For Papers & Tracks",
+      title: "Call For Papers and Tracks",
       desc: "Eight core conference tracks spanning Generative AI, Robotics, Data Science, Cyber Security, and IoT.",
       link: "/call-for-papers",
       cta: "View 8 Tracks",
@@ -891,13 +887,13 @@ function ConferenceOverviewCards() {
     },
     {
       title: "Organizing Committees",
-      desc: "Meet the Chief Patrons, Principal, Deans, Convenors, and National & International Advisory Board.",
+      desc: "Meet the Chief Patrons, Principal, Deans, Convenors, and National and International Advisory Board.",
       link: "/committees",
       cta: "Meet Committees",
       icon: Users,
     },
     {
-      title: "Registration & Fees",
+      title: "Registration and Fees",
       desc: "Check registration categories, publication fee structure, and complete your participant registration.",
       link: "/register",
       cta: "Register Now",
@@ -939,7 +935,7 @@ function ConferenceOverviewCards() {
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-600 group-hover:text-blue-700">
               <span>{sec.cta}</span>
-              <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
+              <span className="transition-transform group-hover:translate-x-1">→</span>
             </div>
           </Link>
         ))}

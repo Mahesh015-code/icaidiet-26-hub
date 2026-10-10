@@ -23,7 +23,7 @@ import {
 export const Route = createFileRoute("/call-for-papers")({
   head: () => ({
     meta: [
-      { title: "Call For Papers & Tracks — ICAIDIET'26" },
+      { title: "Call For Papers and Tracks — ICAIDIET'26" },
       {
         name: "description",
         content:
@@ -37,96 +37,96 @@ export const Route = createFileRoute("/call-for-papers")({
 const TRACKS = [
   {
     icon: BrainCircuit,
-    title: "Track 1: Artificial Intelligence & Intelligent Systems",
+    title: "Track 1: Artificial Intelligence and Intelligent Systems",
     topics: [
-      "Generative AI & Large Language Models (LLMs)",
-      "Multimodal Architectures & Neural Networks",
-      "Reinforcement Learning & Adaptive Systems",
-      "Explainable AI (XAI) & Trustworthy AI",
+      "Generative AI and Large Language Models (LLMs)",
+      "Multimodal Architectures and Neural Networks",
+      "Reinforcement Learning and Adaptive Systems",
+      "Explainable AI (XAI) and Trustworthy AI",
       "Knowledge Representation and Reasoning",
     ],
   },
   {
     icon: LineChart,
-    title: "Track 2: Machine Learning & Advanced Analytics",
+    title: "Track 2: Machine Learning and Advanced Analytics",
     topics: [
-      "Supervised, Unsupervised & Self-Supervised Learning",
-      "Transfer Learning & Domain Adaptation",
+      "Supervised, Unsupervised and Self-Supervised Learning",
+      "Transfer Learning and Domain Adaptation",
       "Automated Machine Learning (AutoML)",
-      "Time-Series Analysis & Predictive Modeling",
+      "Time-Series Analysis and Predictive Modeling",
       "High-Dimensional Feature Engineering",
     ],
   },
   {
     icon: Database,
-    title: "Track 3: Data Science & Decision Intelligence",
+    title: "Track 3: Data Science and Decision Intelligence",
     topics: [
       "Real-Time Streaming Big Data Analytics",
-      "Decision Support & Intelligent Business Systems",
-      "Data Visualization & Cognitive Analytics",
-      "Data Privacy, Ethics & Governance Frameworks",
+      "Decision Support and Intelligent Business Systems",
+      "Data Visualization and Cognitive Analytics",
+      "Data Privacy, Ethics and Governance Frameworks",
       "Scalable Cloud Data Pipelines",
     ],
   },
   {
     icon: Cpu,
-    title: "Track 4: IoT, Edge Computing & Embedded Systems",
+    title: "Track 4: IoT, Edge Computing and Embedded Systems",
     topics: [
-      "TinyML & Ultra-Low Power Edge AI",
-      "Smart Sensor Networks & Wearables",
+      "TinyML and Ultra-Low Power Edge AI",
+      "Smart Sensor Networks and Wearables",
       "Embedded Hardware Acceleration for AI",
       "Fog-to-Cloud Distributed Computing",
-      "Smart City & Industrial IoT Architectures",
+      "Smart City and Industrial IoT Architectures",
     ],
   },
   {
     icon: Network,
-    title: "Track 5: Communication Systems & Network Technologies",
+    title: "Track 5: Communication Systems and Network Technologies",
     topics: [
       "5G / 6G Wireless Cellular Architectures",
       "AI-Optimized Software-Defined Networking (SDN)",
-      "Optical Communications & Photonics",
-      "RF, Microwave & Satellite Communications",
-      "Cognitive Radio & Spectrum Management",
+      "Optical Communications and Photonics",
+      "RF, Microwave and Satellite Communications",
+      "Cognitive Radio and Spectrum Management",
     ],
   },
   {
     icon: ShieldCheck,
-    title: "Track 6: Cybersecurity & Secure Computing",
+    title: "Track 6: Cybersecurity and Secure Computing",
     topics: [
-      "AI-Driven Threat Intelligence & Intrusion Detection",
-      "Zero-Trust Architecture & Identity Management",
-      "Cloud Security & Secure Multiparty Computation",
-      "Digital Forensics & Incident Response",
-      "Post-Quantum Cryptography & Blockchain Security",
+      "AI-Driven Threat Intelligence and Intrusion Detection",
+      "Zero-Trust Architecture and Identity Management",
+      "Cloud Security and Secure Multiparty Computation",
+      "Digital Forensics and Incident Response",
+      "Post-Quantum Cryptography and Blockchain Security",
     ],
   },
   {
     icon: Bot,
-    title: "Track 7: Robotics, Automation & Smart Industry",
+    title: "Track 7: Robotics, Automation and Smart Industry",
     topics: [
-      "Autonomous Navigation & Robot Vision",
+      "Autonomous Navigation and Robot Vision",
       "Collaborative Robotics (Cobots) in Smart Factories",
-      "Digital Twins & Industry 4.0 Systems",
-      "Motion Planning & Reinforcement Control",
-      "Additive Manufacturing & AI Diagnostics",
+      "Digital Twins and Industry 4.0 Systems",
+      "Motion Planning and Reinforcement Control",
+      "Additive Manufacturing and AI Diagnostics",
     ],
   },
   {
     icon: Sprout,
-    title: "Track 8: Emerging Technologies & Sustainable AI",
+    title: "Track 8: Emerging Technologies and Sustainable AI",
     topics: [
-      "AI for Renewable Energy & Climate Modeling",
-      "Quantum Computing & Quantum Algorithms",
-      "Smart Healthcare & Precision Medicine",
+      "AI for Renewable Energy and Climate Modeling",
+      "Quantum Computing and Quantum Algorithms",
+      "Smart Healthcare and Precision Medicine",
       "Metaverse, Spatial Computing, AR/VR",
-      "Circular Economy & Green Tech Innovations",
+      "Circular Economy and Green Tech Innovations",
     ],
   },
 ];
 
 const DATES = [
-  { label: "Paper Submission Deadline", date: "21st September 2026" },
+  { label: "Paper Submission Deadline", date: "14th October 2026" },
   { label: "Acceptance Notification", date: "20th October 2026" },
   { label: "Early Bird Registration", date: "22nd October 2026" },
   { label: "Late Registration Period", date: "23rd – 28th October 2026" },
@@ -239,7 +239,7 @@ function CallForPapersPage() {
               Important Milestones
             </span>
             <h2 className="mt-1 font-serif text-2xl sm:text-3xl font-bold text-blue-950">
-              Submission &amp; Registration Schedule
+              Submission and Registration Schedule
             </h2>
           </div>
 

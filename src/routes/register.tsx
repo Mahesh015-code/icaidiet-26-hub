@@ -23,11 +23,11 @@ import { SubmissionGuidelinesSection } from "@/components/SubmissionGuidelinesSe
 export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
-      { title: "Register & Paper Submission Portal — ICAIDIET'26" },
+      { title: "Register and Paper Submission Portal — ICAIDIET'26" },
       {
         name: "description",
         content:
-          "Submit your paper and register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley, Indexed in Scopus.",
+          "Submit your paper and register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley, Indexed in Scopus.",
       },
     ],
   }),
@@ -275,17 +275,17 @@ function Register() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 font-body text-slate-900">
-      {/* 1. Header with Muthayammal Logo & Blue-White Theme */}
+      {/* 1. Header with Muthayammal Logo and Blue-White Theme */}
       <Navbar activeSection="register" />
 
-      {/* 2. Welcome Banner & 4 Action Buttons in Blue-White Theme */}
+      {/* 2. Welcome Banner and 4 Action Buttons in Blue-White Theme */}
       <SubmissionPortalHero />
 
-      {/* 3. Detailed Author Portal & Resources Section */}
+      {/* 3. Detailed Author Portal and Resources Section */}
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">
-            Official Submission Channels &amp; Guidelines
+            Official Submission Channels and Guidelines
           </p>
           <h2 className="mt-2 font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-blue-950">
             Author Resource Center
@@ -386,7 +386,7 @@ function Register() {
           </div>
         </div>
 
-        {/* Embedded YouTube Guidelines Player in Blue & Dark Frame */}
+        {/* Embedded YouTube Guidelines Player in Blue and Dark Frame */}
         <div className="mb-16 overflow-hidden rounded-2xl border border-blue-900/30 bg-slate-900 text-white shadow-xl">
           <div className="p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-1/2 space-y-4">
@@ -430,12 +430,12 @@ function Register() {
           </div>
         </div>
 
-        {/* Author Submission Guidelines, Manuscript Prep & Strict AI Policy */}
+        {/* Author Submission Guidelines, Manuscript Prep and Strict AI Policy */}
         <div className="mb-16">
           <SubmissionGuidelinesSection />
         </div>
 
-        {/* 4. Registration Fees & Complete Form */}
+        {/* 4. Registration Fees and Complete Form */}
         <div className="grid gap-12 lg:grid-cols-3 mb-16">
           {/* Fee Structure */}
           <div className="lg:col-span-1">
@@ -463,7 +463,7 @@ function Register() {
                   <Sparkles className="h-3.5 w-3.5 text-blue-600" /> Scopus Indexed Proceedings
                 </p>
                 <p className="mt-1 leading-relaxed text-blue-900/80">
-                  All accepted &amp; presented papers published with ISBN and DOI as per publisher norms.
+                  All accepted and presented papers published with ISBN and DOI as per publisher norms.
                 </p>
               </div>
 
@@ -506,14 +506,14 @@ function Register() {
               <Calendar className="h-5 w-5 text-blue-600" /> Tentative Date
             </div>
             <p className="mt-2 text-sm font-semibold text-slate-800">18th December 2026</p>
-            <p className="text-xs text-slate-500 mt-1">Presentation tracks &amp; keynotes</p>
+            <p className="text-xs text-slate-500 mt-1">Presentation tracks and keynotes</p>
           </div>
           <div className="rounded-xl border border-blue-100 bg-white p-6 shadow-xs">
             <div className="flex items-center gap-2 text-blue-950 font-serif font-bold text-lg">
               <Clock className="h-5 w-5 text-blue-600" /> Mode of Conduct
             </div>
-            <p className="mt-2 text-sm font-semibold text-slate-800">Hybrid Mode (Online &amp; On-Campus)</p>
-            <p className="text-xs text-slate-500 mt-1">Global digital streams &amp; live sessions</p>
+            <p className="mt-2 text-sm font-semibold text-slate-800">Hybrid Mode (Online and On-Campus)</p>
+            <p className="text-xs text-slate-500 mt-1">Global digital streams and live sessions</p>
           </div>
           <div className="rounded-xl border border-blue-100 bg-white p-6 shadow-xs">
             <div className="flex items-center gap-2 text-blue-950 font-serif font-bold text-lg">

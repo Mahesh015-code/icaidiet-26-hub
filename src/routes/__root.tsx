@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West.",
       },
-      { property: "og:title", content: "ICAIDIET'26 — AI-Driven Innovation in Engineering & Technology" },
+      { property: "og:title", content: "ICAIDIET'26 — AI-Driven Innovation in Engineering and Technology" },
       {
         property: "og:description",
         content:
@@ -102,7 +102,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Public+Sans:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900andfamily=Libre+Baskerville:ital,wght@0,400;0,700;1,400andfamily=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600andfamily=Public+Sans:wght@400;500;600;700anddisplay=swap",
       },
     ],
   }),

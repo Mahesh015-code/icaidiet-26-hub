@@ -8,6 +8,7 @@ import {
   UserCheck,
   Globe,
   ArrowRight,
+  ArrowLeft,
   Sparkles,
   Layers,
   GraduationCap,
@@ -16,11 +17,11 @@ import {
 export const Route = createFileRoute("/committees")({
   head: () => ({
     meta: [
-      { title: "Committees & Leadership — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
+      { title: "Committees and Leadership — ICAIDIET'26" },
       {
         name: "description",
         content:
-          "Organizing committee, chief patrons, patrons, convener, and coordinators of ICAIDIET'26, Muthayammal Engineering College (Autonomous).",
+          "Organizing committee, chief patrons, patrons, convener, and coordinators of ICAIDIET'26.",
       },
     ],
   }),
@@ -52,17 +53,12 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     members: [
       {
         name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
-        detail: "Secretary & Managing Trustee",
+        detail: "Secretary and Managing Trustee",
         institution: "Muthayammal Educational Trust And Research Foundation",
       },
       {
         name: "Er. G. Raghul, M.E.",
         detail: "Joint Secretary",
-        institution: "Muthayammal Educational Trust And Research Foundation",
-      },
-      {
-        name: "Deiva Thiru R. Kandasamy",
-        detail: "Founder Chairman",
         institution: "Muthayammal Educational Trust And Research Foundation",
       },
     ],
@@ -71,39 +67,39 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     id: "patrons",
     role: "Patrons",
     short: "Patrons",
-    description: "Executive academic administration of Muthayammal Engineering College (Autonomous).",
+    description: "Executive academic administration and leadership across the conference ecosystem.",
     icon: Shield,
     members: [
       {
         name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
         detail: "Principal",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        institution: "",
       },
       {
         name: "Dr. P. Venugopal",
         detail: "Dean - Academics",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        institution: "",
       },
       {
         name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.",
         detail: "Dean - Student Affairs",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        institution: "",
       },
       {
         name: "Dr. P. Suresh, M.E., Ph.D.",
         detail: "Dean - Research",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        institution: "",
       },
       {
         name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
         detail: "Dean - IQAC",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        institution: "",
       },
     ],
   },
   {
     id: "convener",
-    role: "Convener & Organizing Chair",
+    role: "Convener and Organizing Chair",
     short: "Convener",
     description: "Conference executive head and academic convener for ICAIDIET'26.",
     icon: UserCheck,
@@ -111,7 +107,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
       {
         name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
         detail: "Professor and Head",
-        institution: "Department of Computer Science & Engineering, Muthayammal Engineering College (Autonomous)",
+        institution: "Department of Computer Science and Engineering",
       },
     ],
   },
@@ -124,23 +120,23 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     members: [
       {
         name: "Dr. D Anitha, Ph.D.",
-        detail: "HoD, Information Technology (IT)",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        detail: "HoD, Information Technology",
+        institution: "",
       },
       {
         name: "Dr. S. Vijayaragavan, Ph.D.",
-        detail: "HoD, Artificial Intelligence & Data Science (AI & DS)",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        detail: "HoD, Artificial Intelligence and Data Science",
+        institution: "",
       },
       {
         name: "Dr. S. Muthusamy, Ph.D.",
-        detail: "HoD, Computer Science & Engineering - Cyber Security [CSE (CS)]",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        detail: "HoD, Computer Science and Engineering - Cyber Security",
+        institution: "",
       },
       {
         name: "Dr. S. Lavanya, Ph.D.",
-        detail: "HoD, Computer Science & Engineering - AI & ML [CSE (AI&ML)]",
-        institution: "Muthayammal Engineering College (Autonomous)",
+        detail: "HoD, Computer Science and Engineering - Artificial Intelligence and Machine Learning",
+        institution: "",
       },
     ],
   },
@@ -206,10 +202,6 @@ function CommitteesPage() {
       {/* Header Banner */}
       <section className="relative w-full py-16 sm:py-20 border-b border-blue-100 bg-gradient-to-b from-blue-50/70 via-white to-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-3">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-blue-700">
-            <GraduationCap className="h-3.5 w-3.5 text-blue-600" />
-            Muthayammal Engineering College (Autonomous) (Autonomous)
-          </span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-blue-950">
             Organizing Committees
           </h1>
@@ -287,7 +279,8 @@ function CommitteesPage() {
               onClick={() => handleSelectTab("all")}
               className="rounded-lg bg-white border border-blue-200 px-3.5 py-1.5 text-xs font-bold text-blue-700 hover:bg-blue-100 transition-colors cursor-pointer"
             >
-              &larr; View All Committees
+              <ArrowLeft className="mr-1 inline h-3.5 w-3.5" aria-hidden="true" />
+              View All Committees
             </button>
           </div>
         )}
@@ -325,7 +318,7 @@ function CommitteesPage() {
                       onClick={() => handleSelectTab(group.id)}
                       className="text-xs font-semibold text-blue-600 hover:underline cursor-pointer"
                     >
-                      Focus view &rarr;
+                      Focus view <ArrowRight className="ml-1 inline h-3.5 w-3.5" aria-hidden="true" />
                     </button>
                   )}
                 </div>
@@ -339,14 +332,14 @@ function CommitteesPage() {
                     className="rounded-xl border border-slate-100 bg-slate-50/60 p-5 hover:bg-blue-50/40 hover:border-blue-200 transition-all flex flex-col justify-between"
                   >
                     <div>
-                      <h3 className="font-serif text-base font-bold text-slate-900 leading-snug">
+                      <h3 className="font-serif text-lg font-bold text-slate-900 leading-snug">
                         {m.name}
                       </h3>
-                      <p className="text-xs font-semibold text-blue-700 mt-1">
+                      <p className="text-sm font-semibold text-blue-700 mt-1">
                         {m.detail}
                       </p>
                       {m.institution && (
-                        <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                        <p className="text-sm text-slate-600 mt-1 leading-relaxed">
                           {m.institution}
                         </p>
                       )}
@@ -364,7 +357,8 @@ function CommitteesPage() {
             to="/"
             className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors"
           >
-            &larr; Back to Home
+            <ArrowLeft className="mr-1 inline h-4 w-4" aria-hidden="true" />
+            Back to Home
           </Link>
           <div className="flex gap-3">
             <Link
@@ -387,10 +381,10 @@ function CommitteesPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
+          ICAIDIET'26
         </p>
         <p className="text-slate-400 mb-2">
-          Department of Computer Science &amp; Engineering in association with University Canada West.
+          Department of Computer Science and Engineering in association with University Canada West.
         </p>
         <p>© 2026 ICAIDIET'26. All rights reserved.</p>
       </footer>

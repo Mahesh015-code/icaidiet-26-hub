@@ -24,7 +24,7 @@ export const Route = createFileRoute("/brochure")({
       {
         name: "description",
         content:
-          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College (Autonomous) in association with University Canada West. Published Partner: Wiley.",
+          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology. Organized by Department of Computer Science and Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West. Published Partner: Wiley.",
       },
       { property: "og:image", content: "/brochure.png" },
     ],
@@ -54,7 +54,7 @@ function BrochurePage() {
             Official Conference Brochure
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            International Conference on AI-Driven Innovation in Engineering &amp; Technology (ICAIDIET'26).
+            International Conference on AI-Driven Innovation in Engineering and Technology (ICAIDIET'26).
           </p>
 
           <div className="pt-2 flex flex-wrap justify-center gap-3">
@@ -105,7 +105,7 @@ function BrochurePage() {
             </div>
 
             <div className="w-full mt-4 flex items-center justify-between text-xs text-slate-500 px-1">
-              <span>Official Brochure • Department of CSE</span>
+              <span>Official Brochure • Department of Computer Science and Engineering</span>
               <a
                 href="/brochure.png"
                 download="ICAIDIET26_Official_Brochure.png"
@@ -155,8 +155,8 @@ function BrochurePage() {
                     <Award className="h-4 w-4" />
                   </span>
                   <div>
-                    <p className="font-semibold text-slate-900">Publication &amp; Indexing</p>
-                    <p className="text-xs text-slate-600 font-medium">Wiley Online Library • Scopus-Indexed Proceedings with ISBN &amp; DOI</p>
+                    <p className="font-semibold text-slate-900">Publication and Indexing</p>
+                    <p className="text-xs text-slate-600 font-medium">Wiley Online Library • Scopus-Indexed Proceedings with ISBN and DOI</p>
                   </div>
                 </div>
 
@@ -273,7 +273,7 @@ function BrochurePage() {
           ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p className="text-slate-400 mb-2">
-          Department of Computer Science &amp; Engineering in association with University Canada West.
+          Department of Computer Science and Engineering in association with University Canada West.
         </p>
         <p>© 2026 ICAIDIET'26. All rights reserved.</p>
       </footer>

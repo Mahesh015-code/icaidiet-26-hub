@@ -19,7 +19,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "About ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College (Autonomous) in association with University Canada West, Canada.",
+          "About ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology. Organized by Department of Computer Science and Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West, Canada.",
       },
     ],
   }),
@@ -59,7 +59,7 @@ function AboutPage() {
               to="/register"
               className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-6 py-2.5 text-sm font-semibold text-blue-700 transition-all hover:bg-blue-50"
             >
-              Registration &amp; Submissions
+              Registration and Submissions
             </Link>
           </div>
         </div>
@@ -92,10 +92,10 @@ function AboutPage() {
                 <Building className="h-4 w-4" /> Organized By
               </div>
               <h3 className="font-serif text-lg font-bold text-blue-950">
-                Department of Computer Science &amp; Engineering
+                Department of Computer Science and Engineering
               </h3>
               <p className="text-sm font-semibold text-slate-800 mt-1">
-                Muthayammal Engineering College (Autonomous) (Autonomous)
+                Muthayammal Engineering College (Autonomous)
               </p>
               <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                 Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408.
@@ -110,7 +110,7 @@ function AboutPage() {
                 <img
                   src="https://wpvip.guscancolleges.ca/ucanwest/wp-content/uploads/sites/3/2022/12/UCW-logo-outline-2x.webp?w=512&quality=85"
                   alt="University Canada West, Canada"
-                  className="h-auto max-h-12 w-auto max-w-full object-contain"
+                  className="h-auto max-h-16 w-auto max-w-full object-contain sm:max-h-20"
                 />
               </h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
@@ -136,7 +136,7 @@ function AboutPage() {
               </div>
 
               <p className="text-xs text-slate-600 mt-3 leading-relaxed">
-                All accepted &amp; presented papers published in Scopus-indexed conference book proceedings with ISBN &amp; DOI.
+                All accepted and presented papers published as Scopus-indexed conference book proceedings with ISBN and DOI.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ function AboutPage() {
           <div>
             <h3 className="font-serif text-2xl font-bold">Ready to submit your manuscript?</h3>
             <p className="text-sm text-blue-100 mt-1">
-              Submit by 21st September 2026. Review our author guidelines and templates.
+              Submit by 14th October 2026. Review our author guidelines and templates.
             </p>
           </div>
           <div className="flex gap-3 shrink-0">
