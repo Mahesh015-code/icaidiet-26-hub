@@ -24,7 +24,7 @@ export const Route = createFileRoute("/brochure")({
       {
         name: "description",
         content:
-          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College in association with Yorkville University, Canada. Published Partner: Wiley.",
+          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology. Organized by Department of CSE, Muthayammal Engineering College in association with University Canada West. Published Partner: Wiley.",
       },
       { property: "og:image", content: "/brochure.png" },
     ],
@@ -273,7 +273,7 @@ function BrochurePage() {
           ICAIDIET'26 — Muthayammal Engineering College
         </p>
         <p className="text-slate-400 mb-2">
-          Department of Computer Science &amp; Engineering in association with Yorkville University, Canada.
+          Department of Computer Science &amp; Engineering in association with University Canada West.
         </p>
         <p>© 2026 ICAIDIET'26. All rights reserved.</p>
       </footer>

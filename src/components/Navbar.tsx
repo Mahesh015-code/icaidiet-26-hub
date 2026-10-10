@@ -81,11 +81,11 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
         </div>
 
         {/* Center / Right Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
+        <nav className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-5 2xl:gap-6">
           {/* Home */}
           <Link
             to="/"
-            className={`relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
+            className={`whitespace-nowrap relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
               isHomePage && activeSection === "home"
                 ? "font-bold text-blue-700"
                 : "text-slate-700"
@@ -100,7 +100,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           {/* About */}
           <Link
             to="/about"
-            className={`relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
+            className={`whitespace-nowrap relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
               activeSection === "about"
                 ? "font-bold text-blue-700"
                 : "text-slate-700"
@@ -115,7 +115,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           {/* Call For Papers */}
           <Link
             to="/call-for-papers"
-            className={`relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
+            className={`whitespace-nowrap relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
               activeSection === "tracks" || activeSection === "call-for-papers"
                 ? "font-bold text-blue-700"
                 : "text-slate-700"
@@ -135,7 +135,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           >
             <Link
               to="/committees"
-              className={`flex items-center gap-1 py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
+              className={`whitespace-nowrap flex items-center gap-1 py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
                 activeSection === "committees"
                   ? "font-bold text-blue-700"
                   : "text-slate-700"
@@ -204,7 +204,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           >
             <button
               onClick={() => setAuthorsOpen(!authorsOpen)}
-              className="flex items-center gap-1 py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+              className="whitespace-nowrap flex items-center gap-1 py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
               aria-expanded={authorsOpen}
             >
               For Authors
@@ -311,7 +311,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
             href="/brochure.png"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+            className="whitespace-nowrap py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
           >
             Brochure
           </a>
@@ -321,7 +321,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
             href="https://mec.edu.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+            className="whitespace-nowrap py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
           >
             MEC
           </a>
@@ -333,7 +333,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           <Link
             to="/register"
             id="desktop-nav-cta"
-            className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95"
+            className="whitespace-nowrap inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95"
           >
             Register Now
             <ArrowRight className="h-4 w-4" />

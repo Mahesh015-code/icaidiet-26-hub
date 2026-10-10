@@ -390,7 +390,7 @@ function CommitteesPage() {
           ICAIDIET'26 — Muthayammal Engineering College
         </p>
         <p className="text-slate-400 mb-2">
-          Department of Computer Science &amp; Engineering in association with Yorkville University, Canada.
+          Department of Computer Science &amp; Engineering in association with University Canada West.
         </p>
         <p>© 2026 ICAIDIET'26. All rights reserved.</p>
       </footer>

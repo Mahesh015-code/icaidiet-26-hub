@@ -38,13 +38,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology (CSE), hosted by Muthayammal Engineering College in association with Yorkville University, Canada. Tentative Date: 18th December 2026. Published Partner: Wiley.",
+          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology (CSE), hosted by Muthayammal Engineering College in association with University Canada West. Tentative Date: 18th December 2026. Published Partner: Wiley.",
       },
       { property: "og:title", content: "ICAIDIET'26 — International Conference - CSE" },
       {
         property: "og:description",
         content:
-          "International conference by Department of CSE, Muthayammal Engineering College & Yorkville University, Canada. Tentative date: 18th December 2026. Published Partner: Wiley.",
+          "International conference by Department of CSE, Muthayammal Engineering College & University Canada West. Tentative date: 18th December 2026. Published Partner: Wiley.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -275,7 +275,7 @@ function Hero() {
             ICAIDIET'26 — CSE
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A hybrid platform organized by the Department of Computer Science &amp; Engineering, Muthayammal Engineering College in association with Yorkville University, Canada.
+            A hybrid platform organized by the Department of Computer Science &amp; Engineering, Muthayammal Engineering College in association with University Canada West.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
@@ -362,7 +362,7 @@ function About() {
             <h3 className="mt-5 font-display text-sm font-bold tracking-wide text-navy uppercase">
               In Collaboration With
             </h3>
-            <p className="mt-2 font-display text-xl font-bold text-primary">Yorkville University, Canada</p>
+            <p className="mt-2 font-display text-xl font-bold text-primary">University Canada West</p>
             <p className="mt-1 text-sm text-muted-foreground">
               A renowned university recognized for its global outlook and career-focused education.
             </p>
@@ -383,8 +383,7 @@ function About() {
           </p>
           <p>
             ICAIDIET'26 aspires to inspire forward-thinking ideas and promote interdisciplinary approaches that
-            will shape the future of smart and sustainable technologies. In collaboration with Yorkville
-            University, Canada, the conference encourages international collaboration and knowledge sharing in
+            will shape the future of smart and sustainable technologies. In collaboration with University Canada West, the conference encourages international collaboration and knowledge sharing in
             emerging technologies.
           </p>
         </div>
@@ -798,7 +797,7 @@ function Footer() {
         </p>
         <p className="max-w-xl text-sm text-primary-foreground/75 leading-relaxed">
           International Conference on AI-Driven Innovation in Engineering and Technology — Muthayammal
-          Engineering College, in association with Yorkville University, Canada.
+          Engineering College, in association with University Canada West.
         </p>
         
         {/* Quick Portal Links */}
@@ -878,7 +877,7 @@ function ConferenceOverviewCards() {
   const sections = [
     {
       title: "About The Conference",
-      desc: "Learn about the mission, organizers, Yorkville University partnership, and hybrid presentation format.",
+      desc: "Learn about the mission, organizers, University Canada West partnership, and hybrid presentation format.",
       link: "/about",
       cta: "Explore About",
       icon: Globe,
