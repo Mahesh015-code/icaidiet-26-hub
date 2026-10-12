@@ -71,22 +71,22 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: Shield,
     members: [
       {
-        name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
+        name: "Dr. P. Senthilkumar, M.E., Ph.D., (IITM)",
         detail: "Principal",
         institution: "",
       },
       {
-        name: "Dr. P. Venugopal",
+        name: "Dr. P. Venugopal, Ph.D.,",
         detail: "Dean - Academics",
         institution: "",
       },
       {
-        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.",
+        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.,",
         detail: "Dean - Student Affairs",
         institution: "",
       },
       {
-        name: "Dr. P. Suresh, M.E., Ph.D.",
+        name: "Dr. P. Suresh, M.E., Ph.D.,",
         detail: "Dean - Research",
         institution: "",
       },
@@ -105,7 +105,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: UserCheck,
     members: [
       {
-        name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head",
         institution: "Department of Computer Science and Engineering",
       },
@@ -119,22 +119,22 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: Users,
     members: [
       {
-        name: "Dr. D Anitha, Ph.D.",
+        name: "Dr. D Anitha, Ph.D.,",
         detail: "HoD, Information Technology",
         institution: "",
       },
       {
-        name: "Dr. S. Vijayaragavan, Ph.D.",
+        name: "Dr. S. Vijayaragavan, Ph.D.,",
         detail: "HoD, Artificial Intelligence and Data Science",
         institution: "",
       },
       {
-        name: "Dr. S. Muthusamy, Ph.D.",
+        name: "Dr. S. Muthusamy, Ph.D.,",
         detail: "HoD, Computer Science and Engineering - Cyber Security",
         institution: "",
       },
       {
-        name: "Dr. S. Lavanya, Ph.D.",
+        name: "Dr. S. Lavanya, Ph.D.,",
         detail: "HoD, Computer Science and Engineering - Artificial Intelligence and Machine Learning",
         institution: "",
       },
@@ -332,9 +332,12 @@ function CommitteesPage() {
                     className="rounded-xl border border-slate-100 bg-slate-50/60 p-5 hover:bg-blue-50/40 hover:border-blue-200 transition-all flex flex-col justify-between"
                   >
                     <div>
-                      <h3 className="font-serif text-lg font-bold text-slate-900 leading-snug">
-                        {m.name}
-                      </h3>
+                      <h3
+                          className="font-serif text-lg font-bold text-slate-900 leading-snug"
+                          style={{ whiteSpace: "pre-line" }}
+                        >
+                          {m.name}
+                        </h3>
                       <p className="text-sm font-semibold text-blue-700 mt-1">
                         {m.detail}
                       </p>

@@ -106,19 +106,19 @@ const COMMITTEE = [
     role: "Patrons",
     members: [
       {
-        name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
+        name: "Dr. P. Senthilkumar, M.E., Ph.D., (IITM)",
         detail: "Principal",
       },
       {
-        name: "Dr. P. Venugopal",
+        name: "Dr. P. Venugopal, Ph.D.,",
         detail: "Dean - Academics",
       },
       {
-        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D",
+        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.,",
         detail: "Dean - Student Affairs",
       },
       {
-        name: "Dr. P. Suresh, M.E., Ph.D",
+        name: "Dr. P. Suresh, M.E., Ph.D.,",
         detail: "Dean - Research",
       },
       {
@@ -131,7 +131,7 @@ const COMMITTEE = [
     role: "Convenor",
     members: [
       {
-        name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head, Computer Science and Engineering",
       },
     ],
@@ -488,7 +488,9 @@ function Committee() {
               <ul className="mt-4 space-y-4">
                 {group.members.map((m) => (
                   <li key={m.name}>
-                    <p className="font-semibold text-white">{m.name}</p>
+                    <p className="font-semibold text-white" style={{ whiteSpace: "pre-line" }}>
+                      {m.name}
+                    </p>
                     <p className="text-sm text-primary-foreground/70">{m.detail}</p>
                   </li>
                 ))}
