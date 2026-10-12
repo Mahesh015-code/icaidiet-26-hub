@@ -87,7 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Join researchers, academicians, and industry professionals at ICAIDIET'26, hosted by Muthayammal Engineering College (Autonomous) with University Canada West. Scopus-indexed proceedings.",
+          "Join researchers, academicians and industry professionals at ICAIDIET'26, hosted by Muthayammal Engineering College (Autonomous) with University Canada West. Scopus-indexed proceedings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

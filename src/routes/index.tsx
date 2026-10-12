@@ -96,12 +96,12 @@ const COMMITTEE = [
     role: "Chief Patrons",
     members: [
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
         detail:
           "Secretary and Managing Trustee, Muthayammal Educational Trust And Research Foundation",
       },
       {
-        name: "Er. G. Raghul, M.E.,",
+        name: "Er. G. Raghul, M.E.",
         detail: "Joint Secretary, Muthayammal Educational Trust And Research Foundation",
       },
     ],
@@ -110,23 +110,23 @@ const COMMITTEE = [
     role: "Patrons",
     members: [
       {
-        name: "Dr. P. Senthilkumar, M.E., Ph.D., (IITM)",
+        name: "Dr. P. Senthilkumar, M.E., Ph.D. (IITM)",
         detail: "Principal",
       },
       {
-        name: "Dr. P. Venugopal, M.E., Ph.D.,",
+        name: "Dr. P. Venugopal, M.E., Ph.D.",
         detail: "Dean - Academics",
       },
       {
-        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.,",
+        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.",
         detail: "Dean - Student Affairs",
       },
       {
-        name: "Dr. P. Suresh, M.E., Ph.D.,",
+        name: "Dr. P. Suresh, M.E., Ph.D.",
         detail: "Dean - Research",
       },
       {
-        name: "Dr. S. Saravanan, M.E., Ph.D., FIE,",
+        name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
         detail: "Dean - Product and Consultancy",
       },
     ],
@@ -135,7 +135,7 @@ const COMMITTEE = [
     role: "Convenor",
     members: [
       {
-        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE,",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head, Computer Science and Engineering",
       },
     ],
@@ -407,15 +407,15 @@ function About() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-muted-foreground lg:pt-14">
           <p>
-            The International Conference on AI-Driven Innovations in Engineering and Technology
+            The International Conference on AI-Driven Innovation in Engineering and Technology
             (ICAIDIET'26), conducted in hybrid mode, serves as a dynamic platform that brings
-            together researchers, academicians, and industry professionals from across the globe to
+            together researchers, academicians and industry professionals from across the globe to
             explore the transformative potential of Artificial Intelligence.
           </p>
           <p>
-            The conference aims to foster innovation, collaboration, and knowledge exchange across
+            The conference aims to foster innovation, collaboration and knowledge exchange across
             diverse domains of engineering and technology. It emphasizes cutting-edge research,
-            emerging trends, and practical applications of AI, encouraging the development of
+            emerging trends and practical applications of AI, encouraging the development of
             intelligent solutions to address real-world challenges.
           </p>
           <p>
@@ -951,28 +951,28 @@ function ConferenceOverviewCards() {
   const sections = [
     {
       title: "About The Conference",
-      desc: "Learn about the mission, organizers, University Canada West partnership, and hybrid presentation format.",
+      desc: "Learn about the mission, organizers, University Canada West partnership and hybrid presentation format.",
       link: "/about",
       cta: "Explore About",
       icon: Globe,
     },
     {
       title: "Call For Papers and Tracks",
-      desc: "Eight core conference tracks spanning Generative AI, Robotics, Data Science, Cyber Security, and IoT.",
+      desc: "Eight core conference tracks spanning Generative AI, Robotics, Data Science, Cyber Security and IoT.",
       link: "/call-for-papers",
       cta: "View 8 Tracks",
       icon: BrainCircuit,
     },
     {
       title: "Organizing Committees",
-      desc: "Meet the Chief Patrons, Principal, Deans, Convenors, and National and International Advisory Board.",
+      desc: "Meet the Chief Patrons, Principal, Deans, Convenors and National and International Advisory Board.",
       link: "/committees",
       cta: "Meet Committees",
       icon: Users,
     },
     {
       title: "Registration and Fees",
-      desc: "Check registration categories, publication fee structure, and complete your participant registration.",
+      desc: "Check registration categories, publication fee structure and complete your participant registration.",
       link: "/register",
       cta: "Register Now",
       icon: BadgeCheck,
@@ -989,7 +989,7 @@ function ConferenceOverviewCards() {
           Explore ICAIDIET'26
         </h2>
         <p className="mt-3 text-slate-600 text-sm sm:text-base">
-          Navigate directly to dedicated conference details, track specifications, and author
+          Navigate directly to dedicated conference details, track specifications and author
           resources.
         </p>
       </div>

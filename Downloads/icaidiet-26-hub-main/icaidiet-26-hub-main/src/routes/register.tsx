@@ -9,7 +9,7 @@ export const Route = createFileRoute("/register")({
       { title: "Register — ICAIDIET'26" },
       {
         name: "description",
-        content: "Register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology",
+        content: "Register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology",
       },
     ],
   }),
@@ -274,7 +274,7 @@ function Register() {
             Join ICAIDIET<span className="text-primary">'26</span>
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Register now to participate in the International Conference on AI-Driven Innovation in Engineering &
+            Register now to participate in the International Conference on AI-Driven Innovation in Engineering and
             Technology
           </p>
         </div>
@@ -307,7 +307,7 @@ function Register() {
 
               <div className="mt-6 rounded-lg bg-blue-50 p-4 text-sm text-blue-900">
                 <p className="font-semibold">📋 Scopus Indexed</p>
-                <p className="mt-1 text-xs">All accepted papers published with ISBN & DOI</p>
+                <p className="mt-1 text-xs">All accepted papers published with ISBN and DOI</p>
               </div>
             </div>
           </div>
@@ -326,11 +326,11 @@ function Register() {
         <div className="mt-16 grid gap-6 sm:grid-cols-3">
           <div className="rounded-xl border border-border bg-ice p-6">
             <h4 className="font-display font-bold text-navy">📅 Dates</h4>
-            <p className="mt-2 text-sm text-muted-foreground">20th & 21st November 2026</p>
+            <p className="mt-2 text-sm text-muted-foreground">20th and 21st November 2026</p>
           </div>
           <div className="rounded-xl border border-border bg-ice p-6">
             <h4 className="font-display font-bold text-navy">🌐 Mode</h4>
-            <p className="mt-2 text-sm text-muted-foreground">Hybrid (Online & Offline)</p>
+            <p className="mt-2 text-sm text-muted-foreground">Hybrid (Online and Offline)</p>
           </div>
           <div className="rounded-xl border border-border bg-ice p-6">
             <h4 className="font-display font-bold text-navy">📍 Location</h4>

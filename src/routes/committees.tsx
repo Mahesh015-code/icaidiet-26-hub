@@ -21,7 +21,7 @@ export const Route = createFileRoute("/committees")({
       {
         name: "description",
         content:
-          "Organizing committee, chief patrons, patrons, convener, and coordinators of ICAIDIET'26.",
+          "Organizing committee, chief patrons, patrons, convener and coordinators of ICAIDIET'26.",
       },
     ],
   }),
@@ -53,12 +53,12 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: Award,
     members: [
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
         detail: "Secretary and Managing Trustee",
         institution: "Muthayammal Educational Trust And Research Foundation",
       },
       {
-        name: "Er. G. Raghul, M.E.,",
+        name: "Er. G. Raghul, M.E.",
         detail: "Joint Secretary",
         institution: "Muthayammal Educational Trust And Research Foundation",
       },
@@ -73,27 +73,27 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: Shield,
     members: [
       {
-        name: "Dr. P. Senthilkumar, M.E., Ph.D., (IITM)",
+        name: "Dr. P. Senthilkumar, M.E., Ph.D. (IITM)",
         detail: "Principal",
         institution: "",
       },
       {
-        name: "Dr. P. Venugopal, M.E., Ph.D.,",
+        name: "Dr. P. Venugopal, M.E., Ph.D.",
         detail: "Dean - Academics",
         institution: "",
       },
       {
-        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.,",
+        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.",
         detail: "Dean - Student Affairs",
         institution: "",
       },
       {
-        name: "Dr. P. Suresh, M.E., Ph.D.,",
+        name: "Dr. P. Suresh, M.E., Ph.D.",
         detail: "Dean - Research",
         institution: "",
       },
       {
-        name: "Dr. S. Saravanan, M.E., Ph.D., FIE,",
+        name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
         detail: "Dean - IQAC",
         institution: "",
       },
@@ -107,7 +107,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: UserCheck,
     members: [
       {
-        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE,",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head",
         institution: "Department of Computer Science and Engineering",
       },
@@ -121,22 +121,22 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: Users,
     members: [
       {
-        name: "Dr. D Anitha, Ph.D.,",
+        name: "Dr. D Anitha, Ph.D.",
         detail: "HoD, Information Technology",
         institution: "",
       },
       {
-        name: "Dr. S. Vijayaragavan, Ph.D.,",
+        name: "Dr. S. Vijayaragavan, Ph.D.",
         detail: "HoD, Artificial Intelligence and Data Science",
         institution: "",
       },
       {
-        name: "Dr. S. Muthusamy, Ph.D.,",
+        name: "Dr. S. Muthusamy, Ph.D.",
         detail: "HoD, Computer Science and Engineering - Cyber Security",
         institution: "",
       },
       {
-        name: "Dr. S. Lavanya, Ph.D.,",
+        name: "Dr. S. Lavanya, Ph.D.",
         detail:
           "HoD, Computer Science and Engineering - Artificial Intelligence and Machine Learning",
         institution: "",
@@ -207,7 +207,7 @@ function CommitteesPage() {
             Organizing Committees
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            The visionary leaders, patrons, convenors, and coordinators guiding ICAIDIET'26.
+            The visionary leaders, patrons, convenors and coordinators guiding ICAIDIET'26.
           </p>
         </div>
       </section>

@@ -27,7 +27,7 @@ export const Route = createFileRoute("/call-for-papers")({
       {
         name: "description",
         content:
-          "Call For Papers for ICAIDIET'26 — Eight conference tracks covering AI, Machine Learning, Data Science, IoT, Robotics, and Emerging Technologies.",
+          "Call For Papers for ICAIDIET'26 — Eight conference tracks covering AI, Machine Learning, Data Science, IoT, Robotics and Emerging Technologies.",
       },
     ],
   }),
@@ -153,7 +153,7 @@ function CallForPapersPage() {
             Call For Papers — Eight Core Tracks
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Submit original, unpublished research papers across foundational AI, intelligent cybernetics, and engineering breakthroughs.
+            Submit original, unpublished research papers across foundational AI, intelligent cybernetics and engineering breakthroughs.
           </p>
 
           {/* Quick Action Buttons */}

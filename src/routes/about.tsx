@@ -45,7 +45,7 @@ function AboutPage() {
             About ICAIDIET<span className="text-blue-600">'26</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Where Artificial Intelligence meets engineering excellence. A global hybrid platform uniting researchers, academicians, and industry pioneers worldwide.
+            Where Artificial Intelligence meets engineering excellence. A global hybrid platform uniting researchers, academicians and industry pioneers worldwide.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
@@ -76,13 +76,13 @@ function AboutPage() {
               </h2>
             </div>
             <p>
-              The <strong>International Conference on AI-Driven Innovations in Engineering and Technology (ICAIDIET'26)</strong> serves as a premier dynamic forum that brings together leading academicians, researchers, and industry professionals from across the globe to explore the transformative potential of Artificial Intelligence.
+              The <strong>International Conference on AI-Driven Innovation in Engineering and Technology (ICAIDIET'26)</strong> serves as a premier dynamic forum that brings together leading academicians, researchers and industry professionals from across the globe to explore the transformative potential of Artificial Intelligence.
             </p>
             <p>
-              Conducted in <strong>hybrid mode</strong>, the conference aims to foster high-impact interdisciplinary collaboration, technical knowledge exchange, and foundational innovation across emerging technological fields.
+              Conducted in <strong>hybrid mode</strong>, the conference aims to foster high-impact interdisciplinary collaboration, technical knowledge exchange and foundational innovation across emerging technological fields.
             </p>
             <p>
-              ICAIDIET'26 emphasizes cutting-edge research, next-generation machine learning frameworks, data science breakthroughs, cyber-physical systems, and practical industrial applications.
+              ICAIDIET'26 emphasizes cutting-edge research, next-generation machine learning frameworks, data science breakthroughs, cyber-physical systems and practical industrial applications.
             </p>
           </div>
 

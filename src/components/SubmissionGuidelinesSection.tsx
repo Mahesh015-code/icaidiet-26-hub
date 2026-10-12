@@ -18,23 +18,23 @@ export function SubmissionGuidelinesSection() {
   const guidelines = [
     {
       num: "01",
-      title: "Official Template & Language",
+      title: "Official Template and Language",
       desc: "Manuscripts must be prepared using the official conference template and written in formal academic English.",
     },
     {
       num: "02",
       title: "Strict 12-Page Limit",
-      desc: "Papers are strictly limited to 12 pages (including title, references, figures, and tables).",
+      desc: "Papers are strictly limited to 12 pages (including title, references, figures and tables).",
     },
     {
       num: "03",
-      title: "Typography & Line Spacing",
+      title: "Typography and Line Spacing",
       desc: "Formatting should follow: Times New Roman, 12 pt font, single line spacing, with properly structured sections.",
     },
     {
       num: "04",
-      title: "High-Resolution Graphics & Text Tables",
-      desc: "All figures, tables, and illustrations must be of high resolution (minimum 300 dpi) and appropriately captioned. Tables must be text-based (not images).",
+      title: "High-Resolution Graphics and Text Tables",
+      desc: "All figures, tables and illustrations must be of high resolution (minimum 300 dpi) and appropriately captioned. Tables must be text-based (not images).",
     },
     {
       num: "05",
@@ -48,13 +48,13 @@ export function SubmissionGuidelinesSection() {
     },
     {
       num: "07",
-      title: "Originality & Scholarly Ethics",
+      title: "Originality and Scholarly Ethics",
       desc: "Submissions must represent original scholarly work not under review elsewhere. Plagiarism, duplicate submission, or unethical practices will lead to immediate rejection.",
     },
     {
       num: "08",
-      title: "Publisher Screening & Peer Review",
-      desc: "Manuscripts must comply with Wiley publisher screening, peer-review standards, and editorial policies.",
+      title: "Publisher Screening and Peer Review",
+      desc: "Manuscripts must comply with Wiley publisher screening, peer-review standards and editorial policies.",
     },
     {
       num: "09",
@@ -63,7 +63,7 @@ export function SubmissionGuidelinesSection() {
     },
     {
       num: "10",
-      title: "Acceptance & Registration",
+      title: "Acceptance and Registration",
       desc: "Upon acceptance, authors must complete registration and payment within the stipulated timeline for inclusion in the conference proceedings.",
     },
     {
@@ -73,7 +73,7 @@ export function SubmissionGuidelinesSection() {
     },
     {
       num: "12",
-      title: "Quality Checks & Scopus Indexing",
+      title: "Quality Checks and Scopus Indexing",
       desc: "Final acceptance and publication are subject to publisher quality checks and indexing criteria; inclusion in indexed databases (e.g., Scopus) depends on meeting all required standards.",
     },
   ];
@@ -83,7 +83,7 @@ export function SubmissionGuidelinesSection() {
     "Content created through generative AI tools is strictly prohibited and will not be reviewed.",
     "Figures must be high resolution (300 dpi+) and tables must be text-based (not images).",
     "Do not use academic titles (e.g., Dr., Prof.) or positions in author affiliations.",
-    "Include full address, affiliation, and email for all authors.",
+    "Include full address, affiliation and email for all authors.",
     "Clearly specify one corresponding author for proofreading.",
     "References must strictly follow the template style (Author, Title, Journal, Volume, Issue, Year).",
   ];
@@ -101,7 +101,7 @@ export function SubmissionGuidelinesSection() {
             Author Submission Guidelines
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Authors are invited to submit original, unpublished, and high-quality research papers that are not under consideration for publication elsewhere. All submissions must strictly adhere to the following guidelines in line with <strong>Wiley publication standards</strong> and indexing requirements.
+            Authors are invited to submit original, unpublished and high-quality research papers that are not under consideration for publication elsewhere. All submissions must strictly adhere to the following guidelines in line with <strong>Wiley publication standards</strong> and indexing requirements.
           </p>
         </div>
 
@@ -233,7 +233,7 @@ export function SubmissionGuidelinesSection() {
                 </span>
               </div>
               <h4 className="font-serif text-lg font-bold text-slate-900">
-                Originality &amp; Similarity Report
+                Originality and Similarity Report
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
                 Authors are requested to submit the Plagiarism Report of their paper as a supplementary document. Check your similarity index before final submission:

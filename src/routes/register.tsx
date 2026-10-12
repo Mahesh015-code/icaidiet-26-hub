@@ -291,7 +291,7 @@ function Register() {
             Author Resource Center
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600">
-            Everything you need to format, check originality, and submit your research manuscript for ICAIDIET'26.
+            Everything you need to format, check originality and submit your research manuscript for ICAIDIET'26.
           </p>
         </div>
 
@@ -339,7 +339,7 @@ function Register() {
               </div>
               <h3 className="font-serif text-xl font-bold text-blue-950">2. Submission Guidelines</h3>
               <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                Watch the complete step-by-step video guide explaining manuscript formatting, citation style, and how to upload via the portal.
+                Watch the complete step-by-step video guide explaining manuscript formatting, citation style and how to upload via the portal.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100">

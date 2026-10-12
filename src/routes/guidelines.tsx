@@ -12,7 +12,7 @@ export const Route = createFileRoute("/guidelines")({
       {
         name: "description",
         content:
-          "Official Author Paper Submission Guidelines, manuscript preparation instructions, Wiley template downloads, strict AI policy, and submission channels for ICAIDIET'26.",
+          "Official Author Paper Submission Guidelines, manuscript preparation instructions, Wiley template downloads, strict AI policy and submission channels for ICAIDIET'26.",
       },
     ],
   }),
@@ -38,7 +38,7 @@ function GuidelinesPage() {
             Paper Submission Guidelines
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Essential formatting standards, ethics rules, Wiley manuscript preparation, and electronic submission instructions for ICAIDIET'26.
+            Essential formatting standards, ethics rules, Wiley manuscript preparation and electronic submission instructions for ICAIDIET'26.
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-3">
             <a

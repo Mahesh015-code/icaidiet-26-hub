@@ -57,14 +57,14 @@ export const Route = createFileRoute('/api/register')({
 
               <h3>Conference Details:</h3>
               <ul>
-                <li><strong>Conference Name:</strong> ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering & Technology</li>
-                <li><strong>Dates:</strong> 20th & 21st November 2026</li>
-                <li><strong>Mode:</strong> Hybrid (Online & Offline)</li>
+                <li><strong>Conference Name:</strong> ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology</li>
+                <li><strong>Dates:</strong> 20th and 21st November 2026</li>
+                <li><strong>Mode:</strong> Hybrid (Online and Offline)</li>
                 <li><strong>Location:</strong> Muthayammal Engineering College (Autonomous), Tamil Nadu, India</li>
               </ul>
 
               <h3>Next Steps:</h3>
-              <p>Please keep your registration ID for future reference. You will receive further communications regarding the conference schedule, payment details, and conference materials.</p>
+              <p>Please keep your registration ID for future reference. You will receive further communications regarding the conference schedule, payment details and conference materials.</p>
 
               <p>For any queries, please contact us:</p>
               <ul>
@@ -73,7 +73,7 @@ export const Route = createFileRoute('/api/register')({
               </ul>
 
               <p>Best regards,<br>ICAIDIET'26 Team</p>
-              <p><small>International Conference on AI-Driven Innovation in Engineering & Technology</small></p>
+              <p><small>International Conference on AI-Driven Innovation in Engineering and Technology</small></p>
             `,
           });
 
@@ -154,4 +154,3 @@ function escapeHtml(text: string): string {
   };
   return text.replace(/[&<>"']/g, (m) => map[m]);
 }
-

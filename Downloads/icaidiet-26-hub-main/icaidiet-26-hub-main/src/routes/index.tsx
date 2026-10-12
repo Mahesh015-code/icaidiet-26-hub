@@ -27,7 +27,6 @@ import {
 } from "lucide-react";
 import { useEffect, useState, type CSSProperties } from "react";
 import heroRobot from "@/assets/hero-robot.png";
-import brochure from "@/assets/brochure.png";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/")({
@@ -35,16 +34,16 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "ICAIDIET'26 | International Conference on AI-Driven Innovation in Engineering & Technology",
+          "ICAIDIET'26 | International Conference on AI-Driven Innovation in Engineering and Technology",
       },
       {
         name: "description",
         content:
-          "ICAIDIET'26 — hybrid international conference on AI-driven innovation, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Scopus-indexed proceedings with ISBN & DOI.",
+          "ICAIDIET'26 — hybrid international conference on AI-driven innovation, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Scopus-indexed proceedings with ISBN and DOI.",
       },
       {
         property: "og:title",
-        content: "ICAIDIET'26 — AI-Driven Innovation in Engineering & Technology",
+        content: "ICAIDIET'26 — AI-Driven Innovation in Engineering and Technology",
       },
       {
         property: "og:description",
@@ -68,20 +67,20 @@ const NAV_LINKS = [
 ];
 
 const RESOURCE_LINKS = [
-  { label: "Brochure", href: brochure, external: false },
+  { label: "Brochure", href: "/MEC-Conference.pdf", external: false },
   { label: "MEC", href: "https://mec.edu.in/", external: true },
 ];
 // Both open in a new tab (same behavior as the official site).
 
 const TRACKS = [
-  { icon: BrainCircuit, title: "Artificial Intelligence & Intelligent Systems" },
-  { icon: LineChart, title: "Machine Learning & Advanced Analysis" },
-  { icon: Database, title: "Data Science & Decision Intelligence" },
-  { icon: Cpu, title: "IoT, Edge Computing & Embedded Systems" },
-  { icon: Network, title: "Communication Systems & Network Technologies" },
-  { icon: ShieldCheck, title: "Cybersecurity & Secure Computing" },
-  { icon: Bot, title: "Robotics, Automation & Smart Industry" },
-  { icon: Sprout, title: "Emerging Technologies, Sustainability & AI-Driven Management" },
+  { icon: BrainCircuit, title: "Artificial Intelligence and Intelligent Systems" },
+  { icon: LineChart, title: "Machine Learning and Advanced Analysis" },
+  { icon: Database, title: "Data Science and Decision Intelligence" },
+  { icon: Cpu, title: "IoT, Edge Computing and Embedded Systems" },
+  { icon: Network, title: "Communication Systems and Network Technologies" },
+  { icon: ShieldCheck, title: "Cybersecurity and Secure Computing" },
+  { icon: Bot, title: "Robotics, Automation and Smart Industry" },
+  { icon: Sprout, title: "Emerging Technologies, Sustainability and AI-Driven Management" },
 ];
 
 const DATES = [
@@ -102,13 +101,13 @@ const COMMITTEE = [
         detail: "Founder Chairman, Muthayammal Educational Trust And Research Foundation",
       },
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
         detail:
-          "Secretary & Managing Trustee, Muthayammal Educational Trust And Research Foundation",
+          "Secretary and Managing Trustee, Muthayammal Educational Trust and Research Foundation",
       },
       {
-        name: "Er. G. Raghul, M.E.,",
-        detail: "Joint Secretary, Muthayammal Educational Trust And Research Foundation",
+        name: "Er. G. Raghul, M.E.",
+        detail: "Joint Secretary, Muthayammal Educational Trust and Research Foundation",
       },
     ],
   },
@@ -116,19 +115,19 @@ const COMMITTEE = [
     role: "Patrons",
     members: [
       {
-        name: "Dr. P. Senthilkumar, M.E., Ph.D.(IITM)",
+        name: "Dr. P. Senthilkumar, M.E., Ph.D. (IITM)",
         detail: "Principal, Muthayammal Engineering College (Autonomous)",
       },
       {
-        name: "Dr. P. Venugopal",
+        name: "Dr. P. Venugopal, M.E., Ph.D.",
         detail: "Dean - Academics, Muthayammal Engineering College (Autonomous)",
       },
       {
-        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D",
+        name: "Dr. G. Sudarmozhi, M.Sc., Ph.D.",
         detail: "Dean - Student Affairs, Muthayammal Engineering College (Autonomous)",
       },
       {
-        name: "Dr. P. Suresh, M.E., Ph.D",
+        name: "Dr. P. Suresh, M.E., Ph.D.",
         detail: "Dean - Research, Muthayammal Engineering College (Autonomous)",
       },
       {
@@ -141,7 +140,7 @@ const COMMITTEE = [
     role: "Convenor",
     members: [
       {
-        name: "Dr. G. Kavitha, M.S(By Research), Ph.D., FIE",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head, CSE, Muthayammal Engineering College (Autonomous)",
       },
     ],
@@ -185,14 +184,8 @@ function Header() {
             <a
               key={l.label}
               href={l.href}
-              target={l.external ? "_blank" : undefined}
-              rel={l.external ? "noopener noreferrer" : undefined}
-              onClick={(event) => {
-                if (l.label === "Brochure") {
-                  event.preventDefault();
-                  window.open(l.href, "_blank", "noopener,noreferrer");
-                }
-              }}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               {l.label}
@@ -230,15 +223,9 @@ function Header() {
             <a
               key={l.label}
               href={l.href}
-              target={l.external ? "_blank" : undefined}
-              rel={l.external ? "noopener noreferrer" : undefined}
-              onClick={(event) => {
-                setOpen(false);
-                if (l.label === "Brochure") {
-                  event.preventDefault();
-                  window.open(l.href, "_blank", "noopener,noreferrer");
-                }
-              }}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
               className="flex items-center justify-between border-b border-border py-3 text-sm font-medium text-foreground"
             >
               {l.label}
@@ -273,14 +260,14 @@ function Hero() {
           </p>
           <h1 className="mt-6 font-display text-4xl leading-[1.05] font-black tracking-tight text-navy sm:text-5xl lg:text-6xl">
             International Conference on{" "}
-            <span className="gradient-heading">AI-Driven Innovation</span> in Engineering &amp;
+            <span className="gradient-heading">AI-Driven Innovation</span> in Engineering and
             Technology
           </h1>
           <p className="mt-4 inline-block rounded-lg bg-primary px-4 py-1.5 font-display text-xl font-bold tracking-widest text-primary-foreground">
             ICAIDIET'26
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A hybrid platform uniting researchers, academicians, and industry professionals to
+            A hybrid platform uniting researchers, academicians and industry professionals to
             explore the transformative potential of Artificial Intelligence across engineering and
             technology.
           </p>
@@ -303,7 +290,7 @@ function Hero() {
               <CalendarDays className="h-4 w-4 text-primary" /> Tentative Date: 18th December 2026
             </span>
             <span className="inline-flex items-center gap-2">
-              <Globe className="h-4 w-4 text-primary" /> Hybrid Mode (Online)
+              <Globe className="h-4 w-4 text-primary" /> Hybrid Mode (Online )
             </span>
             <span className="inline-flex items-center gap-2">
               <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College
@@ -331,11 +318,11 @@ function Highlights() {
     {
       icon: BookOpenCheck,
       title: "Scopus-Indexed",
-      text: "All accepted & presented papers published as Scopus-indexed conference proceedings",
+      text: "All accepted and presented papers published as Scopus-indexed conference proceedings",
     },
     {
       icon: BadgeCheck,
-      title: "ISBN & DOI",
+      title: "ISBN and DOI",
       text: "Print ISBN: 9781836690467 | Online ISBN: 9781394423415",
     },
     {
@@ -387,7 +374,7 @@ function About() {
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
               An Autonomous Institution — Approved by AICTE, Affiliated to Anna University. A
-              leading institution known for quality engineering education, innovation, and research.
+              leading institution known for quality engineering education, innovation and research.
             </p>
             <h3 className="mt-5 font-display text-sm font-bold tracking-wide text-navy uppercase">
               In Collaboration With
@@ -402,15 +389,15 @@ function About() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-muted-foreground lg:pt-14">
           <p>
-            The International Conference on AI-Driven Innovations in Engineering and Technology
+            The International Conference on AI-Driven Innovation in Engineering and Technology
             (ICAIDIET'26), conducted in hybrid mode, serves as a dynamic platform that brings
-            together researchers, academicians, and industry professionals from across the globe to
+            together researchers, academicians and industry professionals from across the globe to
             explore the transformative potential of Artificial Intelligence.
           </p>
           <p>
-            The conference aims to foster innovation, collaboration, and knowledge exchange across
+            The conference aims to foster innovation, collaboration and knowledge exchange across
             diverse domains of engineering and technology. It emphasizes cutting-edge research,
-            emerging trends, and practical applications of AI, encouraging the development of
+            emerging trends and practical applications of AI, encouraging the development of
             intelligent solutions to address real-world challenges.
           </p>
           <p>

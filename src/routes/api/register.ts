@@ -64,7 +64,7 @@ export const Route = createFileRoute('/api/register')({
               </ul>
 
               <h3>Next Steps:</h3>
-              <p>Please keep your registration ID for future reference. You will receive further communications regarding the conference schedule, payment details, and conference materials.</p>
+              <p>Please keep your registration ID for future reference. You will receive further communications regarding the conference schedule, payment details and conference materials.</p>
 
               <p>For any queries, please contact us:</p>
               <ul>
@@ -154,4 +154,3 @@ function escapeHtml(text: string): string {
   };
   return text.replace(/[&<>"']/g, (m) => map[m]);
 }
-

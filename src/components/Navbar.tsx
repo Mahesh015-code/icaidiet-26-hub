@@ -298,7 +298,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
                       to="/register"
                       className="flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-semibold text-blue-700 hover:bg-blue-50 transition-colors"
                     >
-                      Registration Fees &amp; Details
+                      Registration Fees and Details
                     </Link>
                   </div>
                 </div>
@@ -308,7 +308,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
 
           {/* Brochure */}
           <a
-            href="/brochure.png"
+            href="/MEC-Conference.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="whitespace-nowrap py-1 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
@@ -529,7 +529,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
             </div>
 
             <a
-              href="/brochure.png"
+              href="/MEC-Conference.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

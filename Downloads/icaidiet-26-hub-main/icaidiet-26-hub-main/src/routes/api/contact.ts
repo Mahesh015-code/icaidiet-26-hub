@@ -60,7 +60,7 @@ export const Route = createFileRoute('/api/contact')({
               <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
               <hr>
               <p>Best regards,<br>ICAIDIET'26 Team</p>
-              <p><small>International Conference on AI-Driven Innovation in Engineering & Technology</small></p>
+              <p><small>International Conference on AI-Driven Innovation in Engineering and Technology</small></p>
             `,
           });
 
@@ -113,4 +113,3 @@ function escapeHtml(text: string): string {
   };
   return text.replace(/[&<>"']/g, (m) => map[m]);
 }
-
