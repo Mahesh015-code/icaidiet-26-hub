@@ -48,11 +48,12 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     id: "chief-patrons",
     role: "Chief Patrons",
     short: "Chief Patrons",
-    description: "Visionary leadership guiding Muthayammal Educational Trust and Research Foundation.",
+    description:
+      "Visionary leadership guiding Muthayammal Educational Trust and Research Foundation.",
     icon: Award,
     members: [
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
         detail: "Secretary and Managing Trustee",
         institution: "Muthayammal Educational Trust And Research Foundation",
       },
@@ -67,7 +68,8 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     id: "patrons",
     role: "Patrons",
     short: "Patrons",
-    description: "Executive academic administration and leadership across the conference ecosystem.",
+    description:
+      "Executive academic administration and leadership across the conference ecosystem.",
     icon: Shield,
     members: [
       {
@@ -76,7 +78,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
         institution: "",
       },
       {
-        name: "Dr. P. Venugopal, M.E., Ph.D.,",
+        name: "Dr. P. Venugopal, Ph.D.,",
         detail: "Dean - Academics",
         institution: "",
       },
@@ -105,7 +107,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: UserCheck,
     members: [
       {
-        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE,",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head",
         institution: "Department of Computer Science and Engineering",
       },
@@ -135,7 +137,8 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
       },
       {
         name: "Dr. S. Lavanya, Ph.D.,",
-        detail: "HoD, Computer Science and Engineering - Artificial Intelligence and Machine Learning",
+        detail:
+          "HoD, Computer Science and Engineering - Artificial Intelligence and Machine Learning",
         institution: "",
       },
     ],
@@ -189,9 +192,7 @@ function CommitteesPage() {
 
   // Filter sections based on activeTab
   const visibleSections =
-    activeTab === "all"
-      ? COMMITTEE_SECTIONS
-      : COMMITTEE_SECTIONS.filter((s) => s.id === activeTab);
+    activeTab === "all" ? COMMITTEE_SECTIONS : COMMITTEE_SECTIONS.filter((s) => s.id === activeTab);
 
   const activeSectionInfo = COMMITTEE_SECTIONS.find((s) => s.id === activeTab);
 
@@ -244,9 +245,7 @@ function CommitteesPage() {
               <span>{sec.short}</span>
               <span
                 className={`ml-0.5 rounded-full px-1.5 py-0.2 text-[10px] font-extrabold ${
-                  activeTab === sec.id
-                    ? "bg-white/20 text-white"
-                    : "bg-slate-200 text-slate-700"
+                  activeTab === sec.id ? "bg-white/20 text-white" : "bg-slate-200 text-slate-700"
                 }`}
               >
                 {sec.members.length}
@@ -318,7 +317,8 @@ function CommitteesPage() {
                       onClick={() => handleSelectTab(group.id)}
                       className="text-xs font-semibold text-blue-600 hover:underline cursor-pointer"
                     >
-                      Focus view <ArrowRight className="ml-1 inline h-3.5 w-3.5" aria-hidden="true" />
+                      Focus view{" "}
+                      <ArrowRight className="ml-1 inline h-3.5 w-3.5" aria-hidden="true" />
                     </button>
                   )}
                 </div>
@@ -333,14 +333,12 @@ function CommitteesPage() {
                   >
                     <div>
                       <h3
-                          className="font-serif text-lg font-bold text-slate-900 leading-snug"
-                          style={{ whiteSpace: "pre-line" }}
-                        >
-                          {m.name}
-                        </h3>
-                      <p className="text-sm font-semibold text-blue-700 mt-1">
-                        {m.detail}
-                      </p>
+                        className="font-serif text-lg font-bold text-slate-900 leading-snug"
+                        style={{ whiteSpace: "pre-line" }}
+                      >
+                        {m.name}
+                      </h3>
+                      <p className="text-sm font-semibold text-blue-700 mt-1">{m.detail}</p>
                       {m.institution && (
                         <p className="text-sm text-slate-600 mt-1 leading-relaxed">
                           {m.institution}
@@ -383,9 +381,7 @@ function CommitteesPage() {
 
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
-        <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26
-        </p>
+        <p className="text-white font-serif font-bold text-base mb-2">ICAIDIET'26</p>
         <p className="text-slate-400 mb-2">
           Department of Computer Science and Engineering in association with University Canada West.
         </p>

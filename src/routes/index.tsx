@@ -34,7 +34,10 @@ import { SubmissionPortalHero } from "@/components/SubmissionPortalHero";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ICAIDIET'26 | International Conference | Muthayammal Engineering College (Autonomous)" },
+      {
+        title:
+          "ICAIDIET'26 | International Conference | Muthayammal Engineering College (Autonomous)",
+      },
       {
         name: "description",
         content:
@@ -93,8 +96,9 @@ const COMMITTEE = [
     role: "Chief Patrons",
     members: [
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
-        detail: "Secretary and Managing Trustee, Muthayammal Educational Trust And Research Foundation",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
+        detail:
+          "Secretary and Managing Trustee, Muthayammal Educational Trust And Research Foundation",
       },
       {
         name: "Er. G. Raghul, M.E.,",
@@ -110,7 +114,7 @@ const COMMITTEE = [
         detail: "Principal",
       },
       {
-        name: "Dr. P. Venugopal, M.E., Ph.D.,",
+        name: "Dr. P. Venugopal, Ph.D.,",
         detail: "Dean - Academics",
       },
       {
@@ -131,7 +135,7 @@ const COMMITTEE = [
     role: "Convenor",
     members: [
       {
-        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE,",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
         detail: "Professor and Head, Computer Science and Engineering",
       },
     ],
@@ -156,7 +160,10 @@ function Header() {
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <BrainCircuit className="h-5 w-5" />
           </span>
-          <span className="font-display text-lg font-800 tracking-tight text-navy" style={{ fontWeight: 800 }}>
+          <span
+            className="font-display text-lg font-800 tracking-tight text-navy"
+            style={{ fontWeight: 800 }}
+          >
             ICAIDIET<span className="text-primary">'26</span>
           </span>
         </a>
@@ -231,7 +238,9 @@ function Header() {
               className="flex items-center justify-between border-b border-border py-3 text-sm font-medium text-foreground"
             >
               {l.label}
-              {l.external && <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden="true" />}
+              {l.external && (
+                <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+              )}
             </a>
           ))}
           <a
@@ -249,7 +258,10 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="reveal-section bg-gradient-to-b from-blue-50/50 via-white to-white relative overflow-hidden border-b border-blue-100/60">
+    <section
+      id="top"
+      className="reveal-section bg-gradient-to-b from-blue-50/50 via-white to-white relative overflow-hidden border-b border-blue-100/60"
+    >
       <div className="pointer-events-none absolute -top-32 right-0 h-96 w-96 rounded-full bg-sky/30 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-primary/15 blur-3xl" />
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
@@ -264,14 +276,15 @@ function Hero() {
             </span>
           </div>
           <h1 className="mt-6 font-display text-4xl leading-[1.05] font-black tracking-tight text-blue-950 sm:text-5xl lg:text-6xl">
-            International Conference on <span className="text-blue-600">AI-Driven Innovation</span> in
-            Engineering and Technology
+            International Conference on <span className="text-blue-600">AI-Driven Innovation</span>{" "}
+            in Engineering and Technology
           </h1>
           <p className="mt-4 inline-block rounded-lg bg-blue-600 px-4 py-1.5 font-display text-xl font-bold tracking-widest text-white shadow-sm">
             ICAIDIET'26
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            A hybrid platform organized by the Department of Computer Science and Engineering in association with University Canada West.
+            A hybrid platform organized by the Department of Computer Science and Engineering in
+            association with University Canada West.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
@@ -298,7 +311,8 @@ function Hero() {
               <Globe className="h-4 w-4 text-primary" /> Hybrid Mode (Online)
             </span>
             <span className="inline-flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College (Autonomous)
+              <MapPin className="h-4 w-4 text-primary" /> Muthayammal Engineering College
+              (Autonomous)
             </span>
           </div>
         </div>
@@ -319,10 +333,26 @@ function Hero() {
 
 function Highlights() {
   const items = [
-    { icon: BookOpenCheck, title: "Scopus-Indexed", text: "All accepted and presented papers published as Scopus-indexed conference book proceedings" },
-    { icon: BadgeCheck, title: "ISBN and DOI", text: "Assigned ISBN and DOI for all proceedings, as per publisher norms" },
-    { icon: FileText, title: "Published Partner", text: "Wiley — official publishing partner of ICAIDIET'26" },
-    { icon: GraduationCap, title: "Department of Computer Science and Engineering", text: "Muthayammal Engineering College (Autonomous)" },
+    {
+      icon: BookOpenCheck,
+      title: "Scopus-Indexed",
+      text: "All accepted and presented papers published as Scopus-indexed conference book proceedings",
+    },
+    {
+      icon: BadgeCheck,
+      title: "ISBN and DOI",
+      text: "Assigned ISBN and DOI for all proceedings, as per publisher norms",
+    },
+    {
+      icon: FileText,
+      title: "Published Partner",
+      text: "Wiley — official publishing partner of ICAIDIET'26",
+    },
+    {
+      icon: GraduationCap,
+      title: "Department of Computer Science and Engineering",
+      text: "Muthayammal Engineering College (Autonomous)",
+    },
   ];
   return (
     <section className="reveal-section border-y border-blue-100 bg-blue-600">
@@ -344,21 +374,32 @@ function About() {
     <section id="about" className="reveal-section mx-auto max-w-7xl px-4 py-20 sm:px-6">
       <div className="grid items-start gap-12 lg:grid-cols-[1fr_1.4fr]">
         <div>
-          <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">About the Conference</p>
+          <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">
+            About the Conference
+          </p>
           <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
             Where AI Meets <span className="gradient-heading">Engineering Excellence</span>
           </h2>
           <div className="mt-6 rounded-2xl border border-border bg-ice p-6">
-            <h3 className="font-display text-sm font-bold tracking-wide text-navy uppercase">Organized By</h3>
-            <p className="mt-2 font-display text-xl font-bold text-primary">Department of Computer Science and Engineering</p>
-            <p className="mt-1 text-sm font-semibold text-navy">Muthayammal Engineering College (Autonomous)</p>
+            <h3 className="font-display text-sm font-bold tracking-wide text-navy uppercase">
+              Organized By
+            </h3>
+            <p className="mt-2 font-display text-xl font-bold text-primary">
+              Department of Computer Science and Engineering
+            </p>
+            <p className="mt-1 text-sm font-semibold text-navy">
+              Muthayammal Engineering College (Autonomous)
+            </p>
             <p className="mt-1 text-xs text-muted-foreground">
-              Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408.
+              Approved by AICTE, Affiliated to Anna University. Estd. 2000. Muthayammal Engineering
+              College (Autonomous), Rasipuram, Tamil Nadu-637408.
             </p>
             <h3 className="mt-5 font-display text-sm font-bold tracking-wide text-navy uppercase">
               In Collaboration With
             </h3>
-            <p className="mt-2 font-display text-xl font-bold text-primary">University Canada West</p>
+            <p className="mt-2 font-display text-xl font-bold text-primary">
+              University Canada West
+            </p>
             <p className="mt-1 text-sm text-muted-foreground">
               A renowned university recognized for its global outlook and career-focused education.
             </p>
@@ -366,21 +407,22 @@ function About() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-muted-foreground lg:pt-14">
           <p>
-            The International Conference on AI-Driven Innovations in Engineering and Technology (ICAIDIET'26),
-            conducted in hybrid mode, serves as a dynamic platform that brings together researchers, academicians,
-            and industry professionals from across the globe to explore the transformative potential of Artificial
-            Intelligence.
+            The International Conference on AI-Driven Innovations in Engineering and Technology
+            (ICAIDIET'26), conducted in hybrid mode, serves as a dynamic platform that brings
+            together researchers, academicians, and industry professionals from across the globe to
+            explore the transformative potential of Artificial Intelligence.
           </p>
           <p>
-            The conference aims to foster innovation, collaboration, and knowledge exchange across diverse domains
-            of engineering and technology. It emphasizes cutting-edge research, emerging trends, and practical
-            applications of AI, encouraging the development of intelligent solutions to address real-world
-            challenges.
+            The conference aims to foster innovation, collaboration, and knowledge exchange across
+            diverse domains of engineering and technology. It emphasizes cutting-edge research,
+            emerging trends, and practical applications of AI, encouraging the development of
+            intelligent solutions to address real-world challenges.
           </p>
           <p>
-            ICAIDIET'26 aspires to inspire forward-thinking ideas and promote interdisciplinary approaches that
-            will shape the future of smart and sustainable technologies. In collaboration with University Canada West, the conference encourages international collaboration and knowledge sharing in
-            emerging technologies.
+            ICAIDIET'26 aspires to inspire forward-thinking ideas and promote interdisciplinary
+            approaches that will shape the future of smart and sustainable technologies. In
+            collaboration with University Canada West, the conference encourages international
+            collaboration and knowledge sharing in emerging technologies.
           </p>
         </div>
       </div>
@@ -393,12 +435,15 @@ function Tracks() {
     <section id="tracks" className="reveal-section bg-ice py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">Conference Tracks</p>
+          <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">
+            Conference Tracks
+          </p>
           <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
             Eight Tracks. One Vision for AI.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Submit your research across a broad spectrum of AI-driven engineering and technology domains.
+            Submit your research across a broad spectrum of AI-driven engineering and technology
+            domains.
           </p>
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -430,13 +475,15 @@ function Dates() {
     <section id="dates" className="reveal-section mx-auto max-w-7xl px-4 py-20 sm:px-6">
       <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
         <div>
-          <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">Important Dates</p>
+          <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">
+            Important Dates
+          </p>
           <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
             Mark Your <span className="gradient-heading">Calendar</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Stay on track with every milestone — from submission to the conference days. Early bird registration
-            closes 22nd October 2026.
+            Stay on track with every milestone — from submission to the conference days. Early bird
+            registration closes 22nd October 2026.
           </p>
         </div>
         <ol className="relative space-y-0 border-l-2 border-primary/20 pl-0">
@@ -470,7 +517,9 @@ function Committee() {
     <section id="committee" className="reveal-section bg-navy py-20 text-primary-foreground">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-bold tracking-[0.2em] text-sky uppercase">Organizing Committee</p>
+          <p className="text-xs font-bold tracking-[0.2em] text-sky uppercase">
+            Organizing Committee
+          </p>
           <h2 className="mt-3 font-display text-3xl font-black tracking-tight sm:text-4xl">
             The People Behind ICAIDIET'26
           </h2>
@@ -507,7 +556,9 @@ function Fees() {
   return (
     <section id="fees" className="reveal-section mx-auto max-w-7xl px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">Registration and Publication Fees</p>
+        <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">
+          Registration and Publication Fees
+        </p>
         <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
           Fee Structure and Categories
         </h2>
@@ -525,7 +576,10 @@ function Fees() {
           </thead>
           <tbody>
             {FEES.map((f) => (
-              <tr key={f.category} className="border-t border-blue-100 hover:bg-blue-50/50 transition-colors">
+              <tr
+                key={f.category}
+                className="border-t border-blue-100 hover:bg-blue-50/50 transition-colors"
+              >
                 <td className="px-6 py-4 font-semibold text-navy">{f.category}</td>
                 <td className="px-6 py-4 font-bold text-blue-600">{f.fee}</td>
               </tr>
@@ -601,8 +655,8 @@ function Fees() {
         </a>
       </div>
       <p className="mt-4 text-center text-sm text-muted-foreground">
-        All accepted and presented papers will be published as Scopus-indexed conference book proceedings with ISBN
-        and DOI (as per publisher norms).
+        All accepted and presented papers will be published as Scopus-indexed conference book
+        proceedings with ISBN and DOI (as per publisher norms).
       </p>
     </section>
   );
@@ -680,16 +734,23 @@ function Contact() {
               Get in Touch
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Questions about submissions, registration, or the conference program? Our team is happy to help.
+              Questions about submissions, registration, or the conference program? Our team is
+              happy to help.
             </p>
             <div className="mt-8 space-y-4">
-              <a href="tel:+919842073527" className="flex items-center gap-3 text-navy transition-colors hover:text-primary">
+              <a
+                href="tel:+919842073527"
+                className="flex items-center gap-3 text-navy transition-colors hover:text-primary"
+              >
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Phone className="h-4.5 w-4.5" />
                 </span>
                 <span className="font-semibold">+91 9842073527</span>
               </a>
-              <a href="mailto:icaidietmec@gmail.com" className="flex items-center gap-3 text-navy transition-colors hover:text-primary">
+              <a
+                href="mailto:icaidietmec@gmail.com"
+                className="flex items-center gap-3 text-navy transition-colors hover:text-primary"
+              >
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Mail className="h-4.5 w-4.5" />
                 </span>
@@ -794,10 +855,10 @@ function Footer() {
           ICAIDIET<span className="text-gold">'26</span>
         </p>
         <p className="max-w-xl text-sm text-primary-foreground/75 leading-relaxed">
-          International Conference on AI-Driven Innovation in Engineering and Technology — Muthayammal
-          Engineering College, in association with University Canada West.
+          International Conference on AI-Driven Innovation in Engineering and Technology —
+          Muthayammal Engineering College, in association with University Canada West.
         </p>
-        
+
         {/* Quick Portal Links */}
         <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs text-sky border-y border-white/10 py-3 w-full max-w-2xl">
           <a
@@ -832,19 +893,34 @@ function Footer() {
           <Link to="/" className="text-primary-foreground/70 transition-colors hover:text-white">
             Home
           </Link>
-          <Link to="/about" className="text-primary-foreground/70 transition-colors hover:text-white">
+          <Link
+            to="/about"
+            className="text-primary-foreground/70 transition-colors hover:text-white"
+          >
             About
           </Link>
-          <Link to="/call-for-papers" className="text-primary-foreground/70 transition-colors hover:text-white">
+          <Link
+            to="/call-for-papers"
+            className="text-primary-foreground/70 transition-colors hover:text-white"
+          >
             Call For Papers
           </Link>
-          <Link to="/guidelines" className="text-primary-foreground/70 transition-colors hover:text-white">
+          <Link
+            to="/guidelines"
+            className="text-primary-foreground/70 transition-colors hover:text-white"
+          >
             Author Guidelines
           </Link>
-          <Link to="/committees" className="text-primary-foreground/70 transition-colors hover:text-white">
+          <Link
+            to="/committees"
+            className="text-primary-foreground/70 transition-colors hover:text-white"
+          >
             Committees
           </Link>
-          <Link to="/register" className="text-primary-foreground/70 transition-colors hover:text-white">
+          <Link
+            to="/register"
+            className="text-primary-foreground/70 transition-colors hover:text-white"
+          >
             Registration and Fees
           </Link>
           <a
@@ -913,7 +989,8 @@ function ConferenceOverviewCards() {
           Explore ICAIDIET'26
         </h2>
         <p className="mt-3 text-slate-600 text-sm sm:text-base">
-          Navigate directly to dedicated conference details, track specifications, and author resources.
+          Navigate directly to dedicated conference details, track specifications, and author
+          resources.
         </p>
       </div>
 
@@ -931,9 +1008,7 @@ function ConferenceOverviewCards() {
               <h3 className="font-serif text-lg font-bold text-blue-950 group-hover:text-blue-600 transition-colors">
                 {sec.title}
               </h3>
-              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                {sec.desc}
-              </p>
+              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">{sec.desc}</p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-600 group-hover:text-blue-700">
               <span>{sec.cta}</span>
