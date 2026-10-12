@@ -53,7 +53,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: Award,
     members: [
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
         detail: "Secretary and Managing Trustee",
         institution: "Muthayammal Educational Trust And Research Foundation",
       },
@@ -78,7 +78,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
         institution: "",
       },
       {
-        name: "Dr. P. Venugopal, Ph.D.,",
+        name: "Dr. P. Venugopal, M.E., Ph.D.,",
         detail: "Dean - Academics",
         institution: "",
       },
@@ -93,7 +93,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
         institution: "",
       },
       {
-        name: "Dr. S. Saravanan, M.E., Ph.D., FIE",
+        name: "Dr. S. Saravanan, M.E., Ph.D., FIE,",
         detail: "Dean - IQAC",
         institution: "",
       },
@@ -107,7 +107,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     icon: UserCheck,
     members: [
       {
-        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE,",
         detail: "Professor and Head",
         institution: "Department of Computer Science and Engineering",
       },
