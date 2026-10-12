@@ -93,11 +93,11 @@ const COMMITTEE = [
     role: "Chief Patrons",
     members: [
       {
-        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE",
+        name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,",
         detail: "Secretary and Managing Trustee, Muthayammal Educational Trust And Research Foundation",
       },
       {
-        name: "Er. G. Raghul, M.E.",
+        name: "Er. G. Raghul, M.E.,",
         detail: "Joint Secretary, Muthayammal Educational Trust And Research Foundation",
       },
     ],
@@ -110,7 +110,7 @@ const COMMITTEE = [
         detail: "Principal",
       },
       {
-        name: "Dr. P. Venugopal, Ph.D.,",
+        name: "Dr. P. Venugopal, M.E., Ph.D.,",
         detail: "Dean - Academics",
       },
       {
@@ -131,7 +131,7 @@ const COMMITTEE = [
     role: "Convenor",
     members: [
       {
-        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE",
+        name: "Dr. G. Kavitha,\nM.S (By Research), Ph.D., FIE,",
         detail: "Professor and Head, Computer Science and Engineering",
       },
     ],

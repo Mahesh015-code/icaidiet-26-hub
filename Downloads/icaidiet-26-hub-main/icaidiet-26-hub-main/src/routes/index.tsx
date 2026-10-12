@@ -92,8 +92,8 @@ const COMMITTEE = [
     role: "Chief Patrons",
     members: [
       { name: "Deiva Thiru R. Kandasamy", detail: "Founder Chairman, Muthayammal Educational Trust And Research Foundation" },
-      { name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE", detail: "Secretary & Managing Trustee, Muthayammal Educational Trust And Research Foundation" },
-      { name: "Er. G. Raghul, M.E.", detail: "Joint Secretary, Muthayammal Educational Trust And Research Foundation" },
+      { name: "Dr. K. Gunasekaran, M.E., Ph.D., FIE,", detail: "Secretary & Managing Trustee, Muthayammal Educational Trust And Research Foundation" },
+      { name: "Er. G. Raghul, M.E.,", detail: "Joint Secretary, Muthayammal Educational Trust And Research Foundation" },
     ],
   },
   {
