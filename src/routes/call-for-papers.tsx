@@ -130,7 +130,7 @@ const DATES = [
   { label: "Acceptance Notification", date: "20th October 2026" },
   { label: "Early Bird Registration", date: "22nd October 2026" },
   { label: "Late Registration Period", date: "23rd – 28th October 2026" },
-  { label: "Final Manuscript Notification", date: "2nd November 2026" },
+  { label: "Final Manuscript Notification", date: "20th November 2026" },
   { label: "Conference Date", date: "18th December 2026", highlight: true },
 ];
 
