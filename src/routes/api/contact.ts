@@ -35,7 +35,7 @@ export const Route = createFileRoute('/api/contact')({
           const adminResult = await sendEmail({
             to: recipientEmail,
             from: fromEmail,
-            subject: `ICAIDIET'26 Enquiry from ${name}`,
+            subject: `ICAITETM'26 Enquiry from ${name}`,
             html: `
               <h2>New Enquiry Received</h2>
               <p><strong>Name:</strong> ${escapeHtml(name)}</p>
@@ -51,16 +51,16 @@ export const Route = createFileRoute('/api/contact')({
           const userResult = await sendEmail({
             to: email,
             from: fromEmail,
-            subject: "We've received your enquiry — ICAIDIET'26",
+            subject: "We've received your enquiry — ICAITETM'26",
             html: `
               <h2>Thank you for your enquiry!</h2>
               <p>Dear ${escapeHtml(name)},</p>
-              <p>Thank you for reaching out to us regarding ICAIDIET'26. We have received your message and will get back to you as soon as possible.</p>
+              <p>Thank you for reaching out to us regarding ICAITETM'26. We have received your message and will get back to you as soon as possible.</p>
               <p><strong>Your enquiry:</strong></p>
               <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
               <hr>
-              <p>Best regards,<br>ICAIDIET'26 Team</p>
-              <p><small>International Conference on AI-Driven Innovation in Engineering and Technology</small></p>
+              <p>Best regards,<br>ICAITETM'26 Team</p>
+              <p><small>International Conference on AI-Driven Transformation in Engineering, Technology and Management</small></p>
             `,
           });
 

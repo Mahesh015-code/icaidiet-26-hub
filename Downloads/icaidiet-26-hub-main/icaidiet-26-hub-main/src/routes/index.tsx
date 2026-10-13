@@ -34,16 +34,16 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "ICAIDIET'26 | International Conference on AI-Driven Innovation in Engineering and Technology",
+          "ICAITETM'26 | International Conference on AI-Driven Transformation in Engineering, Technology and Management",
       },
       {
         name: "description",
         content:
-          "ICAIDIET'26 — hybrid international conference on AI-driven innovation, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Scopus-indexed proceedings with ISBN and DOI.",
+          "ICAITETM'26 — hybrid international conference on AI-driven transformation, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West. Scopus-indexed proceedings with ISBN and DOI.",
       },
       {
         property: "og:title",
-        content: "ICAIDIET'26 — AI-Driven Innovation in Engineering and Technology",
+        content: "ICAITETM'26 — AI-Driven Transformation in Engineering, Technology and Management",
       },
       {
         property: "og:description",
@@ -73,14 +73,14 @@ const RESOURCE_LINKS = [
 // Both open in a new tab (same behavior as the official site).
 
 const TRACKS = [
-  { icon: BrainCircuit, title: "Artificial Intelligence and Intelligent Systems" },
-  { icon: LineChart, title: "Machine Learning and Advanced Analysis" },
-  { icon: Database, title: "Data Science and Decision Intelligence" },
-  { icon: Cpu, title: "IoT, Edge Computing and Embedded Systems" },
-  { icon: Network, title: "Communication Systems and Network Technologies" },
-  { icon: ShieldCheck, title: "Cybersecurity and Secure Computing" },
-  { icon: Bot, title: "Robotics, Automation and Smart Industry" },
-  { icon: Sprout, title: "Emerging Technologies, Sustainability and AI-Driven Management" },
+  { icon: BrainCircuit, title: "Artificial Intelligence & Smart Systems" },
+  { icon: LineChart, title: "Machine Learning & Data Analytics" },
+  { icon: Database, title: "Data Science & Decision Making" },
+  { icon: Cpu, title: "IoT, Edge Computing & Embedded Systems" },
+  { icon: Network, title: "Communication Systems & Networking" },
+  { icon: ShieldCheck, title: "Cybersecurity & Information Security" },
+  { icon: Bot, title: "Robotics, Automation & Smart Manufacturing" },
+  { icon: Sprout, title: "Emerging Technologies, Sustainability & AI Management" },
 ];
 
 const DATES = [
@@ -167,7 +167,7 @@ function Header() {
             className="font-display text-lg font-800 tracking-tight text-navy"
             style={{ fontWeight: 800 }}
           >
-            ICAIDIET<span className="text-primary">'26</span>
+            ICAITETM<span className="text-primary">'26</span>
           </span>
         </a>
         <nav className="hidden items-center gap-7 lg:flex">
@@ -258,13 +258,18 @@ function Hero() {
             <Globe className="h-3.5 w-3.5" />
             In association with University Canada West
           </p>
-          <h1 className="mt-6 font-display text-4xl leading-[1.05] font-black tracking-tight text-navy sm:text-5xl lg:text-6xl">
-            International Conference on{" "}
-            <span className="gradient-heading">AI-Driven Innovation</span> in Engineering and
-            Technology
+          <h1 className="mt-6 font-display text-[clamp(1.375rem,3.3vw,3rem)] leading-[1.05] font-black tracking-tight text-navy">
+            <span className="block">International</span>
+            <span className="block">
+              Conference on <span className="gradient-heading">AI-</span>
+            </span>
+            <span className="block gradient-heading">Driven Transformation</span>
+            <span className="block text-[clamp(0.8125rem,1.7vw,1.5rem)] leading-tight">
+              in Engineering, Technology and Management
+            </span>
           </h1>
           <p className="mt-4 inline-block rounded-lg bg-primary px-4 py-1.5 font-display text-xl font-bold tracking-widest text-primary-foreground">
-            ICAIDIET'26
+            ICAITETM'26
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             A hybrid platform uniting researchers, academicians and industry professionals to
@@ -328,7 +333,7 @@ function Highlights() {
     {
       icon: FileText,
       title: "Publish Partner",
-      text: "Wiley — official publishing partner of ICAIDIET'26",
+      text: "Wiley — official publishing partner of ICAITETM'26",
     },
     {
       icon: GraduationCap,
@@ -389,8 +394,8 @@ function About() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-muted-foreground lg:pt-14">
           <p>
-            The International Conference on AI-Driven Innovation in Engineering and Technology
-            (ICAIDIET'26), conducted in hybrid mode, serves as a dynamic platform that brings
+            The International Conference on AI-Driven Transformation in Engineering, Technology and Management
+            (ICAITETM'26), conducted in hybrid mode, serves as a dynamic platform that brings
             together researchers, academicians and industry professionals from across the globe to
             explore the transformative potential of Artificial Intelligence.
           </p>
@@ -401,7 +406,7 @@ function About() {
             intelligent solutions to address real-world challenges.
           </p>
           <p>
-            ICAIDIET'26 aspires to inspire forward-thinking ideas and promote interdisciplinary
+            ICAITETM'26 aspires to inspire forward-thinking ideas and promote interdisciplinary
             approaches that will shape the future of smart and sustainable technologies. In
             collaboration with University Canada West, the conference encourages international
             collaboration and knowledge sharing in emerging technologies.
@@ -503,7 +508,7 @@ function Committee() {
             Organizing Committee
           </p>
           <h2 className="mt-3 font-display text-3xl font-black tracking-tight sm:text-4xl">
-            The People Behind ICAIDIET'26
+            The People Behind ICAITETM'26
           </h2>
         </div>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -774,10 +779,10 @@ function Footer() {
     <footer className="bg-navy py-10 text-primary-foreground">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 text-center sm:px-6">
         <p className="font-display text-xl font-bold">
-          ICAIDIET<span className="text-gold">'26</span>
+          ICAITETM<span className="text-gold">'26</span>
         </p>
         <p className="max-w-xl text-sm text-primary-foreground/70">
-          International Conference on AI-Driven Innovation in Engineering and Technology —
+          International Conference on AI-Driven Transformation in Engineering, Technology and Management —
           Muthayammal Engineering College, in association with University Canada West.
         </p>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
@@ -792,7 +797,7 @@ function Footer() {
           ))}
         </div>
         <p className="text-xs text-primary-foreground/50">
-          © 2026 ICAIDIET'26, Muthayammal Engineering College (Autonomous). All rights reserved.
+          © 2026 ICAITETM'26, Muthayammal Engineering College (Autonomous). All rights reserved.
         </p>
       </div>
     </footer>

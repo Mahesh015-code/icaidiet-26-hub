@@ -20,11 +20,11 @@ import {
 export const Route = createFileRoute("/brochure")({
   head: () => ({
     meta: [
-      { title: "Official Conference Brochure — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
+      { title: "Official Conference Brochure — ICAITETM'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "View and download the official conference brochure of ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology. Organized by Department of Computer Science and Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West. Published Partner: Wiley.",
+          "View and download the official conference brochure of ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management. Organized by Department of Computer Science and Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West. Published Partner: Wiley.",
       },
       { property: "og:image", content: "/brochure.png" },
     ],
@@ -36,7 +36,7 @@ function BrochurePage() {
   const [fullscreen, setFullscreen] = useState(false);
 
   useEffect(() => {
-    window.location.replace("/brochure.png");
+    window.location.replace("/MEC-Conference.pdf");
   }, []);
 
   return (
@@ -54,13 +54,13 @@ function BrochurePage() {
             Official Conference Brochure
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            International Conference on AI-Driven Innovation in Engineering and Technology (ICAIDIET'26).
+            International Conference on AI-Driven Transformation in Engineering, Technology and Management (ICAITETM'26).
           </p>
 
           <div className="pt-2 flex flex-wrap justify-center gap-3">
             <a
               href="/brochure.png"
-              download="ICAIDIET26_Official_Brochure.png"
+              download="ICAITETM26_Official_Brochure.png"
               className="inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/25 transition-all duration-200 hover:-translate-y-0.5"
             >
               <Download className="h-4 w-4" />
@@ -87,7 +87,7 @@ function BrochurePage() {
             <div className="relative w-full overflow-hidden rounded-xl bg-slate-100 group border border-slate-200/80">
               <img
                 src="/brochure.png"
-                alt="ICAIDIET'26 Official Conference Brochure — Muthayammal Engineering College (Autonomous)"
+                alt="ICAITETM'26 Official Conference Brochure — Muthayammal Engineering College (Autonomous)"
                 className="w-full h-auto object-contain rounded-lg transition-transform duration-300 hover:scale-[1.01]"
               />
 
@@ -108,7 +108,7 @@ function BrochurePage() {
               <span>Official Brochure • Department of Computer Science and Engineering</span>
               <a
                 href="/brochure.png"
-                download="ICAIDIET26_Official_Brochure.png"
+                download="ICAITETM26_Official_Brochure.png"
                 className="font-semibold text-blue-600 hover:underline inline-flex items-center gap-1"
               >
                 <Download className="h-3.5 w-3.5" /> Download Image (.png)
@@ -260,7 +260,7 @@ function BrochurePage() {
             </button>
             <img
               src="/brochure.png"
-              alt="ICAIDIET'26 Official Brochure"
+              alt="ICAITETM'26 Official Brochure"
               className="max-h-[92vh] w-auto mx-auto object-contain rounded-lg shadow-2xl"
             />
           </div>
@@ -270,12 +270,12 @@ function BrochurePage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
+          ICAITETM'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p className="text-slate-400 mb-2">
           Department of Computer Science and Engineering in association with University Canada West.
         </p>
-        <p>© 2026 ICAIDIET'26. All rights reserved.</p>
+        <p>© 2026 ICAITETM'26. All rights reserved.</p>
       </footer>
     </div>
   );

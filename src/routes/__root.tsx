@@ -77,17 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ICAIDIET'26 — International Conference on AI-Driven Innovation" },
+      { title: "ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management" },
       {
         name: "description",
         content:
-          "ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West.",
+          "ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West.",
       },
-      { property: "og:title", content: "ICAIDIET'26 — AI-Driven Innovation in Engineering and Technology" },
+      { property: "og:title", content: "ICAITETM'26 — AI-Driven Transformation in Engineering, Technology and Management" },
       {
         property: "og:description",
         content:
-          "Join researchers, academicians and industry professionals at ICAIDIET'26, hosted by Muthayammal Engineering College (Autonomous) with University Canada West. Scopus-indexed proceedings.",
+          "Join researchers, academicians and industry professionals at ICAITETM'26, hosted by Muthayammal Engineering College (Autonomous) with University Canada West. Scopus-indexed proceedings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

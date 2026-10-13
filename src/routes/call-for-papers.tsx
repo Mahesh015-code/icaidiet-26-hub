@@ -23,11 +23,11 @@ import {
 export const Route = createFileRoute("/call-for-papers")({
   head: () => ({
     meta: [
-      { title: "Call For Papers and Tracks — ICAIDIET'26" },
+      { title: "Call For Papers and Tracks — ICAITETM'26" },
       {
         name: "description",
         content:
-          "Call For Papers for ICAIDIET'26 — Eight conference tracks covering AI, Machine Learning, Data Science, IoT, Robotics and Emerging Technologies.",
+          "Call For Papers for ICAITETM'26 — Eight conference tracks covering AI, Machine Learning, Data Science, IoT, Robotics and Emerging Technologies.",
       },
     ],
   }),
@@ -37,90 +37,90 @@ export const Route = createFileRoute("/call-for-papers")({
 const TRACKS = [
   {
     icon: BrainCircuit,
-    title: "Track 1: Artificial Intelligence and Intelligent Systems",
+    title: "Artificial Intelligence & Smart Systems",
     topics: [
-      "Generative AI and Large Language Models (LLMs)",
-      "Multimodal Architectures and Neural Networks",
-      "Reinforcement Learning and Adaptive Systems",
-      "Explainable AI (XAI) and Trustworthy AI",
-      "Knowledge Representation and Reasoning",
+      "Generative AI & Foundation Models",
+      "Deep Learning & Neural Network Architectures",
+      "Reinforcement Learning & Autonomous Agents",
+      "AI Transparency, Ethics & Reliability",
+      "Knowledge Engineering & Automated Reasoning",
     ],
   },
   {
     icon: LineChart,
-    title: "Track 2: Machine Learning and Advanced Analytics",
+    title: "Machine Learning & Data Analytics",
     topics: [
-      "Supervised, Unsupervised and Self-Supervised Learning",
-      "Transfer Learning and Domain Adaptation",
-      "Automated Machine Learning (AutoML)",
-      "Time-Series Analysis and Predictive Modeling",
-      "High-Dimensional Feature Engineering",
+      "Machine Learning Methods & Learning Strategies",
+      "Transfer Learning & Cross-Domain Applications",
+      "Automated Model Development & Optimization",
+      "Time-Series Forecasting & Trend Analysis",
+      "Feature Selection & High-Dimensional Data Analysis",
     ],
   },
   {
     icon: Database,
-    title: "Track 3: Data Science and Decision Intelligence",
+    title: "Data Science & Decision Making",
     topics: [
-      "Real-Time Streaming Big Data Analytics",
-      "Decision Support and Intelligent Business Systems",
-      "Data Visualization and Cognitive Analytics",
-      "Data Privacy, Ethics and Governance Frameworks",
-      "Scalable Cloud Data Pipelines",
+      "Big Data Processing & Real-Time Analytics",
+      "Business Intelligence & Decision Support",
+      "Visual Analytics & Data Interpretation",
+      "Data Governance, Privacy & Ethical Practices",
+      "Cloud-Based Data Processing & Scalable Pipelines",
     ],
   },
   {
     icon: Cpu,
-    title: "Track 4: IoT, Edge Computing and Embedded Systems",
+    title: "IoT, Edge Computing & Embedded Systems",
     topics: [
-      "TinyML and Ultra-Low Power Edge AI",
-      "Smart Sensor Networks and Wearables",
-      "Embedded Hardware Acceleration for AI",
-      "Fog-to-Cloud Distributed Computing",
-      "Smart City and Industrial IoT Architectures",
+      "TinyML & Energy-Efficient Edge AI",
+      "Smart Sensors & Wearable Technologies",
+      "AI Hardware Acceleration & Embedded Systems",
+      "Distributed Computing & Fog-Cloud Integration",
+      "Smart Cities & Industrial IoT Systems",
     ],
   },
   {
     icon: Network,
-    title: "Track 5: Communication Systems and Network Technologies",
+    title: "Communication Systems & Networking",
     topics: [
-      "5G / 6G Wireless Cellular Architectures",
-      "AI-Optimized Software-Defined Networking (SDN)",
-      "Optical Communications and Photonics",
-      "RF, Microwave and Satellite Communications",
-      "Cognitive Radio and Spectrum Management",
+      "5G / 6G Networks & Wireless Technologies",
+      "AI-Based Networking & Software-Defined Networks",
+      "Optical Networks & Photonic Technologies",
+      "RF Engineering, Microwave & Satellite Systems",
+      "Cognitive Radio & Wireless Spectrum Management",
     ],
   },
   {
     icon: ShieldCheck,
-    title: "Track 6: Cybersecurity and Secure Computing",
+    title: "Cybersecurity & Information Security",
     topics: [
-      "AI-Driven Threat Intelligence and Intrusion Detection",
-      "Zero-Trust Architecture and Identity Management",
-      "Cloud Security and Secure Multiparty Computation",
-      "Digital Forensics and Incident Response",
-      "Post-Quantum Cryptography and Blockchain Security",
+      "AI-Driven Threat Intelligence & Intrusion Detection",
+      "Zero-Trust Architecture & Identity Management",
+      "Cloud Security & Secure Multiparty Computation",
+      "Digital Forensics & Incident Response",
+      "Post-Quantum Cryptography & Blockchain Security",
     ],
   },
   {
     icon: Bot,
-    title: "Track 7: Robotics, Automation and Smart Industry",
+    title: "Robotics, Automation & Smart Manufacturing",
     topics: [
-      "Autonomous Navigation and Robot Vision",
-      "Collaborative Robotics (Cobots) in Smart Factories",
-      "Digital Twins and Industry 4.0 Systems",
-      "Motion Planning and Reinforcement Control",
-      "Additive Manufacturing and AI Diagnostics",
+      "Autonomous Robots & Computer Vision",
+      "Collaborative Robots & Smart Manufacturing",
+      "Digital Twins & Industrial Automation",
+      "Robot Motion Planning & Intelligent Control",
+      "3D Printing, AI Diagnostics & Predictive Maintenance",
     ],
   },
   {
     icon: Sprout,
-    title: "Track 8: Emerging Technologies and Sustainable AI",
+    title: "Emerging Technologies, Sustainability & AI Management",
     topics: [
-      "AI for Renewable Energy and Climate Modeling",
-      "Quantum Computing and Quantum Algorithms",
-      "Smart Healthcare and Precision Medicine",
-      "Metaverse, Spatial Computing, AR/VR",
-      "Circular Economy and Green Tech Innovations",
+      "AI for Clean Energy & Climate Prediction",
+      "Quantum Technologies & Advanced Computing",
+      "Healthcare AI & Personalized Medicine",
+      "Extended Reality (AR/VR) & Spatial Computing",
+      "Green Technologies & Circular Economy",
     ],
   },
 ];
@@ -216,7 +216,7 @@ function CallForPapersPage() {
                       Track 0{idx + 1}
                     </span>
                     <h3 className="font-serif text-lg font-bold text-blue-950 leading-snug">
-                      {t.title.replace(/Track \d+: /, "")}
+                      {t.title}
                     </h3>
                   </div>
                 </div>
@@ -272,9 +272,9 @@ function CallForPapersPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
+          ICAITETM'26 — Muthayammal Engineering College (Autonomous)
         </p>
-        <p>© 2026 ICAIDIET'26. All rights reserved.</p>
+        <p>© 2026 ICAITETM'26. All rights reserved.</p>
       </footer>
     </div>
   );

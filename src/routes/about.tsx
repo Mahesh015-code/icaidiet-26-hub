@@ -15,11 +15,11 @@ import {
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About the Conference — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
+      { title: "About the Conference — ICAITETM'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "About ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology. Organized by Department of Computer Science and Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West, Canada.",
+          "About ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management. Organized by Department of Computer Science and Engineering, Muthayammal Engineering College (Autonomous) in association with University Canada West, Canada.",
       },
     ],
   }),
@@ -42,7 +42,7 @@ function AboutPage() {
             International Conference
           </p>
           <h1 className="mt-3 font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-blue-950">
-            About ICAIDIET<span className="text-blue-600">'26</span>
+            About ICAITETM<span className="text-blue-600">'26</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Where Artificial Intelligence meets engineering excellence. A global hybrid platform uniting researchers, academicians and industry pioneers worldwide.
@@ -76,13 +76,13 @@ function AboutPage() {
               </h2>
             </div>
             <p>
-              The <strong>International Conference on AI-Driven Innovation in Engineering and Technology (ICAIDIET'26)</strong> serves as a premier dynamic forum that brings together leading academicians, researchers and industry professionals from across the globe to explore the transformative potential of Artificial Intelligence.
+              The <strong>International Conference on AI-Driven Transformation in Engineering, Technology and Management (ICAITETM'26)</strong> serves as a premier dynamic forum that brings together leading academicians, researchers and industry professionals from across the globe to explore the transformative potential of Artificial Intelligence.
             </p>
             <p>
               Conducted in <strong>hybrid mode</strong>, the conference aims to foster high-impact interdisciplinary collaboration, technical knowledge exchange and foundational innovation across emerging technological fields.
             </p>
             <p>
-              ICAIDIET'26 emphasizes cutting-edge research, next-generation machine learning frameworks, data science breakthroughs, cyber-physical systems and practical industrial applications.
+              ICAITETM'26 emphasizes cutting-edge research, next-generation machine learning frameworks, data science breakthroughs, cyber-physical systems and practical industrial applications.
             </p>
           </div>
 
@@ -205,9 +205,9 @@ function AboutPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
+          ICAITETM'26 — Muthayammal Engineering College (Autonomous)
         </p>
-        <p>© 2026 ICAIDIET'26. All rights reserved.</p>
+        <p>© 2026 ICAITETM'26. All rights reserved.</p>
       </footer>
     </div>
   );

@@ -32,18 +32,18 @@ export const Route = createFileRoute('/api/register')({
             );
           }
 
-          const registrationId = `ICAIDIET26-${Date.now()}`;
+          const registrationId = `ICAITETM26-${Date.now()}`;
           const recipientEmail = 'kvenkateshk2004@gmail.com';
           const fromEmail = process.env.SMTP_FROM_EMAIL || 'noreply@icaidiet26.tech';
 
           const userResult = await sendEmail({
             to: email,
             from: fromEmail,
-            subject: "Registration Confirmed — ICAIDIET'26",
+            subject: "Registration Confirmed — ICAITETM'26",
             html: `
               <h2>Registration Confirmation</h2>
               <p>Dear ${escapeHtml(fullName)},</p>
-              <p>Thank you for registering for ICAIDIET'26! Your registration has been successfully received.</p>
+              <p>Thank you for registering for ICAITETM'26! Your registration has been successfully received.</p>
 
               <h3>Registration Details:</h3>
               <ul>
@@ -57,7 +57,7 @@ export const Route = createFileRoute('/api/register')({
 
               <h3>Conference Details:</h3>
               <ul>
-                <li><strong>Conference Name:</strong> ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology</li>
+                <li><strong>Conference Name:</strong> ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management</li>
                 <li><strong>Conference Date:</strong> 18th December 2026</li>
                 <li><strong>Mode:</strong> Hybrid (Online and Offline)</li>
                 <li><strong>Location:</strong> Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408</li>
@@ -72,15 +72,15 @@ export const Route = createFileRoute('/api/register')({
                 <li>Phone: +91 9842073527</li>
               </ul>
 
-              <p>Best regards,<br>ICAIDIET'26 Team</p>
-              <p><small>International Conference on AI-Driven Innovation in Engineering and Technology</small></p>
+              <p>Best regards,<br>ICAITETM'26 Team</p>
+              <p><small>International Conference on AI-Driven Transformation in Engineering, Technology and Management</small></p>
             `,
           });
 
           const adminResult = await sendEmail({
             to: recipientEmail,
             from: fromEmail,
-            subject: `New Registration: ${fullName} — ICAIDIET'26`,
+            subject: `New Registration: ${fullName} — ICAITETM'26`,
             html: `
               <h2>New Registration Received</h2>
               <p><strong>Registration ID:</strong> ${registrationId}</p>

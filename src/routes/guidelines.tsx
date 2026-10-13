@@ -8,11 +8,11 @@ import { Send, FileText, Video, ExternalLink, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/guidelines")({
   head: () => ({
     meta: [
-      { title: "Paper Submission Guidelines — ICAIDIET'26 | Muthayammal Engineering College (Autonomous)" },
+      { title: "Paper Submission Guidelines — ICAITETM'26 | Muthayammal Engineering College (Autonomous)" },
       {
         name: "description",
         content:
-          "Official Author Paper Submission Guidelines, manuscript preparation instructions, Wiley template downloads, strict AI policy and submission channels for ICAIDIET'26.",
+          "Official Author Paper Submission Guidelines, manuscript preparation instructions, Wiley template downloads, strict AI policy and submission channels for ICAITETM'26.",
       },
     ],
   }),
@@ -38,7 +38,7 @@ function GuidelinesPage() {
             Paper Submission Guidelines
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Essential formatting standards, ethics rules, Wiley manuscript preparation and electronic submission instructions for ICAIDIET'26.
+            Essential formatting standards, ethics rules, Wiley manuscript preparation and electronic submission instructions for ICAITETM'26.
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-3">
             <a
@@ -70,12 +70,12 @@ function GuidelinesPage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
         <p className="text-white font-serif font-bold text-base mb-2">
-          ICAIDIET'26 — Muthayammal Engineering College (Autonomous)
+          ICAITETM'26 — Muthayammal Engineering College (Autonomous)
         </p>
         <p className="text-slate-400 mb-3">
           Department of Computer Science and Engineering in association with University Canada West.
         </p>
-        <p>© 2026 ICAIDIET'26. All rights reserved.</p>
+        <p>© 2026 ICAITETM'26. All rights reserved.</p>
       </footer>
     </div>
   );

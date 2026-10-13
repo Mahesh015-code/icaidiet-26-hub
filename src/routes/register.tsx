@@ -23,11 +23,11 @@ import { SubmissionGuidelinesSection } from "@/components/SubmissionGuidelinesSe
 export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
-      { title: "Register and Paper Submission Portal — ICAIDIET'26" },
+      { title: "Register and Paper Submission Portal — ICAITETM'26" },
       {
         name: "description",
         content:
-          "Submit your paper and register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley, Indexed in Scopus.",
+          "Submit your paper and register for ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley, Indexed in Scopus.",
       },
     ],
   }),
@@ -291,7 +291,7 @@ function Register() {
             Author Resource Center
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600">
-            Everything you need to format, check originality and submit your research manuscript for ICAIDIET'26.
+            Everything you need to format, check originality and submit your research manuscript for ICAITETM'26.
           </p>
         </div>
 
@@ -420,7 +420,7 @@ function Register() {
               <div className="aspect-video w-full overflow-hidden rounded-xl bg-black border border-slate-800 shadow-2xl">
                 <iframe
                   src="https://www.youtube-nocookie.com/embed/zy2JHdf3ahs"
-                  title="ICAIDIET'26 Submission Guidelines Video"
+                  title="ICAITETM'26 Submission Guidelines Video"
                   className="h-full w-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -529,10 +529,10 @@ function Register() {
       <footer className="bg-slate-950 py-10 text-slate-300">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 text-center sm:px-6">
           <p className="font-serif text-xl font-bold text-white">
-            ICAIDIET<span className="text-blue-400">'26</span>
+            ICAITETM<span className="text-blue-400">'26</span>
           </p>
           <p className="max-w-xl text-xs sm:text-sm text-slate-400">
-            International Conference on AI-Driven Innovation in Engineering and Technology. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley. Indexed in Scopus.
+            International Conference on AI-Driven Transformation in Engineering, Technology and Management. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley. Indexed in Scopus.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-xs text-slate-400 pt-2">
             <a href="https://www.acadera.co.in/conferences/icaidiet-2026" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
@@ -547,7 +547,7 @@ function Register() {
               NovelCheckr (₹99)
             </a>
             <span>•</span>
-            <a href="/brochure.png" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="/MEC-Conference.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               Brochure
             </a>
             <span>•</span>
@@ -556,7 +556,7 @@ function Register() {
             </a>
           </div>
           <p className="text-xs text-slate-600 mt-2">
-            © 2026 ICAIDIET'26, Muthayammal Engineering College (Autonomous). All rights reserved.
+            © 2026 ICAITETM'26, Muthayammal Engineering College (Autonomous). All rights reserved.
           </p>
         </div>
       </footer>

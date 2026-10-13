@@ -6,10 +6,10 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
-      { title: "Register — ICAIDIET'26" },
+      { title: "Register — ICAITETM'26" },
       {
         name: "description",
-        content: "Register for ICAIDIET'26 — International Conference on AI-Driven Innovation in Engineering and Technology",
+        content: "Register for ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management",
       },
     ],
   }),
@@ -253,7 +253,7 @@ function Register() {
               <Mail className="h-5 w-5" />
             </span>
             <span className="font-display text-lg font-800 tracking-tight text-navy">
-              ICAIDIET<span className="text-primary">'26</span>
+              ICAITETM<span className="text-primary">'26</span>
             </span>
           </a>
           <a
@@ -271,11 +271,11 @@ function Register() {
         <div className="mb-12 text-center">
           <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">Registration</p>
           <h1 className="mt-3 font-display text-4xl font-black tracking-tight text-navy sm:text-5xl">
-            Join ICAIDIET<span className="text-primary">'26</span>
+            Join ICAITETM<span className="text-primary">'26</span>
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Register now to participate in the International Conference on AI-Driven Innovation in Engineering and
-            Technology
+            Register now to participate in the International Conference on AI-Driven Transformation
+            in Engineering, Technology and Management.
           </p>
         </div>
 
@@ -343,10 +343,10 @@ function Register() {
       <footer className="bg-navy py-10 text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 text-center sm:px-6">
           <p className="font-display text-xl font-bold">
-            ICAIDIET<span className="text-gold">'26</span>
+            ICAITETM<span className="text-gold">'26</span>
           </p>
           <p className="max-w-xl text-sm text-primary-foreground/70">
-            International Conference on AI-Driven Innovation in Engineering and Technology — Muthayammal
+            International Conference on AI-Driven Transformation in Engineering, Technology and Management — Muthayammal
             Engineering College.
           </p>
         </div>

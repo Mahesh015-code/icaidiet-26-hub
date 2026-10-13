@@ -16,7 +16,7 @@ export function SubmissionPortalHero({ showQuickDetails = true }: SubmissionPort
           {/* Main Titles */}
           <div className="space-y-1.5 sm:space-y-2">
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 text-balance">
-              Welcome To ICAIDIET'26
+              Welcome To ICAITETM'26
             </h2>
             <p className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-blue-700">
               Paper Submission Portal
@@ -62,7 +62,7 @@ export function SubmissionPortalHero({ showQuickDetails = true }: SubmissionPort
             {/* 4. Download Template */}
             <a
               href="/Conference_paper_Template.docx"
-              download="ICAIDIET26_Paper_Template.docx"
+              download="ICAITETM26_Paper_Template.docx"
               id="btn-download-template"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 hover:bg-slate-800 px-6 py-4 text-base font-semibold text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
             >
@@ -105,7 +105,7 @@ export function SubmissionPortalHero({ showQuickDetails = true }: SubmissionPort
           <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl bg-black shadow-2xl border border-blue-900/40">
             <div className="flex items-center justify-between border-b border-slate-800 px-4 py-3 bg-slate-900 text-white">
               <span className="font-semibold text-sm flex items-center gap-2">
-                <Video className="h-4 w-4 text-red-500" /> ICAIDIET'26 Paper Submission Guidelines
+                <Video className="h-4 w-4 text-red-500" /> ICAITETM'26 Paper Submission Guidelines
               </span>
               <button
                 onClick={() => setVideoModalOpen(false)}
@@ -118,7 +118,7 @@ export function SubmissionPortalHero({ showQuickDetails = true }: SubmissionPort
             <div className="aspect-video w-full bg-black">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/zy2JHdf3ahs?autoplay=1"
-                title="ICAIDIET'26 Submission Guidelines"
+                title="ICAITETM'26 Submission Guidelines"
                 className="h-full w-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

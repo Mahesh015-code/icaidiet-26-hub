@@ -17,11 +17,11 @@ import {
 export const Route = createFileRoute("/committees")({
   head: () => ({
     meta: [
-      { title: "Committees and Leadership — ICAIDIET'26" },
+      { title: "Committees and Leadership — ICAITETM'26" },
       {
         name: "description",
         content:
-          "Organizing committee, chief patrons, patrons, convener and coordinators of ICAIDIET'26.",
+          "Organizing committee, chief patrons, patrons, convener and coordinators of ICAITETM'26.",
       },
     ],
   }),
@@ -103,7 +103,7 @@ const COMMITTEE_SECTIONS: CommitteeSection[] = [
     id: "convener",
     role: "Convener and Organizing Chair",
     short: "Convener",
-    description: "Conference executive head and academic convener for ICAIDIET'26.",
+    description: "Conference executive head and academic convener for ICAITETM'26.",
     icon: UserCheck,
     members: [
       {
@@ -207,7 +207,7 @@ function CommitteesPage() {
             Organizing Committees
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            The visionary leaders, patrons, convenors and coordinators guiding ICAIDIET'26.
+            The visionary leaders, patrons, convenors and coordinators guiding ICAITETM'26.
           </p>
         </div>
       </section>
@@ -381,11 +381,11 @@ function CommitteesPage() {
 
       {/* Footer */}
       <footer className="bg-slate-950 py-10 text-slate-400 text-center text-xs">
-        <p className="text-white font-serif font-bold text-base mb-2">ICAIDIET'26</p>
+        <p className="text-white font-serif font-bold text-base mb-2">ICAITETM'26</p>
         <p className="text-slate-400 mb-2">
           Department of Computer Science and Engineering in association with University Canada West.
         </p>
-        <p>© 2026 ICAIDIET'26. All rights reserved.</p>
+        <p>© 2026 ICAITETM'26. All rights reserved.</p>
       </footer>
     </div>
   );

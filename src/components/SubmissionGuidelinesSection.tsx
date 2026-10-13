@@ -198,7 +198,7 @@ export function SubmissionGuidelinesSection() {
               <div className="space-y-2.5">
                 <a
                   href="/Conference_paper_Template.docx"
-                  download="ICAIDIET26_Paper_Template.docx"
+                  download="ICAITETM26_Paper_Template.docx"
                   className="flex items-center justify-between rounded-xl bg-slate-900 hover:bg-slate-800 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all"
                 >
                   <span className="flex items-center gap-2.5">
@@ -262,7 +262,7 @@ export function SubmissionGuidelinesSection() {
                 Where to Submit Your Manuscript
               </h3>
               <p className="text-sm text-blue-100 leading-relaxed">
-                All submissions will be handled electronically via the <strong>ICAIDIET'26 portal</strong> once it is open. Papers may also be submitted directly through our official Acadera submission gateway.
+                All submissions will be handled electronically via the <strong>ICAITETM'26 portal</strong> once it is open. Papers may also be submitted directly through our official Acadera submission gateway.
               </p>
             </div>
 
