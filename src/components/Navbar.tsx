@@ -33,12 +33,29 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
   const [authorsOpen, setAuthorsOpen] = useState(false);
   const [mobileCommitteesOpen, setMobileCommitteesOpen] = useState(false);
   const [mobileAuthorsOpen, setMobileAuthorsOpen] = useState(false);
+  const [submissionMenuOpen, setSubmissionMenuOpen] = useState(false);
+
+  const submissionLinks = [
+    {
+      label: "Internal submission",
+      href: "https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146",
+    },
+    {
+      label: "External submission",
+      href: "https://www.acadera.co.in/submit/mec-icaitetm26-da7f0cd3",
+    },
+    {
+      label: "Foreign submission",
+      href: "https://www.acadera.co.in/submit/mec-icaitetm26-7b1d2699",
+    },
+  ];
 
   // Close menus on path change
   useEffect(() => {
     setMobileMenuOpen(false);
     setCommitteesOpen(false);
     setAuthorsOpen(false);
+    setSubmissionMenuOpen(false);
   }, [currentPath]);
 
   const handleNavClick = (targetId: string) => {
@@ -58,9 +75,9 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-blue-100 shadow-xs transition-colors">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="flex h-20 w-full items-center justify-between px-3 sm:px-4 lg:px-6">
         {/* Left Branding: Muthayammal Engineering College (Autonomous) Official Logo */}
-        <div className="flex items-center shrink-0">
+        <div className="flex min-w-0 shrink items-center">
           <a
             href="/#top"
             onClick={(e) => {
@@ -69,13 +86,13 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }
             }}
-            className="flex items-center transition-opacity hover:opacity-90"
+            className="flex max-w-full items-center transition-opacity hover:opacity-90"
             aria-label="Muthayammal Engineering College (Autonomous)"
           >
             <img
               src="/mec-logo.png"
               alt="Muthayammal Engineering College (Autonomous) — An Autonomous Institution"
-              className="h-11 sm:h-12 md:h-14 w-auto object-contain"
+              className="h-7 w-auto max-w-[52vw] object-contain sm:h-12 sm:max-w-none md:h-14"
             />
           </a>
         </div>
@@ -330,29 +347,78 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           <div className="h-5 w-px bg-slate-200 mx-1" aria-hidden="true" />
 
           {/* Primary submission CTA */}
-          <a
-            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="desktop-nav-cta"
-            className="whitespace-nowrap inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95"
-          >
-            Internal Submissions
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="relative">
+            <button
+              type="button"
+              id="desktop-nav-cta"
+              onClick={() => setSubmissionMenuOpen(!submissionMenuOpen)}
+              aria-expanded={submissionMenuOpen}
+              aria-haspopup="menu"
+              className="whitespace-nowrap inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95"
+            >
+              Submit papers
+              <ChevronDown className={`h-4 w-4 transition-transform ${submissionMenuOpen ? "rotate-180" : ""}`} />
+            </button>
+            {submissionMenuOpen && (
+              <div
+                role="menu"
+                aria-labelledby="desktop-nav-cta"
+                className="absolute right-0 top-full z-50 mt-2 w-64 overflow-hidden rounded-xl border border-blue-100 bg-white p-2 shadow-xl"
+              >
+                {submissionLinks.map((submission) => (
+                  <a
+                    key={submission.label}
+                    href={submission.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    role="menuitem"
+                    onClick={() => setSubmissionMenuOpen(false)}
+                    className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
+                  >
+                    {submission.label}
+                    <ArrowRight className="h-4 w-4 text-blue-600" />
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Mobile Menu & Quick CTA */}
         <div className="flex items-center gap-2 lg:hidden">
-          <a
-            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 rounded-full bg-blue-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-sm"
-          >
-            Internal
-            <ArrowRight className="h-3 w-3" />
-          </a>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setSubmissionMenuOpen(!submissionMenuOpen)}
+              aria-expanded={submissionMenuOpen}
+              aria-haspopup="menu"
+              className="inline-flex items-center gap-1 rounded-full bg-blue-600 px-3.5 py-2 text-xs font-bold text-white shadow-sm"
+            >
+              Submit papers
+              <ChevronDown className={`h-3.5 w-3.5 transition-transform ${submissionMenuOpen ? "rotate-180" : ""}`} />
+            </button>
+            {submissionMenuOpen && (
+              <div
+                role="menu"
+                className="absolute right-0 top-full z-50 mt-2 w-64 overflow-hidden rounded-xl border border-blue-100 bg-white p-2 shadow-xl"
+              >
+                {submissionLinks.map((submission) => (
+                  <a
+                    key={submission.label}
+                    href={submission.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    role="menuitem"
+                    onClick={() => setSubmissionMenuOpen(false)}
+                    className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
+                  >
+                    {submission.label}
+                    <ArrowRight className="h-4 w-4 text-blue-600" />
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rounded-lg p-2 text-slate-800 hover:bg-blue-50 focus:outline-none"
