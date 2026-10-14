@@ -143,12 +143,21 @@ const COMMITTEE = [
 ];
 
 const FEES = [
-  { category: "Registration Fee — UG Students", fee: "₹ 1,000" },
-  { category: "Registration Fee — PG Students", fee: "₹ 1,250" },
-  { category: "Publication Cost — UG Students", fee: "₹ 10,450" },
-  { category: "Publication Cost — PG Students", fee: "₹ 13,500" },
-  { category: "Total Cost (UG) — Registration + Publication", fee: "₹ 11,450" },
-  { category: "Total Cost (PG) — Registration + Publication", fee: "₹ 14,750" },
+  {
+    category: "UG/PG/Research Scholars",
+    registration: "Rs. 1000",
+    publication: "Rs. 10450",
+  },
+  {
+    category: "Faculty/\nIndustry Delegates",
+    registration: "Rs. 1250",
+    publication: "Rs. 10450",
+  },
+  {
+    category: "Foreign",
+    registration: "$ 400",
+    publication: "For Registration and\nPublication",
+  },
 ];
 
 function Header() {
@@ -548,110 +557,50 @@ function Committee() {
 
 function Fees() {
   return (
-    <section id="fees" className="reveal-section mx-auto max-w-7xl px-4 py-20 sm:px-6">
-      <div className="mx-auto max-w-2xl text-center">
-        <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">
-          Registration and Publication Fees
-        </p>
-        <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
-          Fee Structure and Categories
+    <section id="fees" className="reveal-section bg-[#0b4dc6] py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="text-center text-3xl font-black uppercase tracking-tight text-white sm:text-4xl md:text-5xl">
+          FEE STRUCTURE
         </h2>
-        <p className="mt-4 text-muted-foreground">
-          Published Partner: <span className="font-bold text-navy">Wiley</span>
-        </p>
-      </div>
-      <div className="card-glow mx-auto mt-12 max-w-4xl overflow-hidden rounded-2xl border border-blue-100 bg-card">
-        <table className="w-full text-left text-sm">
-          <thead>
-            <tr className="bg-blue-600 text-white">
-              <th className="px-6 py-4 font-display font-bold">Category</th>
-              <th className="px-6 py-4 font-display font-bold">Fee / Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            {FEES.map((f) => (
-              <tr
-                key={f.category}
-                className="border-t border-blue-100 hover:bg-blue-50/50 transition-colors"
-              >
-                <td className="px-6 py-4 font-semibold text-navy">{f.category}</td>
-                <td className="px-6 py-4 font-bold text-blue-600">{f.fee}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <div className="mx-auto mt-6 grid max-w-4xl gap-4 rounded-2xl border border-blue-100 bg-blue-50/60 p-6 sm:grid-cols-2">
-        <div>
-          <p className="text-xs font-bold tracking-[0.16em] text-blue-600 uppercase">Print ISBN</p>
-          <p className="mt-2 font-display text-lg font-bold text-navy">9781836690467</p>
+
+        <div className="mt-8 overflow-hidden border border-dashed border-white/75 bg-transparent">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center md:text-left">
+              <span className="text-2xl font-extrabold text-white sm:text-3xl">Category</span>
+            </div>
+            <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center">
+              <span className="text-2xl font-extrabold text-white sm:text-3xl">Registration</span>
+            </div>
+            <div className="border-b border-dashed border-white/75 px-4 py-6 text-center">
+              <span className="text-2xl font-extrabold text-white sm:text-3xl">Publication</span>
+            </div>
+          </div>
+
+          {FEES.map((fee, index) => (
+            <div
+              key={fee.category}
+              className="grid grid-cols-1 md:grid-cols-3"
+              style={{ borderTop: index === 0 ? "1px dashed rgba(255,255,255,0.75)" : undefined }}
+            >
+              <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center md:text-left">
+                <span className="whitespace-pre-line text-xl font-extrabold text-white sm:text-2xl md:text-3xl">
+                  {fee.category}
+                </span>
+              </div>
+              <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center">
+                <span className="text-xl font-extrabold text-white sm:text-2xl md:text-3xl">
+                  {fee.registration}
+                </span>
+              </div>
+              <div className="border-b border-dashed border-white/75 px-4 py-6 text-center">
+                <span className="whitespace-pre-line text-xl font-extrabold text-white sm:text-2xl md:text-3xl">
+                  {fee.publication}
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
-        <div>
-          <p className="text-xs font-bold tracking-[0.16em] text-blue-600 uppercase">Online ISBN</p>
-          <p className="mt-2 font-display text-lg font-bold text-navy">9781394423415</p>
-        </div>
       </div>
-
-      {/* Author Resources Callouts */}
-      <div className="mx-auto mt-6 max-w-4xl grid gap-4 sm:grid-cols-3">
-        <a
-          href="https://www.novelcheckr.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 rounded-xl border border-red-200 bg-red-50/80 p-4 transition-all hover:bg-red-100"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-600 text-white font-bold">
-            ₹99
-          </span>
-          <div>
-            <p className="text-xs font-bold text-red-900">Plagiarism Checker</p>
-            <p className="text-[11px] text-red-700">Check via NovelCheckr before submitting →</p>
-          </div>
-        </a>
-
-        <a
-          href="https://youtu.be/zy2JHdf3ahs"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 rounded-xl border border-blue-200 bg-blue-50/80 p-4 transition-all hover:bg-blue-100"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-600 text-white font-bold">
-            📺
-          </span>
-          <div>
-            <p className="text-xs font-bold text-slate-900">Author Guidelines</p>
-            <p className="text-[11px] text-slate-600">Watch video instructions on YouTube →</p>
-          </div>
-        </a>
-
-        <a
-          href="https://www.acadera.co.in/conferences/icaidiet-2026"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 rounded-xl border border-blue-100 bg-white p-4 transition-all hover:bg-blue-50"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-600 text-white font-bold">
-            🚀
-          </span>
-          <div>
-            <p className="text-xs font-bold text-slate-900">Submission Portal</p>
-            <p className="text-[11px] text-slate-600">Upload paper on Acadera →</p>
-          </div>
-        </a>
-      </div>
-
-      <div className="mt-8 text-center">
-        <a
-          href="/register"
-          className="inline-flex rounded-full bg-blue-600 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-500/25 transition-transform hover:-translate-y-0.5 hover:bg-blue-700"
-        >
-          Proceed to Registration →
-        </a>
-      </div>
-      <p className="mt-4 text-center text-sm text-muted-foreground">
-        All accepted and presented papers will be published as Scopus-indexed conference book
-        proceedings with ISBN and DOI (as per publisher norms).
-      </p>
     </section>
   );
 }
@@ -1042,6 +991,7 @@ function Index() {
         <SubmissionPortalHero />
         <Highlights />
         <ConferenceOverviewCards />
+        <Fees />
         <Contact />
       </main>
       <Footer />

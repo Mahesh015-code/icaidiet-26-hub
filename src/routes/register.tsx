@@ -35,12 +35,10 @@ export const Route = createFileRoute("/register")({
 });
 
 const FEES = [
-  { category: "Registration Fee — UG Students", cost: "₹ 1,000" },
-  { category: "Registration Fee — PG Students", cost: "₹ 1,250" },
-  { category: "Publication Cost — UG Students", cost: "₹ 10,450" },
-  { category: "Publication Cost — PG Students", cost: "₹ 13,500" },
-  { category: "UG Total (Registration + Publication)", cost: "₹ 11,450" },
-  { category: "PG Total (Registration + Publication)", cost: "₹ 14,750" },
+  { category: "UG/PG/Research Scholars", cost: "₹ 1,000" },
+  { category: "Publication Fee", cost: "₹ 10,450" },
+  { category: "Faculty/Industry Delegates", cost: "₹ 1,250" },
+  { category: "Foreign", cost: "$ 400" },
 ];
 
 function RegistrationForm() {
@@ -49,7 +47,7 @@ function RegistrationForm() {
     email: "",
     phoneNumber: "",
     institution: "",
-    category: "UG Students — Registration Fee (₹ 1,000)",
+    category: "UG/PG/Research Scholars — Registration Fee (₹ 1,000)",
     country: "India",
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -92,7 +90,7 @@ function RegistrationForm() {
           email: "",
           phoneNumber: "",
           institution: "",
-          category: "Author — With Scopus-Indexed Proceedings (Indian)",
+          category: "UG/PG/Research Scholars — Registration Fee (₹ 1,000)",
           country: "India",
         });
       } else {
@@ -213,23 +211,14 @@ function RegistrationForm() {
           onChange={handleChange}
           className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
         >
-          <option value="UG Students — Registration Fee (₹ 1,000)">
-            UG Students — Registration Fee (₹ 1,000)
+          <option value="UG/PG/Research Scholars — Registration Fee (₹ 1,000)">
+            UG/PG/Research Scholars — Registration Fee (₹ 1,000)
           </option>
-          <option value="PG Students — Registration Fee (₹ 1,250)">
-            PG Students — Registration Fee (₹ 1,250)
+          <option value="Faculty/Industry Delegates — Registration Fee (₹ 1,250)">
+            Faculty/Industry Delegates — Registration Fee (₹ 1,250)
           </option>
-          <option value="UG Students — Publication Cost (₹ 10,450)">
-            UG Students — Publication Cost (₹ 10,450)
-          </option>
-          <option value="PG Students — Publication Cost (₹ 13,500)">
-            PG Students — Publication Cost (₹ 13,500)
-          </option>
-          <option value="UG Students — Total (Registration + Publication ₹ 11,450)">
-            UG Students — Total (Registration + Publication ₹ 11,450)
-          </option>
-          <option value="PG Students — Total (Registration + Publication ₹ 14,750)">
-            PG Students — Total (Registration + Publication ₹ 14,750)
+          <option value="Foreign — Registration + Publication ($ 400)">
+            Foreign — Registration + Publication ($ 400)
           </option>
         </select>
       </div>

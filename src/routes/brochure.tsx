@@ -194,14 +194,19 @@ function BrochurePage() {
                   </thead>
                   <tbody className="divide-y divide-slate-100 font-medium">
                     <tr>
-                      <td className="py-2.5 px-3 font-bold text-blue-900">UG Students</td>
+                      <td className="py-2.5 px-3 font-bold text-blue-900">UG/PG/Research Scholars</td>
                       <td className="py-2.5 px-3">₹ 1,000</td>
                       <td className="py-2.5 px-3 font-semibold text-slate-900">₹ 10,450</td>
                     </tr>
                     <tr>
-                      <td className="py-2.5 px-3 font-bold text-blue-900">PG Students</td>
+                      <td className="py-2.5 px-3 font-bold text-blue-900">Faculty/Industry Delegates</td>
                       <td className="py-2.5 px-3">₹ 1,250</td>
-                      <td className="py-2.5 px-3 font-semibold text-slate-900">₹ 13,500</td>
+                      <td className="py-2.5 px-3 font-semibold text-slate-900">₹ 10,450</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2.5 px-3 font-bold text-blue-900">Foreign</td>
+                      <td className="py-2.5 px-3">$ 400</td>
+                      <td className="py-2.5 px-3 font-semibold text-slate-900">For Registration and Publication</td>
                     </tr>
                   </tbody>
                 </table>
