@@ -225,7 +225,7 @@ function BrochurePage() {
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-600 shrink-0" />
-                  <a href="mailto:icaidietmec@gmail.com" className="font-semibold hover:underline">icaidietmec@gmail.com</a>
+                  <a href="mailto:icaitetmmec@gmail.com" className="font-semibold hover:underline">icaitetmmec@gmail.com</a>
                 </p>
                 <p className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
@@ -234,12 +234,14 @@ function BrochurePage() {
               </div>
 
               <div className="pt-2 border-t border-blue-200/70 flex flex-wrap gap-2">
-                <Link
-                  to="/register"
+                <a
+                  href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-xl bg-blue-600 px-4 py-2 text-xs font-bold text-white hover:bg-blue-700 transition-colors inline-flex items-center gap-1.5"
                 >
-                  Register Now <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
+                  Internal Submissions <ArrowRight className="h-3.5 w-3.5" />
+                </a>
                 <Link
                   to="/guidelines"
                   className="rounded-xl bg-white border border-blue-200 px-4 py-2 text-xs font-semibold text-blue-900 hover:bg-blue-50 transition-colors"

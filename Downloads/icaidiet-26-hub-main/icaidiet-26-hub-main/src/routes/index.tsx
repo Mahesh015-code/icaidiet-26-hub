@@ -631,7 +631,7 @@ function Contact() {
       } else {
         setSubmitStatus({
           type: "error",
-          message: data.statusMessage || "Please directly contact with icaidietmec@gmail.com",
+          message: data.statusMessage || "Please directly contact with icaitetmmec@gmail.com",
         });
         toast.error("Failed to Send", {
           description: data.statusMessage || "Something went wrong.",
@@ -674,13 +674,13 @@ function Contact() {
                 <span className="font-semibold">+91 9842073527</span>
               </a>
               <a
-                href="mailto:icaidietmec@gmail.com"
+                href="mailto:icaitetmmec@gmail.com"
                 className="flex items-center gap-3 text-navy transition-colors hover:text-primary"
               >
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Mail className="h-4.5 w-4.5" />
                 </span>
-                <span className="font-semibold">icaidietmec@gmail.com</span>
+                <span className="font-semibold">icaitetmmec@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-navy">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">

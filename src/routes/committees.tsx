@@ -368,13 +368,15 @@ function CommitteesPage() {
             >
               Call For Papers
             </Link>
-            <Link
-              to="/register"
+            <a
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-blue-500/20 hover:bg-blue-700 transition-colors"
             >
-              Register Now
+              Internal Submissions
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </main>

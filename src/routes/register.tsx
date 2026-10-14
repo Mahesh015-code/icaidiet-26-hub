@@ -1,9 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
-  CheckCircle,
-  AlertCircle,
-  Loader,
   ExternalLink,
   ShieldCheck,
   Video,
@@ -15,7 +12,6 @@ import {
   Clock,
   Sparkles,
 } from "lucide-react";
-import { toast } from "sonner";
 import { Navbar } from "@/components/Navbar";
 import { SubmissionPortalHero } from "@/components/SubmissionPortalHero";
 import { SubmissionGuidelinesSection } from "@/components/SubmissionGuidelinesSection";
@@ -40,222 +36,6 @@ const FEES = [
   { category: "Faculty/Industry Delegates", cost: "₹ 1,250" },
   { category: "Foreign", cost: "$ 400" },
 ];
-
-function RegistrationForm() {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phoneNumber: "",
-    institution: "",
-    category: "UG/PG/Research Scholars — Registration Fee (₹ 1,000)",
-    country: "India",
-  });
-  const [isLoading, setIsLoading] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{
-    type: "success" | "error" | null;
-    message: string;
-  }>({ type: null, message: "" });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.currentTarget;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setSubmitStatus({ type: null, message: "" });
-
-    try {
-      const response = await fetch("/api/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setSubmitStatus({
-          type: "success",
-          message: data.message || "Registration successful! Check your email for confirmation.",
-        });
-        toast.success("Registration Submitted!", {
-          description: "We'll send you a confirmation email shortly.",
-        });
-        setFormData({
-          fullName: "",
-          email: "",
-          phoneNumber: "",
-          institution: "",
-          category: "UG/PG/Research Scholars — Registration Fee (₹ 1,000)",
-          country: "India",
-        });
-      } else {
-        setSubmitStatus({
-          type: "error",
-          message: data.statusMessage || "Registration failed. Please try again.",
-        });
-        toast.error("Registration Failed", {
-          description: data.statusMessage || "Something went wrong.",
-        });
-      }
-    } catch (error) {
-      setSubmitStatus({
-        type: "error",
-        message: "Network error. Please check your connection and try again.",
-      });
-      toast.error("Network Error", {
-        description: "Please check your connection.",
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label htmlFor="fullName" className="mb-2 block text-sm font-semibold text-slate-900">
-            Full Name *
-          </label>
-          <input
-            required
-            type="text"
-            id="fullName"
-            name="fullName"
-            value={formData.fullName}
-            onChange={handleChange}
-            placeholder="Your full name"
-            className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="mb-2 block text-sm font-semibold text-slate-900">
-            Email Address *
-          </label>
-          <input
-            required
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="your@email.com"
-            className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-          />
-        </div>
-      </div>
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label htmlFor="phoneNumber" className="mb-2 block text-sm font-semibold text-slate-900">
-            Phone Number *
-          </label>
-          <input
-            required
-            type="tel"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            placeholder="+91 XXXXX XXXXX"
-            className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-          />
-        </div>
-        <div>
-          <label htmlFor="country" className="mb-2 block text-sm font-semibold text-slate-900">
-            Country *
-          </label>
-          <input
-            required
-            type="text"
-            id="country"
-            name="country"
-            value={formData.country}
-            onChange={handleChange}
-            placeholder="Your country"
-            className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-          />
-        </div>
-      </div>
-
-      <div>
-        <label htmlFor="institution" className="mb-2 block text-sm font-semibold text-slate-900">
-          Institution / Organization *
-        </label>
-        <input
-          required
-          type="text"
-          id="institution"
-          name="institution"
-          value={formData.institution}
-          onChange={handleChange}
-          placeholder="Your institution or organization"
-          className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-        />
-      </div>
-
-      <div>
-        <label htmlFor="category" className="mb-2 block text-sm font-semibold text-slate-900">
-          Registration Category *
-        </label>
-        <select
-          required
-          id="category"
-          name="category"
-          value={formData.category}
-          onChange={handleChange}
-          className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
-        >
-          <option value="UG/PG/Research Scholars — Registration Fee (₹ 1,000)">
-            UG/PG/Research Scholars — Registration Fee (₹ 1,000)
-          </option>
-          <option value="Faculty/Industry Delegates — Registration Fee (₹ 1,250)">
-            Faculty/Industry Delegates — Registration Fee (₹ 1,250)
-          </option>
-          <option value="Foreign — Registration + Publication ($ 400)">
-            Foreign — Registration + Publication ($ 400)
-          </option>
-        </select>
-      </div>
-
-      {submitStatus.type && (
-        <div
-          className={`flex items-start gap-3 rounded-lg p-4 ${
-            submitStatus.type === "success"
-              ? "bg-green-50 text-green-900 border border-green-200"
-              : "bg-red-50 text-red-900 border border-red-200"
-          }`}
-        >
-          {submitStatus.type === "success" ? (
-            <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-green-600" />
-          ) : (
-            <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-600" />
-          )}
-          <p className="text-sm font-medium">{submitStatus.message}</p>
-        </div>
-      )}
-
-      <button
-        type="submit"
-        disabled={isLoading}
-        className="w-full rounded-full bg-blue-600 px-6 py-3.5 text-sm font-bold text-white transition-all hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-md shadow-blue-500/20"
-      >
-        {isLoading && <Loader className="h-4 w-4 animate-spin" />}
-        {isLoading ? "Submitting Registration..." : "Complete Registration"}
-      </button>
-
-      <p className="text-center text-xs text-slate-500">
-        Early bird registration closes 22nd October 2026. Accepted papers will be published in Wiley
-        Scopus-indexed proceedings with ISBN and DOI.
-      </p>
-    </form>
-  );
-}
 
 function Register() {
   useEffect(() => {
@@ -297,19 +77,19 @@ function Register() {
                   Primary Portal
                 </span>
               </div>
-              <h3 className="font-serif text-xl font-bold text-blue-950">1. Submit Your Paper</h3>
+              <h3 className="font-serif text-xl font-bold text-blue-950">1. Internal Submissions (MEC)</h3>
               <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                Submit your original research through our official Acadera submission portal. Fast-track peer-review process and status tracking.
+                Submit your original research through the official Muthayammal Engineering College submission route. Fast-track peer-review process and status tracking.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100">
               <a
-                href="https://www.acadera.co.in/conferences/icaidiet-2026"
+                href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-700"
               >
-                Go to Acadera Portal
+                Internal Submissions
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
@@ -424,11 +204,11 @@ function Register() {
           <SubmissionGuidelinesSection />
         </div>
 
-        {/* 4. Registration Fees and Complete Form */}
-        <div className="grid gap-12 lg:grid-cols-3 mb-16">
+        {/* 4. Registration Fees */}
+        <div className="mx-auto mb-16 max-w-3xl">
           {/* Fee Structure */}
-          <div className="lg:col-span-1">
-            <div className="rounded-2xl border border-blue-100 bg-white p-6 sticky top-28 shadow-sm">
+          <div>
+            <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
               <h2 className="font-serif text-xl font-bold text-blue-950">Registration Fees</h2>
               <p className="mt-1 text-xs text-slate-500">Early bird closes 22nd Oct 2026</p>
 
@@ -475,17 +255,6 @@ function Register() {
               </div>
             </div>
           </div>
-
-          {/* Registration Form */}
-          <div className="lg:col-span-2">
-            <div className="rounded-2xl border border-blue-100 bg-white p-8 shadow-sm">
-              <h3 className="font-serif text-2xl font-bold text-blue-950">Complete Your Registration</h3>
-              <p className="mt-1 text-sm text-slate-600 mb-6">
-                Fill in the details below to complete participant or author registration.
-              </p>
-              <RegistrationForm />
-            </div>
-          </div>
         </div>
 
         {/* 5. Key Highlights / Dates */}
@@ -524,8 +293,8 @@ function Register() {
             International Conference on AI-Driven Transformation in Engineering, Technology and Management. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley. Indexed in Scopus.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-xs text-slate-400 pt-2">
-            <a href="https://www.acadera.co.in/conferences/icaidiet-2026" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-              Acadera Submission
+            <a href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              Internal Submissions (MEC)
             </a>
             <span>•</span>
             <a href="https://youtu.be/zy2JHdf3ahs" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">

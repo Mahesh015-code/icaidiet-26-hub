@@ -268,24 +268,15 @@ export function SubmissionGuidelinesSection() {
 
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
-                href="https://www.acadera.co.in/conferences/icaidiet-2026"
+                href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-500 hover:bg-blue-400 px-6 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
-                <span>Go to Submission Portal</span>
+                <span>Internal Submissions</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
 
-              <a
-                href="https://user.icaidiet26.tech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200"
-              >
-                <span>Registration Portal</span>
-                <ExternalLink className="h-4 w-4" />
-              </a>
             </div>
           </div>
 

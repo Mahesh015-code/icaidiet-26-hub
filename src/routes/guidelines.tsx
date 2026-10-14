@@ -42,12 +42,12 @@ function GuidelinesPage() {
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-3">
             <a
-              href="https://www.acadera.co.in/conferences/icaidiet-2026"
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700"
             >
-              Go to Submission Portal
+              Internal Submissions
               <ArrowRight className="h-4 w-4" />
             </a>
             <a

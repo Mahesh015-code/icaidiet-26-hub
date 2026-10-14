@@ -23,51 +23,39 @@ export function SubmissionPortalHero({ showQuickDetails = true }: SubmissionPort
             </p>
           </div>
 
-          {/* 4 Action Buttons Grid in Blue & White Theme */}
-          <div className="mt-8 sm:mt-10 mx-auto max-w-2xl grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
-            {/* 1. Go to Submission Portal -> */}
+          {/* Three submission action buttons */}
+          <div className="mt-8 sm:mt-10 mx-auto grid max-w-3xl grid-cols-1 gap-3.5 sm:grid-cols-3 sm:gap-4">
             <a
-              href="https://www.acadera.co.in/conferences/icaidiet-2026"
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
               target="_blank"
               rel="noopener noreferrer"
-              id="btn-submission-portal"
+              id="btn-internal-submission"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-4 text-base font-semibold text-white shadow-md shadow-blue-600/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>Go to Submission Portal</span>
-              <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" />
+              <span>Internal Submissions</span>
+              <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
 
-            {/* 2. Author Guidelines */}
-            <Link
-              to="/guidelines"
-              id="btn-author-guidelines"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-slate-300 hover:border-blue-400 hover:bg-slate-50/80 px-6 py-4 text-base font-semibold text-slate-800 shadow-xs transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-            >
-              <span>Author Guidelines</span>
-              <ArrowRight className="h-4 w-4 text-blue-600 opacity-70" />
-            </Link>
-
-            {/* 3. Plagiarism Checker at ₹99 */}
             <a
-              href="https://www.novelcheckr.com/"
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-da7f0cd3"
               target="_blank"
               rel="noopener noreferrer"
-              id="btn-plagiarism-checker"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] px-6 py-4 text-base font-bold text-white shadow-md shadow-red-600/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+              id="btn-external-submission"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-4 text-base font-semibold text-white shadow-md shadow-blue-600/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>Plagiarism Checker at ₹99</span>
-              <ExternalLink className="h-3.5 w-3.5 text-white/80" />
+              <span>External Submissions</span>
+              <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
 
-            {/* 4. Download Template */}
             <a
-              href="/Conference_paper_Template.docx"
-              download="ICAITETM26_Paper_Template.docx"
-              id="btn-download-template"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 hover:bg-slate-800 px-6 py-4 text-base font-semibold text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-7b1d2699"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="btn-foreign-submission"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-4 text-base font-semibold text-white shadow-md shadow-blue-600/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>Download Template</span>
-              <Download className="h-4 w-4 shrink-0 text-white/80" />
+              <span>Foreign Submissions</span>
+              <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
           </div>
 

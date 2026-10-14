@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { Navbar } from "@/components/Navbar";
 import { SubmissionGuidelinesSection } from "@/components/SubmissionGuidelinesSection";
 import {
@@ -134,7 +134,15 @@ const DATES = [
   { label: "Conference Date", date: "18th December 2026", highlight: true },
 ];
 
+const SUBMISSION_OPTIONS = [
+  { label: "Internal Submissions (MEC)", href: "https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146" },
+  { label: "External Submissions (Other Colleges)", href: "https://www.acadera.co.in/submit/mec-icaitetm26-da7f0cd3" },
+  { label: "Foreign Submissions", href: "https://www.acadera.co.in/submit/mec-icaitetm26-7b1d2699" },
+];
+
 function CallForPapersPage() {
+  const [submissionModalOpen, setSubmissionModalOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -142,6 +150,43 @@ function CallForPapersPage() {
   return (
     <div className="min-h-screen bg-slate-50/50 font-body text-slate-900">
       <Navbar activeSection="tracks" />
+
+      {submissionModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm">
+          <div className="w-full max-w-2xl rounded-2xl border border-blue-200 bg-white p-6 shadow-2xl">
+            <div className="mb-5 flex items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-bold tracking-[0.18em] text-blue-600 uppercase">Choose Submission Type</p>
+                <h3 className="mt-1 font-serif text-2xl font-bold text-blue-950">Acadera Portal</h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSubmissionModalOpen(false)}
+                className="rounded-full border border-slate-200 p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-800"
+                aria-label="Close submission options"
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              {SUBMISSION_OPTIONS.map((option) => (
+                <a
+                  key={option.label}
+                  href={option.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between gap-3 rounded-xl bg-blue-600 px-5 py-4 text-left text-base font-semibold text-white shadow-sm transition-all hover:bg-blue-700"
+                  onClick={() => setSubmissionModalOpen(false)}
+                >
+                  <span>{option.label}</span>
+                  <ArrowRight className="h-4 w-4 shrink-0" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Header Banner */}
       <section className="relative w-full py-16 sm:py-20 border-b border-blue-100 bg-gradient-to-b from-blue-50/70 via-white to-white">
@@ -158,22 +203,21 @@ function CallForPapersPage() {
 
           {/* Quick Action Buttons */}
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href="https://www.acadera.co.in/conferences/icaidiet-2026"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => setSubmissionModalOpen(true)}
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/25 transition-all hover:bg-blue-700"
             >
-              1. Submit via Acadera Portal
+              Submit via Acadera Portal
               <ExternalLink className="h-4 w-4" />
-            </a>
+            </button>
             <a
               href="https://youtu.be/zy2JHdf3ahs"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-6 py-3 text-sm font-semibold text-blue-900 shadow-xs transition-all hover:bg-blue-50"
             >
-              2. Watch Guidelines Video
+              Watch Guidelines Video
               <Video className="h-4 w-4 text-red-600" />
             </a>
             <a
@@ -182,7 +226,7 @@ function CallForPapersPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700"
             >
-              3. Check Plagiarism (₹99)
+              Check Plagiarism (₹99)
               <ShieldCheck className="h-4 w-4" />
             </a>
           </div>

@@ -232,14 +232,14 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
 
                   {/* Link 1: Paper Submission Portal */}
                   <a
-                    href="https://www.acadera.co.in/conferences/icaidiet-2026"
+                    href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between rounded-lg px-3 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-900 transition-colors"
                   >
                     <span className="flex items-center gap-2">
                       <Send className="h-4 w-4 text-blue-600" />
-                      Paper Submission Portal
+                      Internal Submissions
                     </span>
                     <ExternalLink className="h-3.5 w-3.5 text-blue-500" />
                   </a>
@@ -329,26 +329,30 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           {/* Vertical Separator */}
           <div className="h-5 w-px bg-slate-200 mx-1" aria-hidden="true" />
 
-          {/* Register Now Button (Blue Theme) */}
-          <Link
-            to="/register"
+          {/* Primary submission CTA */}
+          <a
+            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+            target="_blank"
+            rel="noopener noreferrer"
             id="desktop-nav-cta"
             className="whitespace-nowrap inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95"
           >
-            Register Now
+            Internal Submissions
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
         </nav>
 
         {/* Mobile Menu & Quick CTA */}
         <div className="flex items-center gap-2 lg:hidden">
-          <Link
-            to="/register"
+          <a
+            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1 rounded-full bg-blue-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-sm"
           >
-            Register
+            Internal
             <ArrowRight className="h-3 w-3" />
-          </Link>
+          </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rounded-lg p-2 text-slate-800 hover:bg-blue-50 focus:outline-none"
@@ -484,12 +488,12 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
                     <span>&rarr;</span>
                   </Link>
                   <a
-                    href="https://www.acadera.co.in/conferences/icaidiet-2026"
+                    href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between py-1.5 text-xs font-semibold text-blue-700"
                   >
-                    <span>1. Submit Paper (Acadera)</span>
+                    <span>1. Internal Submissions (MEC)</span>
                     <ExternalLink className="h-3 w-3" />
                   </a>
                   <a
@@ -549,13 +553,15 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           </div>
 
           <div className="pt-2 border-t border-slate-200">
-            <Link
-              to="/register"
+            <a
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/20"
             >
-              Register Now
+              Internal Submissions
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
       )}

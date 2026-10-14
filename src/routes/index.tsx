@@ -24,6 +24,7 @@ import {
   CheckCircle,
   AlertCircle,
   Loader,
+  ArrowRight,
 } from "lucide-react";
 import { useEffect, useState, type CSSProperties } from "react";
 import heroRobot from "@/assets/hero-robot.png";
@@ -199,10 +200,12 @@ function Header() {
             </a>
           ))}
           <a
-            href="#fees"
+            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-navy"
           >
-            Register Now
+            Internal Submissions
           </a>
         </nav>
         <button
@@ -241,11 +244,13 @@ function Header() {
             </a>
           ))}
           <a
-            href="#fees"
+            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-3 block rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground"
           >
-            Register Now
+            Internal Submissions
           </a>
         </nav>
       )}
@@ -291,19 +296,31 @@ function Hero() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="/register"
-              className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-7 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/25 transition-transform hover:-translate-y-0.5 hover:bg-blue-700"
-            >
-              Register Now →
-            </a>
-            <a
-              href="https://www.acadera.co.in/conferences/icaidiet-2026"
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-7 py-3 text-sm font-semibold text-blue-700 shadow-xs transition-colors hover:bg-blue-50"
+              className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-7 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/25 transition-transform hover:-translate-y-0.5 hover:bg-blue-700"
             >
-              Submit Your Paper
-              <ExternalLink className="h-3.5 w-3.5" />
+              Internal Submissions
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-da7f0cd3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-7 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/25 transition-transform hover:-translate-y-0.5 hover:bg-blue-700"
+            >
+              External Submissions
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-7b1d2699"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-7 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/25 transition-transform hover:-translate-y-0.5 hover:bg-blue-700"
+            >
+              Foreign Submissions
+              <ArrowRight className="h-4 w-4" />
             </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted-foreground">
@@ -557,43 +574,47 @@ function Committee() {
 
 function Fees() {
   return (
-    <section id="fees" className="reveal-section bg-[#0b4dc6] py-16 sm:py-20">
+    <section id="fees" className="reveal-section bg-slate-50 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 className="text-center text-3xl font-black uppercase tracking-tight text-white sm:text-4xl md:text-5xl">
-          FEE STRUCTURE
-        </h2>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">
+            Registration and Publication Fees
+          </p>
+          <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-navy sm:text-4xl">
+            Fee Structure and Categories
+          </h2>
+        </div>
 
-        <div className="mt-8 overflow-hidden border border-dashed border-white/75 bg-transparent">
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center md:text-left">
-              <span className="text-2xl font-extrabold text-white sm:text-3xl">Category</span>
+        <div className="mt-10 overflow-hidden rounded-[28px] border border-blue-200 bg-white shadow-[0_18px_50px_rgba(37,99,235,0.10)]">
+          <div className="grid grid-cols-1 md:grid-cols-3 bg-blue-600 text-white">
+            <div className="border-b border-r border-white/20 px-4 py-5 text-center md:text-left">
+              <span className="font-display text-xl font-bold sm:text-2xl">Category</span>
             </div>
-            <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center">
-              <span className="text-2xl font-extrabold text-white sm:text-3xl">Registration</span>
+            <div className="border-b border-r border-white/20 px-4 py-5 text-center">
+              <span className="font-display text-xl font-bold sm:text-2xl">Registration</span>
             </div>
-            <div className="border-b border-dashed border-white/75 px-4 py-6 text-center">
-              <span className="text-2xl font-extrabold text-white sm:text-3xl">Publication</span>
+            <div className="border-b border-white/20 px-4 py-5 text-center">
+              <span className="font-display text-xl font-bold sm:text-2xl">Publication</span>
             </div>
           </div>
 
-          {FEES.map((fee, index) => (
+          {FEES.map((fee) => (
             <div
               key={fee.category}
-              className="grid grid-cols-1 md:grid-cols-3"
-              style={{ borderTop: index === 0 ? "1px dashed rgba(255,255,255,0.75)" : undefined }}
+              className="grid grid-cols-1 border-b border-blue-100 last:border-b-0 md:grid-cols-3"
             >
-              <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center md:text-left">
-                <span className="whitespace-pre-line text-xl font-extrabold text-white sm:text-2xl md:text-3xl">
+              <div className="border-r border-blue-100 bg-blue-50/40 px-5 py-6 text-center md:text-left">
+                <span className="whitespace-pre-line font-display text-xl font-bold leading-tight text-navy sm:text-2xl">
                   {fee.category}
                 </span>
               </div>
-              <div className="border-b border-r border-dashed border-white/75 px-4 py-6 text-center">
-                <span className="text-xl font-extrabold text-white sm:text-2xl md:text-3xl">
+              <div className="border-r border-blue-100 px-5 py-6 text-center">
+                <span className="font-display text-xl font-black text-blue-700 sm:text-2xl">
                   {fee.registration}
                 </span>
               </div>
-              <div className="border-b border-dashed border-white/75 px-4 py-6 text-center">
-                <span className="whitespace-pre-line text-xl font-extrabold text-white sm:text-2xl md:text-3xl">
+              <div className="px-5 py-6 text-center">
+                <span className="whitespace-pre-line font-display text-xl font-black leading-tight text-blue-700 sm:text-2xl">
                   {fee.publication}
                 </span>
               </div>
@@ -648,7 +669,7 @@ function Contact() {
       } else {
         setSubmitStatus({
           type: "error",
-          message: data.statusMessage || "Please directly contact with icaidietmec@gmail.com",
+          message: data.statusMessage || "Please directly contact with icaitetmmec@gmail.com",
         });
         toast.error("Failed to Send", {
           description: data.statusMessage || "Something went wrong.",
@@ -691,13 +712,13 @@ function Contact() {
                 <span className="font-semibold">+91 9842073527</span>
               </a>
               <a
-                href="mailto:icaidietmec@gmail.com"
+                href="mailto:icaitetmmec@gmail.com"
                 className="flex items-center gap-3 text-navy transition-colors hover:text-primary"
               >
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Mail className="h-4.5 w-4.5" />
                 </span>
-                <span className="font-semibold">icaidietmec@gmail.com</span>
+                <span className="font-semibold">icaitetmmec@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-navy">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
@@ -805,12 +826,12 @@ function Footer() {
         {/* Quick Portal Links */}
         <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs text-sky border-y border-white/10 py-3 w-full max-w-2xl">
           <a
-            href="https://www.acadera.co.in/conferences/icaidiet-2026"
+            href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gold transition-colors font-semibold"
           >
-            1. Acadera Paper Submission Portal
+            1. Internal Submissions (MEC)
           </a>
           <span className="text-white/30">•</span>
           <a
@@ -917,7 +938,7 @@ function ConferenceOverviewCards() {
       title: "Registration and Fees",
       desc: "Check registration categories, publication fee structure and complete your participant registration.",
       link: "/register",
-      cta: "Register Now",
+      cta: "View Fees",
       icon: BadgeCheck,
     },
   ];

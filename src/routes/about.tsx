@@ -185,12 +185,12 @@ function AboutPage() {
           </div>
           <div className="flex gap-3 shrink-0">
             <a
-              href="https://www.acadera.co.in/conferences/icaidiet-2026"
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white px-6 py-2.5 text-sm font-bold text-blue-700 shadow-sm transition-all hover:bg-blue-50"
             >
-              Submit Paper
+              Internal Submissions
             </a>
             <Link
               to="/"
