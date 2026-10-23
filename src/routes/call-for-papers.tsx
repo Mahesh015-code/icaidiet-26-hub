@@ -135,9 +135,18 @@ const DATES = [
 ];
 
 const SUBMISSION_OPTIONS = [
-  { label: "Internal Submissions (MEC)", href: "https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146" },
-  { label: "External Submissions (Other Colleges)", href: "https://www.acadera.co.in/submit/mec-icaitetm26-da7f0cd3" },
-  { label: "Foreign Submissions", href: "https://www.acadera.co.in/submit/mec-icaitetm26-7b1d2699" },
+  {
+    label: "Internal Submissions (MEC)",
+    href: "https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146",
+  },
+  {
+    label: "External Submissions (Other Colleges)",
+    href: "https://www.acadera.co.in/submit/mec-icaitetm26-da7f0cd3",
+  },
+  {
+    label: "Foreign Submissions",
+    href: "https://www.acadera.co.in/submit/mec-icaitetm26-7b1d2699",
+  },
 ];
 
 function CallForPapersPage() {
@@ -156,7 +165,9 @@ function CallForPapersPage() {
           <div className="w-full max-w-2xl rounded-2xl border border-blue-200 bg-white p-6 shadow-2xl">
             <div className="mb-5 flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-bold tracking-[0.18em] text-blue-600 uppercase">Choose Submission Type</p>
+                <p className="text-xs font-bold tracking-[0.18em] text-blue-600 uppercase">
+                  Choose Submission Type
+                </p>
                 <h3 className="mt-1 font-serif text-2xl font-bold text-blue-950">Acadera Portal</h3>
               </div>
               <button
@@ -198,15 +209,16 @@ function CallForPapersPage() {
             Call For Papers — Eight Core Tracks
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Submit original, unpublished research papers across foundational AI, intelligent cybernetics and engineering breakthroughs.
+            Submit original, unpublished research papers across foundational AI, intelligent
+            cybernetics and engineering breakthroughs.
           </p>
 
           {/* Quick Action Buttons */}
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="mt-8 flex flex-wrap items-stretch justify-center gap-3">
             <button
               type="button"
               onClick={() => setSubmissionModalOpen(true)}
-              className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/25 transition-all hover:bg-blue-700"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-md shadow-blue-500/25 transition-all hover:bg-blue-700"
             >
               Submit via Acadera Portal
               <ExternalLink className="h-4 w-4" />
@@ -215,7 +227,7 @@ function CallForPapersPage() {
               href="https://youtu.be/zy2JHdf3ahs"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-6 py-3 text-sm font-semibold text-blue-900 shadow-xs transition-all hover:bg-blue-50"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-blue-200 bg-white px-6 py-3 text-sm font-semibold text-blue-900 shadow-xs transition-all hover:bg-blue-50"
             >
               Watch Guidelines Video
               <Video className="h-4 w-4 text-red-600" />
@@ -224,7 +236,7 @@ function CallForPapersPage() {
               href="https://www.novelcheckr.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#16A34A] px-6 py-3 text-sm font-bold text-white shadow-md shadow-[#16A34A]/20 transition-all hover:bg-[#15803D]"
             >
               Check Plagiarism (₹99)
               <ShieldCheck className="h-4 w-4" />
@@ -297,17 +309,20 @@ function CallForPapersPage() {
                     : "bg-slate-50 border-slate-200/80 text-slate-900"
                 }`}
               >
-                <p className={`text-xs font-semibold ${d.highlight ? "text-blue-100" : "text-slate-500"}`}>
+                <p
+                  className={`text-xs font-semibold ${d.highlight ? "text-blue-100" : "text-slate-500"}`}
+                >
                   {d.label}
                 </p>
-                <p className={`mt-1 font-serif text-lg font-bold ${d.highlight ? "text-white" : "text-blue-950"}`}>
+                <p
+                  className={`mt-1 font-serif text-lg font-bold ${d.highlight ? "text-white" : "text-blue-950"}`}
+                >
                   {d.date}
                 </p>
               </div>
             ))}
           </div>
         </div>
-
       </main>
 
       {/* Author Submission Guidelines, Prep Rules, Strict AI Policy, and Templates */}

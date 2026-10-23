@@ -66,7 +66,11 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
     if (isHomePage) {
       const el = document.getElementById(targetId);
       if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
+        el.scrollIntoView({
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "auto"
+            : "smooth",
+        });
       }
     } else {
       window.location.href = `/#${targetId}`;
@@ -83,7 +87,12 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
             onClick={(e) => {
               if (isHomePage) {
                 e.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({
+                  top: 0,
+                  behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                    ? "auto"
+                    : "smooth",
+                });
               }
             }}
             className="flex max-w-full items-center transition-opacity hover:opacity-90"
@@ -103,9 +112,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           <Link
             to="/"
             className={`whitespace-nowrap relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
-              isHomePage && activeSection === "home"
-                ? "font-bold text-blue-700"
-                : "text-slate-700"
+              isHomePage && activeSection === "home" ? "font-bold text-blue-700" : "text-slate-700"
             }`}
           >
             Home
@@ -118,9 +125,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
           <Link
             to="/about"
             className={`whitespace-nowrap relative py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
-              activeSection === "about"
-                ? "font-bold text-blue-700"
-                : "text-slate-700"
+              activeSection === "about" ? "font-bold text-blue-700" : "text-slate-700"
             }`}
           >
             About
@@ -153,9 +158,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
             <Link
               to="/committees"
               className={`whitespace-nowrap flex items-center gap-1 py-1 text-sm font-medium transition-colors hover:text-blue-600 ${
-                activeSection === "committees"
-                  ? "font-bold text-blue-700"
-                  : "text-slate-700"
+                activeSection === "committees" ? "font-bold text-blue-700" : "text-slate-700"
               }`}
             >
               Committees
@@ -280,13 +283,13 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
                     href="https://www.novelcheckr.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-lg px-3 py-2 text-xs sm:text-sm font-medium text-red-600 hover:bg-red-50 transition-colors"
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-xs sm:text-sm font-medium text-green-800 hover:bg-[#edffed] transition-colors"
                   >
                     <span className="flex items-center gap-2">
-                      <ShieldCheck className="h-4 w-4 text-red-600" />
+                      <ShieldCheck className="h-4 w-4 text-[#00a800]" />
                       Plagiarism Checker at ₹99
                     </span>
-                    <ExternalLink className="h-3.5 w-3.5 text-red-400" />
+                    <ExternalLink className="h-3.5 w-3.5 text-[#00a800]" />
                   </a>
 
                   {/* Download Templates */}
@@ -357,7 +360,9 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
               className="whitespace-nowrap inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/20 transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95"
             >
               Submit papers
-              <ChevronDown className={`h-4 w-4 transition-transform ${submissionMenuOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`h-4 w-4 transition-transform ${submissionMenuOpen ? "rotate-180" : ""}`}
+              />
             </button>
             {submissionMenuOpen && (
               <div
@@ -395,7 +400,9 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
               className="inline-flex items-center gap-1 rounded-full bg-blue-600 px-3.5 py-2 text-xs font-bold text-white shadow-sm"
             >
               Submit papers
-              <ChevronDown className={`h-3.5 w-3.5 transition-transform ${submissionMenuOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`h-3.5 w-3.5 transition-transform ${submissionMenuOpen ? "rotate-180" : ""}`}
+              />
             </button>
             {submissionMenuOpen && (
               <div
@@ -424,7 +431,11 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
             className="rounded-lg p-2 text-slate-800 hover:bg-blue-50 focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
-            {mobileMenuOpen ? <X className="h-6 w-6 text-blue-600" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6 text-blue-600" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
@@ -529,7 +540,6 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
               )}
             </div>
 
-
             {/* Mobile For Authors */}
             <div>
               <button
@@ -575,7 +585,7 @@ export function Navbar({ activeSection = "home" }: NavbarProps) {
                     href="https://www.novelcheckr.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between py-1.5 text-xs font-bold text-red-600"
+                    className="flex items-center justify-between py-1.5 text-xs font-bold text-green-800"
                   >
                     <span>3. Plagiarism Checker at ₹99</span>
                     <ExternalLink className="h-3 w-3" />

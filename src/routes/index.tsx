@@ -26,7 +26,7 @@ import {
   Loader,
   ArrowRight,
 } from "lucide-react";
-import { useEffect, useState, type CSSProperties } from "react";
+import { useState, type CSSProperties } from "react";
 import heroRobot from "@/assets/hero-robot.png";
 import { toast } from "sonner";
 import { Navbar } from "@/components/Navbar";
@@ -427,10 +427,10 @@ function About() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-muted-foreground lg:pt-14">
           <p>
-            The International Conference on AI-Driven Transformation in Engineering, Technology and Management
-            (ICAITETM'26), conducted in hybrid mode, serves as a dynamic platform that brings
-            together researchers, academicians and industry professionals from across the globe to
-            explore the transformative potential of Artificial Intelligence.
+            The International Conference on AI-Driven Transformation in Engineering, Technology and
+            Management (ICAITETM'26), conducted in hybrid mode, serves as a dynamic platform that
+            brings together researchers, academicians and industry professionals from across the
+            globe to explore the transformative potential of Artificial Intelligence.
           </p>
           <p>
             The conference aims to foster innovation, collaboration and knowledge exchange across
@@ -819,8 +819,8 @@ function Footer() {
           ICAITETM<span className="text-gold">'26</span>
         </p>
         <p className="max-w-xl text-sm text-primary-foreground/75 leading-relaxed">
-          International Conference on AI-Driven Transformation in Engineering, Technology and Management —
-          Muthayammal Engineering College, in association with University Canada West.
+          International Conference on AI-Driven Transformation in Engineering, Technology and
+          Management — Muthayammal Engineering College, in association with University Canada West.
         </p>
 
         {/* Quick Portal Links */}
@@ -847,7 +847,7 @@ function Footer() {
             href="https://www.novelcheckr.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gold transition-colors font-semibold text-red-300"
+            className="hover:text-gold transition-colors font-semibold text-[#8bff8b]"
           >
             3. NovelCheckr Plagiarism Checker (₹99)
           </a>
@@ -986,24 +986,6 @@ function ConferenceOverviewCards() {
 }
 
 function Index() {
-  useEffect(() => {
-    const sections = document.querySelectorAll<HTMLElement>(".reveal-section, .reveal-item");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 },
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="min-h-screen bg-background font-body">
       <Navbar activeSection="home" />

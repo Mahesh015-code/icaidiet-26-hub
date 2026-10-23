@@ -48,9 +48,9 @@
 
 :root {
   --radius: 0.75rem;
-  --font-display: "Archivo", sans-serif;
+  --font-display: "Public Sans", sans-serif;
   --font-body: "Public Sans", sans-serif;
-  --font-serif: "Libre Baskerville", "Playfair Display", "Times New Roman", serif;
+  --font-serif: "Public Sans", sans-serif;
 
   --background: oklch(0.99 0.004 240);
   --foreground: oklch(0.24 0.06 255);
@@ -95,6 +95,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @utility text-balance {
   text-wrap: balance;
 }
@@ -129,7 +135,6 @@
 }
 
 @keyframes float-slow {
-
   0%,
   100% {
     transform: translateY(0);
@@ -142,45 +147,35 @@
 
 @utility reveal-section {
   opacity: 0;
-  transform: translateY(22px);
+  translate: 0 22px;
 }
 
 .reveal-section.is-visible {
-  animation: reveal-section 0.7s cubic-bezier(0, 0, 0, 1) forwards;
-}
-
-@keyframes reveal-section {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  opacity: 1;
+  translate: 0 0;
 }
 
 @utility reveal-item {
   opacity: 0;
-  transform: translateY(26px) scale(0.98);
+  translate: 0 20px;
 }
 
 .reveal-item.is-visible {
-  animation: reveal-item 0.6s cubic-bezier(0, 0, 0, 1) forwards;
-  animation-delay: var(--reveal-delay, 0ms);
+  opacity: 1;
+  translate: 0 0;
 }
 
-@keyframes reveal-item {
-  from {
-    opacity: 0;
-    transform: translateY(26px) scale(0.98);
-  }
+.scroll-motion-target {
+  opacity: 0;
+  translate: 0 16px;
+  transition:
+    opacity 560ms cubic-bezier(0.22, 1, 0.36, 1),
+    translate 560ms cubic-bezier(0.22, 1, 0.36, 1);
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+.scroll-motion-target.is-in-view {
+  opacity: 1;
+  translate: 0 0;
 }
 
 @keyframes menu-drop {
@@ -200,15 +195,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
+  .scroll-motion-target,
+  .scroll-motion-target.is-in-view,
   .reveal-section,
   .reveal-section.is-visible,
   .reveal-item,
   .reveal-item.is-visible,
   .animate-menu-drop {
-    animation: none;
+    transition: none;
     opacity: 1;
-    transform: none;
+    translate: none;
+    animation: none;
   }
 }
 
@@ -279,7 +276,7 @@ form {
   @apply space-y-4;
 }
 
-form>div {
+form > div {
   @apply opacity-0 animate-fade-in;
 }
 

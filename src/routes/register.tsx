@@ -60,7 +60,8 @@ function Register() {
             Author Resource Center
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600">
-            Everything you need to format, check originality and submit your research manuscript for ICAITETM'26.
+            Everything you need to format, check originality and submit your research manuscript for
+            ICAITETM'26.
           </p>
         </div>
 
@@ -77,9 +78,12 @@ function Register() {
                   Primary Portal
                 </span>
               </div>
-              <h3 className="font-serif text-xl font-bold text-blue-950">1. Internal Submissions (MEC)</h3>
+              <h3 className="font-serif text-xl font-bold text-blue-950">
+                1. Internal Submissions (MEC)
+              </h3>
               <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                Submit your original research through the official Muthayammal Engineering College submission route. Fast-track peer-review process and status tracking.
+                Submit your original research through the official Muthayammal Engineering College
+                submission route. Fast-track peer-review process and status tracking.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100">
@@ -106,9 +110,12 @@ function Register() {
                   Video Guide
                 </span>
               </div>
-              <h3 className="font-serif text-xl font-bold text-blue-950">2. Submission Guidelines</h3>
+              <h3 className="font-serif text-xl font-bold text-blue-950">
+                2. Submission Guidelines
+              </h3>
               <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                Watch the complete step-by-step video guide explaining manuscript formatting, citation style and how to upload via the portal.
+                Watch the complete step-by-step video guide explaining manuscript formatting,
+                citation style and how to upload via the portal.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100">
@@ -125,20 +132,21 @@ function Register() {
           </div>
 
           {/* Item 3: NovelCheckr Plagiarism Checker */}
-          <div className="rounded-2xl border-2 border-red-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-red-500/10 pointer-events-none" />
+          <div className="rounded-2xl border-2 border-[#9aef9a] bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden">
+            <div className="absolute -right-12 -top-12 h-24 w-24 rounded-full bg-[#16A34A]/10 pointer-events-none" />
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-600 text-white">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#16A34A] text-white">
                   <ShieldCheck className="h-6 w-6" />
                 </span>
-                <span className="rounded-full bg-red-600 px-3 py-1 text-xs font-extrabold text-white animate-pulse">
+                <span className="rounded-full bg-[#16A34A] px-3 py-1 text-xs font-extrabold text-white animate-pulse">
                   Only ₹99
                 </span>
               </div>
               <h3 className="font-serif text-xl font-bold text-slate-900">3. Plagiarism Checker</h3>
               <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                Verify similarity score prior to submission via NovelCheckr. Conference guidelines strictly require similarity under 15% with a valid report.
+                Verify similarity score prior to submission via NovelCheckr. Conference guidelines
+                strictly require similarity under 15% with a valid report.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100">
@@ -146,7 +154,7 @@ function Register() {
                 href="https://www.novelcheckr.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#DC2626] px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-[#B91C1C]"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#16A34A] px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-[#15803D]"
               >
                 Check at NovelCheckr (₹99)
                 <ExternalLink className="h-4 w-4" />
@@ -166,7 +174,8 @@ function Register() {
                 How to Format and Submit Your Manuscript
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Ensure your manuscript meets Wiley publishing requirements and passes editorial screening on first submission. Watch our walkthrough on YouTube.
+                Ensure your manuscript meets Wiley publishing requirements and passes editorial
+                screening on first submission. Watch our walkthrough on YouTube.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
                 <a
@@ -232,21 +241,22 @@ function Register() {
                   <Sparkles className="h-3.5 w-3.5 text-blue-600" /> Scopus Indexed Proceedings
                 </p>
                 <p className="mt-1 leading-relaxed text-blue-900/80">
-                  All accepted and presented papers published with ISBN and DOI as per publisher norms.
+                  All accepted and presented papers published with ISBN and DOI as per publisher
+                  norms.
                 </p>
               </div>
 
-              <div className="mt-4 rounded-xl border border-red-200 bg-red-50/70 p-4 text-xs text-red-950">
-                <p className="font-bold flex items-center gap-1.5 text-red-900">
-                  <ShieldCheck className="h-3.5 w-3.5 text-red-600" /> Plagiarism Requirement
+              <div className="mt-4 rounded-xl border border-[#9aef9a] bg-[#f0fff0] p-4 text-xs text-green-950">
+                <p className="font-bold flex items-center gap-1.5 text-green-900">
+                  <ShieldCheck className="h-3.5 w-3.5 text-[#16A34A]" /> Plagiarism Requirement
                 </p>
-                <p className="mt-1 leading-relaxed text-red-900/80">
+                <p className="mt-1 leading-relaxed text-green-900/80">
                   Similarity must be under 15%. Use{" "}
                   <a
                     href="https://www.novelcheckr.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold underline text-red-700"
+                    className="font-bold underline text-green-800"
                   >
                     NovelCheckr (₹99)
                   </a>{" "}
@@ -270,15 +280,21 @@ function Register() {
             <div className="flex items-center gap-2 text-blue-950 font-serif font-bold text-lg">
               <Clock className="h-5 w-5 text-blue-600" /> Mode of Conduct
             </div>
-            <p className="mt-2 text-sm font-semibold text-slate-800">Hybrid Mode (Online and On-Campus)</p>
+            <p className="mt-2 text-sm font-semibold text-slate-800">
+              Hybrid Mode (Online and On-Campus)
+            </p>
             <p className="text-xs text-slate-500 mt-1">Global digital streams and live sessions</p>
           </div>
           <div className="rounded-xl border border-blue-100 bg-white p-6 shadow-xs">
             <div className="flex items-center gap-2 text-blue-950 font-serif font-bold text-lg">
               <MapPin className="h-5 w-5 text-blue-600" /> Venue
             </div>
-            <p className="mt-2 text-sm font-semibold text-slate-800">Muthayammal Engineering College (Autonomous)</p>
-            <p className="text-xs text-slate-500 mt-1">Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408</p>
+            <p className="mt-2 text-sm font-semibold text-slate-800">
+              Muthayammal Engineering College (Autonomous)
+            </p>
+            <p className="text-xs text-slate-500 mt-1">
+              Muthayammal Engineering College (Autonomous), Rasipuram, Tamil Nadu-637408
+            </p>
           </div>
         </div>
       </section>
@@ -290,26 +306,53 @@ function Register() {
             ICAITETM<span className="text-blue-400">'26</span>
           </p>
           <p className="max-w-xl text-xs sm:text-sm text-slate-400">
-            International Conference on AI-Driven Transformation in Engineering, Technology and Management. Hosted by Muthayammal Engineering College (Autonomous). Published Partner: Wiley. Indexed in Scopus.
+            International Conference on AI-Driven Transformation in Engineering, Technology and
+            Management. Hosted by Muthayammal Engineering College (Autonomous). Published Partner:
+            Wiley. Indexed in Scopus.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-xs text-slate-400 pt-2">
-            <a href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+            <a
+              href="https://www.acadera.co.in/submit/mec-icaitetm26-6d36d146"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
               Internal Submissions (MEC)
             </a>
             <span>•</span>
-            <a href="https://youtu.be/zy2JHdf3ahs" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+            <a
+              href="https://youtu.be/zy2JHdf3ahs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
               Submission Guidelines
             </a>
             <span>•</span>
-            <a href="https://www.novelcheckr.com/" target="_blank" rel="noopener noreferrer" className="hover:text-red-400">
+            <a
+              href="https://www.novelcheckr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#8bff8b]"
+            >
               NovelCheckr (₹99)
             </a>
             <span>•</span>
-            <a href="/MEC-Conference.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a
+              href="/MEC-Conference.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
               Brochure
             </a>
             <span>•</span>
-            <a href="https://mec.edu.in/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+            <a
+              href="https://mec.edu.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
               MEC Website
             </a>
           </div>

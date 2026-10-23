@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { ScrollReveal } from "../components/ScrollReveal";
 
 function NotFoundComponent() {
   return (
@@ -77,13 +78,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management" },
+      {
+        title:
+          "ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management",
+      },
       {
         name: "description",
         content:
           "ICAITETM'26 — International Conference on AI-Driven Transformation in Engineering, Technology and Management, hosted by Muthayammal Engineering College (Autonomous) in association with University Canada West.",
       },
-      { property: "og:title", content: "ICAITETM'26 — AI-Driven Transformation in Engineering, Technology and Management" },
+      {
+        property: "og:title",
+        content: "ICAITETM'26 — AI-Driven Transformation in Engineering, Technology and Management",
+      },
       {
         property: "og:description",
         content:
@@ -102,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900andfamily=Libre+Baskerville:ital,wght@0,400;0,700;1,400andfamily=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600andfamily=Public+Sans:wght@400;500;600;700anddisplay=swap",
+        href: "https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap",
       },
     ],
   }),
@@ -132,7 +139,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <ScrollReveal>
+        <Outlet />
+      </ScrollReveal>
     </QueryClientProvider>
   );
 }

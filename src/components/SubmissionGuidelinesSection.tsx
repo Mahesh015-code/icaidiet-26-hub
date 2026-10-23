@@ -101,7 +101,10 @@ export function SubmissionGuidelinesSection() {
             Author Submission Guidelines
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Authors are invited to submit original, unpublished and high-quality research papers that are not under consideration for publication elsewhere. All submissions must strictly adhere to the following guidelines in line with <strong>Wiley publication standards</strong> and indexing requirements.
+            Authors are invited to submit original, unpublished and high-quality research papers
+            that are not under consideration for publication elsewhere. All submissions must
+            strictly adhere to the following guidelines in line with{" "}
+            <strong>Wiley publication standards</strong> and indexing requirements.
           </p>
         </div>
 
@@ -146,10 +149,12 @@ export function SubmissionGuidelinesSection() {
                 </h3>
               </div>
               <p className="text-sm font-semibold text-red-900 leading-relaxed pt-1">
-                Content created through generative AI tools is strictly prohibited and will not be reviewed.
+                Content created through generative AI tools is strictly prohibited and will not be
+                reviewed.
               </p>
               <p className="text-xs text-red-800/80 leading-relaxed">
-                All submitted manuscripts are subjected to rigorous originality and AI-detection screening. Non-compliant papers will be summarily rejected prior to peer-review.
+                All submitted manuscripts are subjected to rigorous originality and AI-detection
+                screening. Non-compliant papers will be summarily rejected prior to peer-review.
               </p>
             </div>
           </div>
@@ -169,7 +174,10 @@ export function SubmissionGuidelinesSection() {
             </div>
             <ul className="space-y-3">
               {manuscriptPrepRules.map((rule, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+                <li
+                  key={idx}
+                  className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 leading-relaxed"
+                >
                   <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700 mt-0.5">
                     <Check className="h-3 w-3 stroke-[3]" />
                   </span>
@@ -223,12 +231,12 @@ export function SubmissionGuidelinesSection() {
             </div>
 
             {/* Plagiarism Checker Card */}
-            <div className="rounded-2xl border border-red-200 bg-red-50/40 p-6 shadow-xs space-y-3">
+            <div className="rounded-2xl border border-[#9aef9a] bg-[#f0fff0] p-6 shadow-xs space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-red-600">
+                <span className="text-xs font-bold uppercase tracking-wider text-green-800">
                   Similarity &lt; 15% Required
                 </span>
-                <span className="rounded-full bg-red-600 text-white px-2 py-0.5 text-xs font-bold">
+                <span className="rounded-full bg-[#16A34A] text-white px-2 py-0.5 text-xs font-bold">
                   ₹99 Only
                 </span>
               </div>
@@ -236,13 +244,14 @@ export function SubmissionGuidelinesSection() {
                 Originality and Similarity Report
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Authors are requested to submit the Plagiarism Report of their paper as a supplementary document. Check your similarity index before final submission:
+                Authors are requested to submit the Plagiarism Report of their paper as a
+                supplementary document. Check your similarity index before final submission:
               </p>
               <a
                 href="https://www.novelcheckr.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] px-4 py-3 text-sm font-bold text-white shadow-sm transition-all"
+                className="flex items-center justify-center gap-2 rounded-xl bg-[#16A34A] px-4 py-3 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#15803D]"
               >
                 <span>Check Plagiarism at NovelCheckr (₹99)</span>
                 <ExternalLink className="h-4 w-4" />
@@ -262,7 +271,9 @@ export function SubmissionGuidelinesSection() {
                 Where to Submit Your Manuscript
               </h3>
               <p className="text-sm text-blue-100 leading-relaxed">
-                All submissions will be handled electronically via the <strong>ICAITETM'26 portal</strong> once it is open. Papers may also be submitted directly through our official Acadera submission gateway.
+                All submissions will be handled electronically via the{" "}
+                <strong>ICAITETM'26 portal</strong> once it is open. Papers may also be submitted
+                directly through our official Acadera submission gateway.
               </p>
             </div>
 
@@ -276,14 +287,16 @@ export function SubmissionGuidelinesSection() {
                 <span>Internal Submissions</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
-
             </div>
           </div>
 
           <div className="border-t border-white/10 pt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-blue-200/90">
             <div className="flex items-center gap-2">
               <Info className="h-4 w-4 text-blue-400 shrink-0" />
-              <span>Authors are strongly advised to carefully review these guidelines and ensure full compliance to facilitate smooth review and publication processing.</span>
+              <span>
+                Authors are strongly advised to carefully review these guidelines and ensure full
+                compliance to facilitate smooth review and publication processing.
+              </span>
             </div>
             <a
               href="https://youtu.be/zy2JHdf3ahs"
